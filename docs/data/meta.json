@@ -1,0 +1,307 @@
+{
+  "generated_at": "2026-06-30T21:17:02+00:00",
+  "source": "mtgtop8",
+  "snapshot": "2026-07-01",
+  "total_decks": 10,
+  "archetypes": [
+    {
+      "archetype": "4/5C Control",
+      "colors": "WUBR",
+      "count": 5,
+      "share": 50.0,
+      "staples": [
+        {
+          "name": "Great Hall of the Biblioplex",
+          "decks": 5,
+          "copies": 20
+        },
+        {
+          "name": "Jeskai Revelation",
+          "decks": 5,
+          "copies": 20
+        },
+        {
+          "name": "Stock Up",
+          "decks": 5,
+          "copies": 20
+        },
+        {
+          "name": "Tablet of Discovery",
+          "decks": 5,
+          "copies": 20
+        },
+        {
+          "name": "Inevitable Defeat",
+          "decks": 5,
+          "copies": 16
+        },
+        {
+          "name": "Consult the Star Charts",
+          "decks": 5,
+          "copies": 13
+        },
+        {
+          "name": "Sacred Foundry",
+          "decks": 5,
+          "copies": 13
+        },
+        {
+          "name": "Steam Vents",
+          "decks": 5,
+          "copies": 12
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=87498&d=864009&f=ST",
+          "event": "87498"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=87498&d=864010&f=ST",
+          "event": "87498"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=87498&d=864021&f=ST",
+          "event": "87498"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=87498&d=864020&f=ST",
+          "event": "87498"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=87497&d=863990&f=ST",
+          "event": "87497"
+        }
+      ]
+    },
+    {
+      "archetype": "Izzet Lesson",
+      "colors": "WUR",
+      "count": 3,
+      "share": 30.0,
+      "staples": [
+        {
+          "name": "Abandon Attachments",
+          "decks": 3,
+          "copies": 12
+        },
+        {
+          "name": "Accumulate Wisdom",
+          "decks": 3,
+          "copies": 12
+        },
+        {
+          "name": "Combustion Technique",
+          "decks": 3,
+          "copies": 12
+        },
+        {
+          "name": "Firebending Lesson",
+          "decks": 3,
+          "copies": 12
+        },
+        {
+          "name": "Gran-Gran",
+          "decks": 3,
+          "copies": 12
+        },
+        {
+          "name": "Great Hall of the Biblioplex",
+          "decks": 3,
+          "copies": 12
+        },
+        {
+          "name": "Jeskai Revelation",
+          "decks": 3,
+          "copies": 12
+        },
+        {
+          "name": "Riverpyre Verge",
+          "decks": 3,
+          "copies": 12
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=87498&d=864016&f=ST",
+          "event": "87498"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=87498&d=864017&f=ST",
+          "event": "87498"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=87332&d=862791&f=ST",
+          "event": "87332"
+        }
+      ]
+    },
+    {
+      "archetype": "Jeskai Control",
+      "colors": "WUBR",
+      "count": 2,
+      "share": 20.0,
+      "staples": [
+        {
+          "name": "Consult the Star Charts",
+          "decks": 2,
+          "copies": 8
+        },
+        {
+          "name": "Great Hall of the Biblioplex",
+          "decks": 2,
+          "copies": 8
+        },
+        {
+          "name": "Jeskai Revelation",
+          "decks": 2,
+          "copies": 8
+        },
+        {
+          "name": "Tablet of Discovery",
+          "decks": 2,
+          "copies": 8
+        },
+        {
+          "name": "Stock Up",
+          "decks": 2,
+          "copies": 6
+        },
+        {
+          "name": "Watery Grave",
+          "decks": 2,
+          "copies": 5
+        },
+        {
+          "name": "Day of Judgment",
+          "decks": 2,
+          "copies": 4
+        },
+        {
+          "name": "Flashback",
+          "decks": 2,
+          "copies": 4
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=87496&d=863984&f=ST",
+          "event": "87496"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=87380&d=863177&f=ST",
+          "event": "87380"
+        }
+      ]
+    }
+  ],
+  "overall_staples": [
+    {
+      "name": "Great Hall of the Biblioplex",
+      "decks": 10,
+      "copies": 40
+    },
+    {
+      "name": "Jeskai Revelation",
+      "decks": 10,
+      "copies": 40
+    },
+    {
+      "name": "Tablet of Discovery",
+      "decks": 10,
+      "copies": 40
+    },
+    {
+      "name": "Stock Up",
+      "decks": 10,
+      "copies": 37
+    },
+    {
+      "name": "Steam Vents",
+      "decks": 10,
+      "copies": 28
+    },
+    {
+      "name": "Riverpyre Verge",
+      "decks": 8,
+      "copies": 24
+    },
+    {
+      "name": "Hallowed Fountain",
+      "decks": 8,
+      "copies": 19
+    },
+    {
+      "name": "Flashback",
+      "decks": 8,
+      "copies": 15
+    },
+    {
+      "name": "Consult the Star Charts",
+      "decks": 7,
+      "copies": 21
+    },
+    {
+      "name": "Inevitable Defeat",
+      "decks": 7,
+      "copies": 18
+    },
+    {
+      "name": "Shattered Sanctum",
+      "decks": 7,
+      "copies": 14
+    },
+    {
+      "name": "Sear",
+      "decks": 7,
+      "copies": 12
+    },
+    {
+      "name": "Sundown Pass",
+      "decks": 7,
+      "copies": 11
+    },
+    {
+      "name": "Mistrise Village",
+      "decks": 7,
+      "copies": 10
+    },
+    {
+      "name": "Firebending Lesson",
+      "decks": 6,
+      "copies": 19
+    },
+    {
+      "name": "Sacred Foundry",
+      "decks": 6,
+      "copies": 14
+    },
+    {
+      "name": "Day of Judgment",
+      "decks": 5,
+      "copies": 11
+    },
+    {
+      "name": "Stormcarved Coast",
+      "decks": 5,
+      "copies": 6
+    },
+    {
+      "name": "Cori Mountain Monastery",
+      "decks": 5,
+      "copies": 5
+    },
+    {
+      "name": "No More Lies",
+      "decks": 4,
+      "copies": 7
+    }
+  ],
+  "trend": {
+    "2026-07-01": {
+      "4/5C Control": 5,
+      "Izzet Lesson": 3,
+      "Jeskai Control": 2
+    }
+  }
+}

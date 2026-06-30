@@ -1,0 +1,13 @@
+{
+  "name": "MTG Standard メタトラッカー",
+  "short_name": "MTGメタ",
+  "description": "スタンダードの大会上位デッキから集計したメタ・アーキタイプ・主要カード",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1116",
+  "theme_color": "#13161c",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

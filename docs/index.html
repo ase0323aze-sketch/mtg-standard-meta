@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MTG Standard メタ</title>
+<meta name="theme-color" content="#13161c">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<style>
+  :root{
+    --bg:#0f1116; --card:#181b22; --card2:#1f232c; --line:#2a2f3a;
+    --txt:#e7e9ee; --mut:#9aa3b2; --acc:#e0a106; --acc2:#4ea1ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font-family:-apple-system,"Segoe UI",system-ui,"Hiragino Sans","Yu Gothic UI",sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:760px;margin:0 auto;padding:16px 14px 60px}
+  header h1{font-size:20px;font-weight:600;margin:4px 0}
+  .meta{color:var(--mut);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:6px}
+  .meta b{color:var(--txt);font-weight:600}
+  h2{font-size:15px;font-weight:600;margin:26px 0 10px;color:var(--mut);
+    text-transform:uppercase;letter-spacing:.04em}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    margin-bottom:10px;overflow:hidden}
+  .arch{padding:12px 14px;cursor:pointer;user-select:none}
+  .arch-top{display:flex;align-items:center;gap:8px}
+  .pips{display:flex;gap:3px}
+  .pip{width:14px;height:14px;border-radius:50%;border:1px solid #0006}
+  .W{background:#f8f6d8}.U{background:#3a8bd4}.B{background:#5a5560}
+  .R{background:#e0533b}.G{background:#5aa05a}
+  .name{font-weight:600;font-size:15px;flex:1;min-width:0}
+  .share{font-variant-numeric:tabular-nums;font-weight:600;color:var(--acc)}
+  .cnt{color:var(--mut);font-size:12px;margin-left:4px}
+  .bar{height:7px;background:var(--card2);border-radius:4px;margin-top:9px;overflow:hidden}
+  .bar > i{display:block;height:100%;background:var(--acc);border-radius:4px}
+  .detail{display:none;padding:0 14px 14px;border-top:1px solid var(--line)}
+  .detail.open{display:block}
+  .detail h3{font-size:12px;color:var(--mut);margin:12px 0 6px;font-weight:600}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{background:var(--card2);border:1px solid var(--line);border-radius:20px;
+    padding:3px 10px;font-size:12px}
+  .chip b{color:var(--acc);font-weight:600}
+  .links a{display:inline-block;color:var(--acc2);font-size:12px;text-decoration:none;
+    border:1px solid var(--line);border-radius:8px;padding:3px 8px;margin:3px 4px 0 0}
+  .staple{display:flex;justify-content:space-between;font-size:13px;padding:4px 0;
+    border-bottom:1px solid var(--line)}
+  .staple span:last-child{color:var(--mut);font-variant-numeric:tabular-nums}
+  .err{color:#e0533b;font-size:14px;padding:20px 0}
+  footer{color:var(--mut);font-size:12px;margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
+  .caret{color:var(--mut);transition:transform .15s}
+  .arch.open .caret{transform:rotate(90deg)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>MTG Standard メタトラッカー</h1>
+    <div class="meta" id="meta"></div>
+  </header>
+  <main id="app"><p class="meta">読み込み中…</p></main>
+  <footer id="foot"></footer>
+</div>
+<script>
+const COLORNAME={W:"白",U:"青",B:"黒",R:"赤",G:"緑"};
+function pips(colors){
+  if(!colors) return '<span class="cnt">無色</span>';
+  return '<span class="pips">'+[...colors].map(c=>`<span class="pip ${c}" title="${COLORNAME[c]||c}"></span>`).join('')+'</span>';
+}
+function stapleRows(list){
+  return list.map(s=>`<div class="staple"><span>${s.name}</span><span>${s.decks}デッキ / ${s.copies}枚</span></div>`).join('');
+}
+function archCard(a){
+  const links=(a.decks||[]).map((d,i)=>`<a href="${d.url}" target="_blank" rel="noopener">リスト${i+1}↗</a>`).join('');
+  return `<div class="card">
+    <div class="arch" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+      <div class="arch-top">${pips(a.colors)}<span class="name">${a.archetype}</span>
+        <span class="share">${a.share}%</span><span class="cnt">(${a.count})</span>
+        <span class="caret">▸</span></div>
+      <div class="bar"><i style="width:${Math.min(100,a.share)}%"></i></div>
+    </div>
+    <div class="detail">
+      <h3>主要カード</h3>${stapleRows(a.staples||[])}
+      <h3>デッキリスト</h3><div class="links">${links||'<span class="cnt">なし</span>'}</div>
+    </div></div>`;
+}
+fetch('data/meta.json?_='+Date.now()).then(r=>{
+  if(!r.ok) throw new Error('meta.json '+r.status);
+  return r.json();
+}).then(d=>{
+  const dt=new Date(d.generated_at);
+  document.getElementById('meta').innerHTML=
+    `<span>スナップショット <b>${d.snapshot||'-'}</b></span>`+
+    `<span>対象 <b>${d.total_decks}</b> デッキ</span>`+
+    `<span>出典 <b>${d.source}</b></span>`;
+  const app=document.getElementById('app');
+  app.innerHTML='<h2>アーキタイプ別シェア</h2>'+
+    (d.archetypes||[]).map(archCard).join('')+
+    '<h2>環境全体の主要カード</h2><div class="card" style="padding:8px 14px">'+
+    stapleRows(d.overall_staples||[])+'</div>';
+  const snaps=Object.keys(d.trend||{}).sort();
+  document.getElementById('foot').innerHTML=
+    `更新: ${dt.toLocaleString('ja-JP')}<br>収集スナップショット: ${snaps.join(' , ')||'-'}<br>`+
+    `データは大会上位デッキの出現率（メタ占有率の代理指標）。真の勝率はランク戦データが必要で別途対応予定。`;
+}).catch(e=>{
+  document.getElementById('app').innerHTML=
+    `<p class="err">データを読み込めませんでした (${e.message})<br>`+
+    `収集→解析を実行して data/meta.json を生成してください。</p>`;
+});
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#13161c"/>
+  <circle cx="176" cy="180" r="70" fill="#3a8bd4"/>
+  <circle cx="336" cy="180" r="70" fill="#e0533b"/>
+  <circle cx="256" cy="330" r="70" fill="#e0a106"/>
+  <text x="256" y="470" font-family="Segoe UI,sans-serif" font-size="64" font-weight="700"
+        fill="#e7e9ee" text-anchor="middle">STD</text>
+</svg>

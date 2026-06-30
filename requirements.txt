@@ -1,0 +1,7 @@
+google-genai
+python-dotenv
+openpyxl
+
+requests
+beautifulsoup4
+lxml

@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+venv/
+out_deck.txt
+cards.json
+cardpool.xlsx
+*.db
+__pycache__/
+*.pyc

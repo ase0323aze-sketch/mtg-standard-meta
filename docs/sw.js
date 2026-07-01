@@ -1,4 +1,4 @@
-const CACHE = "mtgmeta-v3";
+const CACHE = "mtgmeta-v4";
 const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", e => {
@@ -17,7 +17,7 @@ self.addEventListener("activate", e => {
 
 self.addEventListener("fetch", e => {
   const url = new URL(e.request.url);
-  if (url.pathname.endsWith("meta.json")) {
+  if (url.pathname.includes("/data/")) {
     e.respondWith(
       fetch(e.request).then(r => {
         const copy = r.clone();

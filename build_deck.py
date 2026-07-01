@@ -85,11 +85,12 @@ def build_prompt(theme: str, colors: str | None, pool: list[Card],
 - 土地は十分な枚数（通常 22〜26 枚程度）を入れること。
 
 # 出力形式（厳守・JSON のみ。前後に文章を付けない）
+# archetype と strategy は必ず日本語で書く。ただし maindeck の name は英語のまま。
 {{
-  "archetype": "デッキ名（例: Dimir Control）",
-  "strategy": "勝ち筋を2〜3文で",
+  "archetype": "デッキ名（日本語。例: ディミーア・コントロール）",
+  "strategy": "このデッキの勝ち筋・戦い方・現環境への強みを日本語で3〜4文で分かりやすく",
   "maindeck": [
-    {{"name": "カード名(英語)", "count": 4}},
+    {{"name": "カード名(英語・プールと完全一致)", "count": 4}},
     ...
   ]
 }}

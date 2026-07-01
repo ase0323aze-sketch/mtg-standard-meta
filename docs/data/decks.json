@@ -13,79 +13,98 @@
       "maindeck": [
         {
           "name": "Hallowed Fountain",
-          "count": 4
+          "count": 4,
+          "jp": "神聖なる泉"
         },
         {
           "name": "Steam Vents",
-          "count": 4
+          "count": 4,
+          "jp": "蒸気孔"
         },
         {
           "name": "Sacred Foundry",
-          "count": 4
+          "count": 4,
+          "jp": "聖なる鋳造所"
         },
         {
           "name": "Godless Shrine",
-          "count": 4
+          "count": 4,
+          "jp": "神無き祭殿"
         },
         {
           "name": "Blood Crypt",
-          "count": 4
+          "count": 4,
+          "jp": "血の墓所"
         },
         {
           "name": "Watery Grave",
-          "count": 4
+          "count": 4,
+          "jp": "湿った墓"
         },
         {
           "name": "Great Hall of the Biblioplex",
-          "count": 1
+          "count": 1,
+          "jp": "Great Hall of the Biblioplex"
         },
         {
           "name": "Jeskai Revelation",
-          "count": 4
+          "count": 4,
+          "jp": "ジェスカイの啓示"
         },
         {
           "name": "Stock Up",
-          "count": 4
+          "count": 4,
+          "jp": "食糧補充"
         },
         {
           "name": "Accumulate Wisdom",
-          "count": 3
+          "count": 3,
+          "jp": "積み重ねられた叡智"
         },
         {
           "name": "Inevitable Defeat",
-          "count": 4
+          "count": 4,
+          "jp": "不可避の敗北"
         },
         {
           "name": "Combustion Technique",
-          "count": 4
+          "count": 4,
+          "jp": "爆裂の技"
         },
         {
           "name": "Firebending Lesson",
-          "count": 3
+          "count": 3,
+          "jp": "火の技の修行"
         },
         {
           "name": "Abandon Attachments",
-          "count": 4
+          "count": 4,
+          "jp": "愛着を捨てる"
         },
         {
           "name": "Gran-Gran",
-          "count": 1
+          "count": 1,
+          "jp": "ばあば"
         },
         {
           "name": "Spell Pierce",
-          "count": 2
+          "count": 2,
+          "jp": "呪文貫き"
         },
         {
           "name": "Negate",
-          "count": 2
+          "count": 2,
+          "jp": "否認"
         },
         {
           "name": "Thousand-Year Storm",
-          "count": 2
+          "count": 2,
+          "jp": "千年嵐"
         },
         {
           "name": "Tolarian Terror",
-          "count": 2
+          "count": 2,
+          "jp": "トレイリアの恐怖"
         }
       ],
       "mtga": "Deck\n4 Hallowed Fountain\n4 Steam Vents\n4 Sacred Foundry\n4 Godless Shrine\n4 Blood Crypt\n4 Watery Grave\n1 Great Hall of the Biblioplex\n4 Jeskai Revelation\n4 Stock Up\n3 Accumulate Wisdom\n4 Inevitable Defeat\n4 Combustion Technique\n3 Firebending Lesson\n4 Abandon Attachments\n1 Gran-Gran\n2 Spell Pierce\n2 Negate\n2 Thousand-Year Storm\n2 Tolarian Terror",
@@ -101,67 +120,83 @@
       "maindeck": [
         {
           "name": "Fanatical Firebrand",
-          "count": 4
+          "count": 4,
+          "jp": "狂信的扇動者"
         },
         {
           "name": "Savannah Lions",
-          "count": 4
+          "count": 4,
+          "jp": "サバンナ・ライオン"
         },
         {
           "name": "Novice Inspector",
-          "count": 4
+          "count": 4,
+          "jp": "ひよっこ捜査員"
         },
         {
           "name": "Shock",
-          "count": 4
+          "count": 4,
+          "jp": "ショック"
         },
         {
           "name": "Torch the Tower",
-          "count": 3
+          "count": 3,
+          "jp": "塔の点火"
         },
         {
           "name": "Lavaspur Boots",
-          "count": 2
+          "count": 2,
+          "jp": "溶岩拍車のブーツ"
         },
         {
           "name": "Charming Scoundrel",
-          "count": 4
+          "count": 4,
+          "jp": "魅力的な悪漢"
         },
         {
           "name": "Lightning Strike",
-          "count": 4
+          "count": 4,
+          "jp": "稲妻の一撃"
         },
         {
           "name": "Slickshot Show-Off",
-          "count": 4
+          "count": 4,
+          "jp": "精鋭射手団の目立ちたがり"
         },
         {
           "name": "Boros Charm",
-          "count": 2
+          "count": 2,
+          "jp": "ボロスの魔除け"
         },
         {
           "name": "Anim Pakal, Thousandth Moon",
-          "count": 3
+          "count": 3,
+          "jp": "千番目の月、アニム・パカル"
         },
         {
           "name": "Sacred Foundry",
-          "count": 4
+          "count": 4,
+          "jp": "聖なる鋳造所"
         },
         {
           "name": "Inspiring Vantage",
-          "count": 4
+          "count": 4,
+          "jp": "感動的な眺望所"
         },
         {
           "name": "Abraded Bluffs",
-          "count": 4
+          "count": 4,
+          "jp": "擦り減った絶壁"
         },
         {
           "name": "Mountain",
-          "count": 5
+          "count": 5,
+          "jp": "山"
         },
         {
           "name": "Plains",
-          "count": 5
+          "count": 5,
+          "jp": "平地"
         }
       ],
       "mtga": "Deck\n4 Fanatical Firebrand\n4 Savannah Lions\n4 Novice Inspector\n4 Shock\n3 Torch the Tower\n2 Lavaspur Boots\n4 Charming Scoundrel\n4 Lightning Strike\n4 Slickshot Show-Off\n2 Boros Charm\n3 Anim Pakal, Thousandth Moon\n4 Sacred Foundry\n4 Inspiring Vantage\n4 Abraded Bluffs\n5 Mountain\n5 Plains",
@@ -177,107 +212,133 @@
       "maindeck": [
         {
           "name": "Hallowed Fountain",
-          "count": 4
+          "count": 4,
+          "jp": "神聖なる泉"
         },
         {
           "name": "Watery Grave",
-          "count": 4
+          "count": 4,
+          "jp": "湿った墓"
         },
         {
           "name": "Steam Vents",
-          "count": 4
+          "count": 4,
+          "jp": "蒸気孔"
         },
         {
           "name": "Blood Crypt",
-          "count": 4
+          "count": 4,
+          "jp": "血の墓所"
         },
         {
           "name": "Breeding Pool",
-          "count": 2
+          "count": 2,
+          "jp": "繁殖池"
         },
         {
           "name": "Temple Garden",
-          "count": 1
+          "count": 1,
+          "jp": "寺院の庭"
         },
         {
           "name": "Overgrown Tomb",
-          "count": 1
+          "count": 1,
+          "jp": "草むした墓"
         },
         {
           "name": "Stomping Ground",
-          "count": 1
+          "count": 1,
+          "jp": "踏み鳴らされる地"
         },
         {
           "name": "Godless Shrine",
-          "count": 1
+          "count": 1,
+          "jp": "神無き祭殿"
         },
         {
           "name": "Sacred Foundry",
-          "count": 1
+          "count": 1,
+          "jp": "聖なる鋳造所"
         },
         {
           "name": "Command Bridge",
-          "count": 1
+          "count": 1,
+          "jp": "指揮艦橋"
         },
         {
           "name": "Great Hall of the Biblioplex",
-          "count": 1
+          "count": 1,
+          "jp": "Great Hall of the Biblioplex"
         },
         {
           "name": "Restless Reef",
-          "count": 1
+          "count": 1,
+          "jp": "不穏な浅瀬"
         },
         {
           "name": "Restless Spire",
-          "count": 1
+          "count": 1,
+          "jp": "眠らずの尖塔"
         },
         {
           "name": "Fatal Fissure",
-          "count": 4
+          "count": 4,
+          "jp": "命取りの地割れ"
         },
         {
           "name": "Get Lost",
-          "count": 4
+          "count": 4,
+          "jp": "失せろ"
         },
         {
           "name": "No More Lies",
-          "count": 4
+          "count": 4,
+          "jp": "喝破"
         },
         {
           "name": "Consult the Star Charts",
-          "count": 4
+          "count": 4,
+          "jp": "星間航路の助言"
         },
         {
           "name": "Stock Up",
-          "count": 4
+          "count": 4,
+          "jp": "食糧補充"
         },
         {
           "name": "Mazemind Tome",
-          "count": 2
+          "count": 2,
+          "jp": "精神迷わせの秘本"
         },
         {
           "name": "Hedron Archive",
-          "count": 2
+          "count": 2,
+          "jp": "面晶体の記録庫"
         },
         {
           "name": "Day of Judgment",
-          "count": 2
+          "count": 2,
+          "jp": "審判の日"
         },
         {
           "name": "Chimil, the Inner Sun",
-          "count": 1
+          "count": 1,
+          "jp": "Chimil, the Inner Sun"
         },
         {
           "name": "Ugin, Eye of the Storms",
-          "count": 2
+          "count": 2,
+          "jp": "嵐の目、ウギン"
         },
         {
           "name": "Jeskai Revelation",
-          "count": 2
+          "count": 2,
+          "jp": "ジェスカイの啓示"
         },
         {
           "name": "Niv-Mizzet, Guildpact",
-          "count": 2
+          "count": 2,
+          "jp": "ギルドパクト、ニヴ＝ミゼット"
         }
       ],
       "mtga": "Deck\n4 Hallowed Fountain\n4 Watery Grave\n4 Steam Vents\n4 Blood Crypt\n2 Breeding Pool\n1 Temple Garden\n1 Overgrown Tomb\n1 Stomping Ground\n1 Godless Shrine\n1 Sacred Foundry\n1 Command Bridge\n1 Great Hall of the Biblioplex\n1 Restless Reef\n1 Restless Spire\n4 Fatal Fissure\n4 Get Lost\n4 No More Lies\n4 Consult the Star Charts\n4 Stock Up\n2 Mazemind Tome\n2 Hedron Archive\n2 Day of Judgment\n1 Chimil, the Inner Sun\n2 Ugin, Eye of the Storms\n2 Jeskai Revelation\n2 Niv-Mizzet, Guildpact",
@@ -293,75 +354,93 @@
       "maindeck": [
         {
           "name": "The Millennium Calendar",
-          "count": 4
+          "count": 4,
+          "jp": "千年暦"
         },
         {
           "name": "Peter Parker's Camera",
-          "count": 4
+          "count": 4,
+          "jp": "ピーター・パーカーのカメラ"
         },
         {
           "name": "Tezzeret, Cruel Captain",
-          "count": 4
+          "count": 4,
+          "jp": "冷酷な船長、テゼレット"
         },
         {
           "name": "Beseech the Mirror",
-          "count": 4
+          "count": 4,
+          "jp": "鏡に願いを"
         },
         {
           "name": "Springleaf Drum",
-          "count": 4
+          "count": 4,
+          "jp": "バネ葉の太鼓"
         },
         {
           "name": "Gingerbrute",
-          "count": 4
+          "count": 4,
+          "jp": "ジンジャーブルート"
         },
         {
           "name": "Opt",
-          "count": 2
+          "count": 2,
+          "jp": "選択"
         },
         {
           "name": "Sleight of Hand",
-          "count": 2
+          "count": 2,
+          "jp": "手練"
         },
         {
           "name": "Negate",
-          "count": 4
+          "count": 4,
+          "jp": "否認"
         },
         {
           "name": "Dive Down",
-          "count": 4
+          "count": 4,
+          "jp": "潜水"
         },
         {
           "name": "Blood Crypt",
-          "count": 4
+          "count": 4,
+          "jp": "血の墓所"
         },
         {
           "name": "Steam Vents",
-          "count": 4
+          "count": 4,
+          "jp": "蒸気孔"
         },
         {
           "name": "Watery Grave",
-          "count": 4
+          "count": 4,
+          "jp": "湿った墓"
         },
         {
           "name": "Multiversal Passage",
-          "count": 4
+          "count": 4,
+          "jp": "マルチバースへの通り道"
         },
         {
           "name": "Island",
-          "count": 2
+          "count": 2,
+          "jp": "島"
         },
         {
           "name": "Swamp",
-          "count": 2
+          "count": 2,
+          "jp": "沼"
         },
         {
           "name": "Mountain",
-          "count": 2
+          "count": 2,
+          "jp": "山"
         },
         {
           "name": "Crystal Grotto",
-          "count": 2
+          "count": 2,
+          "jp": "水晶の岩屋"
         }
       ],
       "mtga": "Deck\n4 The Millennium Calendar\n4 Peter Parker's Camera\n4 Tezzeret, Cruel Captain\n4 Beseech the Mirror\n4 Springleaf Drum\n4 Gingerbrute\n2 Opt\n2 Sleight of Hand\n4 Negate\n4 Dive Down\n4 Blood Crypt\n4 Steam Vents\n4 Watery Grave\n4 Multiversal Passage\n2 Island\n2 Swamp\n2 Mountain\n2 Crystal Grotto",

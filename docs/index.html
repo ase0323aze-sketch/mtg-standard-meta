@@ -84,7 +84,7 @@ function pips(colors){
   return '<span class="pips">'+[...colors].map(c=>`<span class="pip ${c}" title="${COLORNAME[c]||c}"></span>`).join('')+'</span>';
 }
 function stapleRows(list){
-  return list.map(s=>`<div class="staple"><span>${s.name}</span><span>${s.decks}デッキ / ${s.copies}枚</span></div>`).join('');
+  return list.map(s=>`<div class="staple"><span>${s.jp||s.name}</span><span>${s.decks}デッキ / ${s.copies}枚</span></div>`).join('');
 }
 function archCard(a){
   const links=(a.decks||[]).map((d,i)=>`<a href="${d.url}" target="_blank" rel="noopener">リスト${i+1}↗</a>`).join('');
@@ -129,7 +129,7 @@ function copyDeck(btn,txt){
   }).catch(()=>{btn.textContent='コピー不可'});
 }
 function deckCard(d){
-  const cards=(d.maindeck||[]).map(c=>`<div>${c.count} ${c.name}</div>`).join('');
+  const cards=(d.maindeck||[]).map(c=>`<div>${c.count} ${c.jp||c.name}</div>`).join('');
   const mtga=(d.mtga||'').replace(/"/g,'&quot;');
   return `<div class="deck">
     <div class="deck-h"><span class="deck-title">${d.title}</span>

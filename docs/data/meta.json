@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T00:02:48+00:00",
+  "generated_at": "2026-07-01T10:49:30+00:00",
   "source": "mtgtop8",
   "snapshot": "2026-07-01",
   "total_decks": 14,
@@ -13,42 +13,50 @@
         {
           "name": "Great Hall of the Biblioplex",
           "decks": 8,
-          "copies": 32
+          "copies": 32,
+          "jp": "Great Hall of the Biblioplex"
         },
         {
           "name": "Jeskai Revelation",
           "decks": 8,
-          "copies": 32
+          "copies": 32,
+          "jp": "ジェスカイの啓示"
         },
         {
           "name": "Stock Up",
           "decks": 8,
-          "copies": 32
+          "copies": 32,
+          "jp": "食糧補充"
         },
         {
           "name": "Tablet of Discovery",
           "decks": 8,
-          "copies": 32
+          "copies": 32,
+          "jp": "発見の石板"
         },
         {
           "name": "Inevitable Defeat",
           "decks": 8,
-          "copies": 28
+          "copies": 28,
+          "jp": "不可避の敗北"
         },
         {
           "name": "Steam Vents",
           "decks": 8,
-          "copies": 24
+          "copies": 24,
+          "jp": "蒸気孔"
         },
         {
           "name": "Consult the Star Charts",
           "decks": 8,
-          "copies": 22
+          "copies": 22,
+          "jp": "星間航路の助言"
         },
         {
           "name": "Sacred Foundry",
           "decks": 8,
-          "copies": 22
+          "copies": 22,
+          "jp": "聖なる鋳造所"
         }
       ],
       "decks": [
@@ -95,42 +103,50 @@
         {
           "name": "Abandon Attachments",
           "decks": 4,
-          "copies": 16
+          "copies": 16,
+          "jp": "愛着を捨てる"
         },
         {
           "name": "Accumulate Wisdom",
           "decks": 4,
-          "copies": 16
+          "copies": 16,
+          "jp": "積み重ねられた叡智"
         },
         {
           "name": "Combustion Technique",
           "decks": 4,
-          "copies": 16
+          "copies": 16,
+          "jp": "爆裂の技"
         },
         {
           "name": "Firebending Lesson",
           "decks": 4,
-          "copies": 16
+          "copies": 16,
+          "jp": "火の技の修行"
         },
         {
           "name": "Gran-Gran",
           "decks": 4,
-          "copies": 16
+          "copies": 16,
+          "jp": "ばあば"
         },
         {
           "name": "Great Hall of the Biblioplex",
           "decks": 4,
-          "copies": 16
+          "copies": 16,
+          "jp": "Great Hall of the Biblioplex"
         },
         {
           "name": "Jeskai Revelation",
           "decks": 4,
-          "copies": 16
+          "copies": 16,
+          "jp": "ジェスカイの啓示"
         },
         {
           "name": "Riverpyre Verge",
           "decks": 4,
-          "copies": 16
+          "copies": 16,
+          "jp": "リバーパイアーの境界"
         }
       ],
       "decks": [
@@ -161,42 +177,50 @@
         {
           "name": "Consult the Star Charts",
           "decks": 2,
-          "copies": 8
+          "copies": 8,
+          "jp": "星間航路の助言"
         },
         {
           "name": "Great Hall of the Biblioplex",
           "decks": 2,
-          "copies": 8
+          "copies": 8,
+          "jp": "Great Hall of the Biblioplex"
         },
         {
           "name": "Jeskai Revelation",
           "decks": 2,
-          "copies": 8
+          "copies": 8,
+          "jp": "ジェスカイの啓示"
         },
         {
           "name": "Tablet of Discovery",
           "decks": 2,
-          "copies": 8
+          "copies": 8,
+          "jp": "発見の石板"
         },
         {
           "name": "Stock Up",
           "decks": 2,
-          "copies": 6
+          "copies": 6,
+          "jp": "食糧補充"
         },
         {
           "name": "Watery Grave",
           "decks": 2,
-          "copies": 5
+          "copies": 5,
+          "jp": "湿った墓"
         },
         {
           "name": "Day of Judgment",
           "decks": 2,
-          "copies": 4
+          "copies": 4,
+          "jp": "審判の日"
         },
         {
           "name": "Flashback",
           "decks": 2,
-          "copies": 4
+          "copies": 4,
+          "jp": "フラッシュバック"
         }
       ],
       "decks": [
@@ -215,102 +239,122 @@
     {
       "name": "Great Hall of the Biblioplex",
       "decks": 14,
-      "copies": 56
+      "copies": 56,
+      "jp": "Great Hall of the Biblioplex"
     },
     {
       "name": "Jeskai Revelation",
       "decks": 14,
-      "copies": 56
+      "copies": 56,
+      "jp": "ジェスカイの啓示"
     },
     {
       "name": "Tablet of Discovery",
       "decks": 14,
-      "copies": 56
+      "copies": 56,
+      "jp": "発見の石板"
     },
     {
       "name": "Stock Up",
       "decks": 14,
-      "copies": 52
+      "copies": 52,
+      "jp": "食糧補充"
     },
     {
       "name": "Steam Vents",
       "decks": 14,
-      "copies": 44
+      "copies": 44,
+      "jp": "蒸気孔"
     },
     {
       "name": "Hallowed Fountain",
       "decks": 12,
-      "copies": 28
+      "copies": 28,
+      "jp": "神聖なる泉"
     },
     {
       "name": "Flashback",
       "decks": 12,
-      "copies": 22
+      "copies": 22,
+      "jp": "フラッシュバック"
     },
     {
       "name": "Sundown Pass",
       "decks": 11,
-      "copies": 16
+      "copies": 16,
+      "jp": "日没の道"
     },
     {
       "name": "Consult the Star Charts",
       "decks": 10,
-      "copies": 30
+      "copies": 30,
+      "jp": "星間航路の助言"
     },
     {
       "name": "Inevitable Defeat",
       "decks": 10,
-      "copies": 30
+      "copies": 30,
+      "jp": "不可避の敗北"
     },
     {
       "name": "Shattered Sanctum",
       "decks": 10,
-      "copies": 20
+      "copies": 20,
+      "jp": "砕かれた聖域"
     },
     {
       "name": "Sear",
       "decks": 10,
-      "copies": 18
+      "copies": 18,
+      "jp": "焼きつけ"
     },
     {
       "name": "Mistrise Village",
       "decks": 10,
-      "copies": 16
+      "copies": 16,
+      "jp": "湧霧の村"
     },
     {
       "name": "Riverpyre Verge",
       "decks": 9,
-      "copies": 28
+      "copies": 28,
+      "jp": "リバーパイアーの境界"
     },
     {
       "name": "Sacred Foundry",
       "decks": 9,
-      "copies": 23
+      "copies": 23,
+      "jp": "聖なる鋳造所"
     },
     {
       "name": "Firebending Lesson",
       "decks": 8,
-      "copies": 25
+      "copies": 25,
+      "jp": "火の技の修行"
     },
     {
       "name": "Day of Judgment",
       "decks": 8,
-      "copies": 17
+      "copies": 17,
+      "jp": "審判の日"
     },
     {
       "name": "Stormcarved Coast",
       "decks": 8,
-      "copies": 9
+      "copies": 9,
+      "jp": "嵐削りの海岸"
     },
     {
       "name": "Cori Mountain Monastery",
       "decks": 8,
-      "copies": 8
+      "copies": 8,
+      "jp": "コーリ山の僧院"
     },
     {
       "name": "No More Lies",
       "decks": 7,
-      "copies": 13
+      "copies": 13,
+      "jp": "喝破"
     }
   ],
   "trend": {

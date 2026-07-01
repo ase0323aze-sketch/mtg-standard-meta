@@ -17,6 +17,7 @@ import analyze
 import store
 from build_deck import get_client, generate_deck
 from cardpool import load_pool, filter_pool
+from jpnames import JpNames
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -44,6 +45,7 @@ def main() -> None:
     conn.close()
 
     client = get_client()
+    jp = JpNames()
     decks = []
     for i, spec in enumerate(THEMES, 1):
         print(f"\n=== [{i}/{len(THEMES)}] {spec['title']} ===")
@@ -54,6 +56,9 @@ def main() -> None:
         except Exception as e:
             print(f"  生成失敗: {e}")
             continue
+        main = [e for e in d.get("maindeck", []) if int(e.get("count", 0)) > 0]
+        for e in main:                       # 表示用の公式日本語名を付与（name は英語のまま=MTGA用）
+            e["jp"] = jp.get(e["name"])
         decks.append({
             "title": spec["title"],
             "theme": spec["theme"],
@@ -61,7 +66,7 @@ def main() -> None:
             "strategy": d.get("strategy", ""),
             "colors": d.get("colors", ""),
             "total": d.get("total", 0),
-            "maindeck": [e for e in d.get("maindeck", []) if int(e.get("count", 0)) > 0],
+            "maindeck": main,
             "mtga": d.get("mtga", ""),
             "fixed": d.get("_fixed", ""),
         })
@@ -73,6 +78,7 @@ def main() -> None:
         "meta_aware": bool(meta_context),
         "decks": decks,
     }
+    jp.save()
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n書き出し: {OUT}（{len(decks)} デッキ）")

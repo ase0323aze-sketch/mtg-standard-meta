@@ -80,6 +80,14 @@ def trend(conn, source: str) -> dict:
 
 
 def build_web_payload(conn, source: str) -> dict:
+    from jpnames import JpNames
+    jp = JpNames()
+
+    def with_jp(lst: list[dict]) -> list[dict]:
+        for s in lst:
+            s["jp"] = jp.get(s["name"])
+        return lst
+
     snap = _latest_snapshot(conn, source)
     shares = archetype_share(conn, source, snap) if snap else []
     archetypes = []
@@ -90,18 +98,20 @@ def build_web_payload(conn, source: str) -> dict:
         ).fetchall()
         archetypes.append({
             **s,
-            "staples": staples(conn, source, snap, s["archetype"], top=8),
+            "staples": with_jp(staples(conn, source, snap, s["archetype"], top=8)),
             "decks": [{"url": u, "event": e} for u, e in decks],
         })
-    return {
+    payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source": source,
         "snapshot": snap,
         "total_decks": sum(s["count"] for s in shares),
         "archetypes": archetypes,
-        "overall_staples": staples(conn, source, snap, None, top=20) if snap else [],
+        "overall_staples": with_jp(staples(conn, source, snap, None, top=20)) if snap else [],
         "trend": trend(conn, source),
     }
+    jp.save()
+    return payload
 
 
 def meta_context_text(conn, source: str = DEFAULT_SOURCE, top: int = 6) -> str:

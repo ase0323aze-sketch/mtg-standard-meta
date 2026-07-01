@@ -11,10 +11,13 @@ Write-Host "[1/3] collect (MTGTop8 + Moxfield)"
 & $py collect_runner.py --source mtgtop8 --limit 40
 & $py collect_runner.py --source moxfield --limit 20
 
-Write-Host "[2/3] analyze + emit web JSON"
+Write-Host "[2/4] analyze + emit web JSON"
 & $py analyze.py --json
 
-Write-Host "[3/3] publish to GitHub"
+Write-Host "[3/4] generate AI showcase decks (meta-aware)"
+& $py build_showcase.py
+
+Write-Host "[4/4] publish to GitHub"
 git add docs
 if (git diff --cached --quiet) {
     Write-Host "  no changes; skip push"

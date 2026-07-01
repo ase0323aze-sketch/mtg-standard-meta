@@ -47,6 +47,20 @@
   .staple{display:flex;justify-content:space-between;font-size:13px;padding:4px 0;
     border-bottom:1px solid var(--line)}
   .staple span:last-child{color:var(--mut);font-variant-numeric:tabular-nums}
+  .deck{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    margin-bottom:10px;padding:12px 14px}
+  .deck-h{display:flex;align-items:center;gap:8px}
+  .deck-title{font-weight:600;font-size:15px;flex:1}
+  .deck-arch{color:var(--mut);font-size:12px;margin:2px 0 8px}
+  .strategy{font-size:13px;color:var(--txt);margin:6px 0 10px;line-height:1.55}
+  .copy{background:var(--acc);color:#1a1400;border:none;border-radius:8px;
+    padding:6px 12px;font-size:12px;font-weight:600;cursor:pointer}
+  .copy:active{transform:scale(.97)}
+  .dl-toggle{color:var(--acc2);font-size:12px;cursor:pointer;user-select:none;margin-top:8px}
+  .dl{display:none;margin-top:8px;font-size:12px;font-variant-numeric:tabular-nums;
+    columns:2;column-gap:16px}
+  .dl.open{display:block}
+  .dl div{break-inside:avoid;padding:1px 0;color:var(--mut)}
   .err{color:#e0533b;font-size:14px;padding:20px 0}
   footer{color:var(--mut);font-size:12px;margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
   .caret{color:var(--mut);transition:transform .15s}
@@ -60,6 +74,7 @@
     <div class="meta" id="meta"></div>
   </header>
   <main id="app"><p class="meta">読み込み中…</p></main>
+  <section id="decks"></section>
   <footer id="foot"></footer>
 </div>
 <script>
@@ -108,6 +123,29 @@ fetch('data/meta.json?_='+Date.now()).then(r=>{
     `<p class="err">データを読み込めませんでした (${e.message})<br>`+
     `収集→解析を実行して data/meta.json を生成してください。</p>`;
 });
+function copyDeck(btn,txt){
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o=btn.textContent; btn.textContent='コピー済み'; setTimeout(()=>btn.textContent=o,1500);
+  }).catch(()=>{btn.textContent='コピー不可'});
+}
+function deckCard(d){
+  const cards=(d.maindeck||[]).map(c=>`<div>${c.count} ${c.name}</div>`).join('');
+  const mtga=(d.mtga||'').replace(/"/g,'&quot;');
+  return `<div class="deck">
+    <div class="deck-h"><span class="deck-title">${d.title}</span>
+      ${pips(d.colors)}<button class="copy" onclick="copyDeck(this,\`${mtga}\`)">MTGAにコピー</button></div>
+    <div class="deck-arch">${d.archetype} ・ ${d.total}枚</div>
+    <div class="strategy">${d.strategy||''}</div>
+    <div class="dl-toggle" onclick="this.nextElementSibling.classList.toggle('open')">▸ デッキリストを見る</div>
+    <div class="dl">${cards}</div>
+  </div>`;
+}
+fetch('data/decks.json?_='+Date.now()).then(r=>r.ok?r.json():null).then(d=>{
+  const el=document.getElementById('decks');
+  if(!d||!d.decks||!d.decks.length){el.innerHTML='';return;}
+  const tag=d.meta_aware?'（現メタを反映）':'';
+  el.innerHTML='<h2>AIおすすめデッキ '+tag+'</h2>'+d.decks.map(deckCard).join('');
+}).catch(()=>{});
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
 </script>
 </body>

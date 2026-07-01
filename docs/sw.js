@@ -1,4 +1,4 @@
-const CACHE = "mtgmeta-v1";
+const CACHE = "mtgmeta-v2";
 const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", e => {

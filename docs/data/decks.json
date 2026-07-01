@@ -1,0 +1,371 @@
+{
+  "generated_at": "2026-07-01T06:01:05+00:00",
+  "snapshot": "2026-07-01",
+  "meta_aware": true,
+  "decks": [
+    {
+      "title": "現メタ最強候補",
+      "theme": "現環境で最も安定して勝てる完成度の高いデッキ。上位メタに五分以上戦える構築",
+      "archetype": "WURB Spellslinger Control",
+      "strategy": "This deck leverages a robust four-color mana base to play a controlling game through efficient removal and powerful card advantage. Early turns focus on disruption with counterspells and targeted burn, while Stock Up and Accumulate Wisdom dig for key pieces. Mid-to-late game, Jeskai Revelation provides massive value, generating tokens, dealing damage, and refilling the hand. Tolarian Terror offers a cheap, resilient threat, and Thousand-Year Storm delivers an explosive, game-winning turn by copying multiple instants and sorceries.",
+      "colors": "",
+      "total": 60,
+      "maindeck": [
+        {
+          "name": "Hallowed Fountain",
+          "count": 4
+        },
+        {
+          "name": "Steam Vents",
+          "count": 4
+        },
+        {
+          "name": "Sacred Foundry",
+          "count": 4
+        },
+        {
+          "name": "Godless Shrine",
+          "count": 4
+        },
+        {
+          "name": "Blood Crypt",
+          "count": 4
+        },
+        {
+          "name": "Watery Grave",
+          "count": 4
+        },
+        {
+          "name": "Great Hall of the Biblioplex",
+          "count": 1
+        },
+        {
+          "name": "Jeskai Revelation",
+          "count": 4
+        },
+        {
+          "name": "Stock Up",
+          "count": 4
+        },
+        {
+          "name": "Accumulate Wisdom",
+          "count": 3
+        },
+        {
+          "name": "Inevitable Defeat",
+          "count": 4
+        },
+        {
+          "name": "Combustion Technique",
+          "count": 4
+        },
+        {
+          "name": "Firebending Lesson",
+          "count": 3
+        },
+        {
+          "name": "Abandon Attachments",
+          "count": 4
+        },
+        {
+          "name": "Gran-Gran",
+          "count": 1
+        },
+        {
+          "name": "Spell Pierce",
+          "count": 2
+        },
+        {
+          "name": "Negate",
+          "count": 2
+        },
+        {
+          "name": "Thousand-Year Storm",
+          "count": 2
+        },
+        {
+          "name": "Tolarian Terror",
+          "count": 2
+        }
+      ],
+      "mtga": "Deck\n4 Hallowed Fountain\n4 Steam Vents\n4 Sacred Foundry\n4 Godless Shrine\n4 Blood Crypt\n4 Watery Grave\n1 Great Hall of the Biblioplex\n4 Jeskai Revelation\n4 Stock Up\n3 Accumulate Wisdom\n4 Inevitable Defeat\n4 Combustion Technique\n3 Firebending Lesson\n4 Abandon Attachments\n1 Gran-Gran\n2 Spell Pierce\n2 Negate\n2 Thousand-Year Storm\n2 Tolarian Terror",
+      "fixed": ""
+    },
+    {
+      "title": "メタに刺すアグロ",
+      "theme": "コントロールが多い現環境を、軽いクロックと火力で素早く殴り切るアグロ",
+      "archetype": "Boros Blitz Aggro",
+      "strategy": "This deck aims to quickly pressure control opponents with a low mana curve of aggressive creatures. It utilizes efficient burn spells to clear blockers and directly damage the opponent, maintaining a high tempo. Key threats like Slickshot Show-Off and Anim Pakal, Thousandth Moon, along with versatile Boros Charm, provide the necessary tools to close out games before control decks can stabilize.",
+      "colors": "",
+      "total": 60,
+      "maindeck": [
+        {
+          "name": "Fanatical Firebrand",
+          "count": 4
+        },
+        {
+          "name": "Savannah Lions",
+          "count": 4
+        },
+        {
+          "name": "Novice Inspector",
+          "count": 4
+        },
+        {
+          "name": "Shock",
+          "count": 4
+        },
+        {
+          "name": "Torch the Tower",
+          "count": 3
+        },
+        {
+          "name": "Lavaspur Boots",
+          "count": 2
+        },
+        {
+          "name": "Charming Scoundrel",
+          "count": 4
+        },
+        {
+          "name": "Lightning Strike",
+          "count": 4
+        },
+        {
+          "name": "Slickshot Show-Off",
+          "count": 4
+        },
+        {
+          "name": "Boros Charm",
+          "count": 2
+        },
+        {
+          "name": "Anim Pakal, Thousandth Moon",
+          "count": 3
+        },
+        {
+          "name": "Sacred Foundry",
+          "count": 4
+        },
+        {
+          "name": "Inspiring Vantage",
+          "count": 4
+        },
+        {
+          "name": "Abraded Bluffs",
+          "count": 4
+        },
+        {
+          "name": "Mountain",
+          "count": 5
+        },
+        {
+          "name": "Plains",
+          "count": 5
+        }
+      ],
+      "mtga": "Deck\n4 Fanatical Firebrand\n4 Savannah Lions\n4 Novice Inspector\n4 Shock\n3 Torch the Tower\n2 Lavaspur Boots\n4 Charming Scoundrel\n4 Lightning Strike\n4 Slickshot Show-Off\n2 Boros Charm\n3 Anim Pakal, Thousandth Moon\n4 Sacred Foundry\n4 Inspiring Vantage\n4 Abraded Bluffs\n5 Mountain\n5 Plains",
+      "fixed": ""
+    },
+    {
+      "title": "受け切りコントロール",
+      "theme": "除去と打ち消しで相手を捌き切り、強力な勝ち筋で蓋をするコントロール",
+      "archetype": "Five-Color Ultimate Control",
+      "strategy": "除去と打ち消しで序盤を凌ぎ、豊富なドローとマナ加速でリソースを圧倒します。最終的に、Niv-Mizzet, Guildpact、Ugin, Eye of the Storms、Chimil, the Inner Sunといった強力なフィニッシャーでゲームを支配し、対戦相手に勝利の機会を与えません。",
+      "colors": "",
+      "total": 60,
+      "maindeck": [
+        {
+          "name": "Hallowed Fountain",
+          "count": 4
+        },
+        {
+          "name": "Watery Grave",
+          "count": 4
+        },
+        {
+          "name": "Steam Vents",
+          "count": 4
+        },
+        {
+          "name": "Blood Crypt",
+          "count": 4
+        },
+        {
+          "name": "Breeding Pool",
+          "count": 2
+        },
+        {
+          "name": "Temple Garden",
+          "count": 1
+        },
+        {
+          "name": "Overgrown Tomb",
+          "count": 1
+        },
+        {
+          "name": "Stomping Ground",
+          "count": 1
+        },
+        {
+          "name": "Godless Shrine",
+          "count": 1
+        },
+        {
+          "name": "Sacred Foundry",
+          "count": 1
+        },
+        {
+          "name": "Command Bridge",
+          "count": 1
+        },
+        {
+          "name": "Great Hall of the Biblioplex",
+          "count": 1
+        },
+        {
+          "name": "Restless Reef",
+          "count": 1
+        },
+        {
+          "name": "Restless Spire",
+          "count": 1
+        },
+        {
+          "name": "Fatal Fissure",
+          "count": 4
+        },
+        {
+          "name": "Get Lost",
+          "count": 4
+        },
+        {
+          "name": "No More Lies",
+          "count": 4
+        },
+        {
+          "name": "Consult the Star Charts",
+          "count": 4
+        },
+        {
+          "name": "Stock Up",
+          "count": 4
+        },
+        {
+          "name": "Mazemind Tome",
+          "count": 2
+        },
+        {
+          "name": "Hedron Archive",
+          "count": 2
+        },
+        {
+          "name": "Day of Judgment",
+          "count": 2
+        },
+        {
+          "name": "Chimil, the Inner Sun",
+          "count": 1
+        },
+        {
+          "name": "Ugin, Eye of the Storms",
+          "count": 2
+        },
+        {
+          "name": "Jeskai Revelation",
+          "count": 2
+        },
+        {
+          "name": "Niv-Mizzet, Guildpact",
+          "count": 2
+        }
+      ],
+      "mtga": "Deck\n4 Hallowed Fountain\n4 Watery Grave\n4 Steam Vents\n4 Blood Crypt\n2 Breeding Pool\n1 Temple Garden\n1 Overgrown Tomb\n1 Stomping Ground\n1 Godless Shrine\n1 Sacred Foundry\n1 Command Bridge\n1 Great Hall of the Biblioplex\n1 Restless Reef\n1 Restless Spire\n4 Fatal Fissure\n4 Get Lost\n4 No More Lies\n4 Consult the Star Charts\n4 Stock Up\n2 Mazemind Tome\n2 Hedron Archive\n2 Day of Judgment\n1 Chimil, the Inner Sun\n2 Ugin, Eye of the Storms\n2 Jeskai Revelation\n2 Niv-Mizzet, Guildpact",
+      "fixed": ""
+    },
+    {
+      "title": "ローグ好みの変則コンボ",
+      "theme": "意表を突く2〜3枚のコンボや変則的な勝ち筋で決める、ローグ好みのデッキ",
+      "archetype": "Grixis Clockwork Chronomancy",
+      "strategy": "このデッキは、ピーター・パーカーのカメラとテゼレット、冷酷な船長の能力を組み合わせて《千年暦》にチャージカウンターを高速で蓄積し、対戦相手全員に1000点のダメージを与えてゲームに勝利するコンボデッキです。カウンター呪文とパーマネント保護呪文で主要なコンボパーツを守り抜き、遅延戦術を駆使するコントロールデッキに対して意表を突く勝ち筋を狙います。",
+      "colors": "",
+      "total": 60,
+      "maindeck": [
+        {
+          "name": "The Millennium Calendar",
+          "count": 4
+        },
+        {
+          "name": "Peter Parker's Camera",
+          "count": 4
+        },
+        {
+          "name": "Tezzeret, Cruel Captain",
+          "count": 4
+        },
+        {
+          "name": "Beseech the Mirror",
+          "count": 4
+        },
+        {
+          "name": "Springleaf Drum",
+          "count": 4
+        },
+        {
+          "name": "Gingerbrute",
+          "count": 4
+        },
+        {
+          "name": "Opt",
+          "count": 2
+        },
+        {
+          "name": "Sleight of Hand",
+          "count": 2
+        },
+        {
+          "name": "Negate",
+          "count": 4
+        },
+        {
+          "name": "Dive Down",
+          "count": 4
+        },
+        {
+          "name": "Blood Crypt",
+          "count": 4
+        },
+        {
+          "name": "Steam Vents",
+          "count": 4
+        },
+        {
+          "name": "Watery Grave",
+          "count": 4
+        },
+        {
+          "name": "Multiversal Passage",
+          "count": 4
+        },
+        {
+          "name": "Island",
+          "count": 2
+        },
+        {
+          "name": "Swamp",
+          "count": 2
+        },
+        {
+          "name": "Mountain",
+          "count": 2
+        },
+        {
+          "name": "Crystal Grotto",
+          "count": 2
+        }
+      ],
+      "mtga": "Deck\n4 The Millennium Calendar\n4 Peter Parker's Camera\n4 Tezzeret, Cruel Captain\n4 Beseech the Mirror\n4 Springleaf Drum\n4 Gingerbrute\n2 Opt\n2 Sleight of Hand\n4 Negate\n4 Dive Down\n4 Blood Crypt\n4 Steam Vents\n4 Watery Grave\n4 Multiversal Passage\n2 Island\n2 Swamp\n2 Mountain\n2 Crystal Grotto",
+      "fixed": ""
+    }
+  ]
+}

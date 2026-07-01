@@ -203,6 +203,31 @@ def to_mtga(deck: dict) -> str:
     return "\n".join(lines)
 
 
+def generate_deck(client, pool: list[Card], theme: str, colors: str | None = None,
+                  model: str = DEFAULT_MODEL, retries: int = 2,
+                  meta_context: str = "", verbose: bool = True) -> dict:
+    """1 つのデッキを生成し、検証・自動修復まで済ませた deck dict を返す。
+    main() と build_showcase.py の共通エンジン。"""
+    base_prompt = build_prompt(theme, colors, pool, meta_context)
+    deck, prompt = None, base_prompt
+    for attempt in range(1, retries + 2):
+        if verbose:
+            print(f"  [{attempt}回目] {model} 構築中...")
+        deck = call_gemini(client, model, prompt)
+        ok, problems = validate(deck, pool)
+        if ok:
+            break
+        if verbose:
+            print("  検証NG: " + "; ".join(problems))
+        prompt = base_prompt + "\n\n" + feedback_for(problems, total_cards(deck))
+    else:
+        deck = auto_fix(deck, pool)
+    deck.setdefault("theme", theme)
+    deck["mtga"] = to_mtga(deck)
+    deck["total"] = total_cards(deck)
+    return deck
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Gemini にスタンダードデッキを組ませる")
     ap.add_argument("--theme", required=True, help="デッキのお題")
@@ -229,41 +254,20 @@ def main() -> None:
             print("※ メタデータ未収集。先に collect_runner を実行してください（通常生成で続行）")
 
     client = get_client()
-    base_prompt = build_prompt(args.theme, args.colors, pool, meta_context)
-
-    deck = None
-    for attempt in range(1, args.retries + 2):
-        print(f"\n[{attempt}回目] Gemini ({args.model}) 構築中...")
-        deck = call_gemini(client, args.model, base_prompt if attempt == 1 else prompt)
-        ok, problems = validate(deck, pool)
-        if ok:
-            print("検証 OK")
-            break
-        print("検証 NG:")
-        for p in problems:
-            print(f"  - {p}")
-        # フィードバックは毎回作り直す（累積させない）
-        prompt = base_prompt + "\n\n" + feedback_for(problems, total_cards(deck))
-    else:
-        # 再試行上限 → 決定論的に修復して必ず合法な 60 枚にする
-        deck = auto_fix(deck, pool)
-        ok, problems = validate(deck, pool)
-        print(f"\n再試行上限 → 自動修復: {deck.get('_fixed') or '（修復不要）'}")
-        if not ok:
-            print("  ※ 修復後も残る問題:", "; ".join(problems))
+    deck = generate_deck(client, pool, args.theme, args.colors,
+                         args.model, args.retries, meta_context)
 
     print("\n" + "=" * 50)
     print(f"アーキタイプ: {deck.get('archetype')}")
     print(f"勝ち筋: {deck.get('strategy')}")
     if deck.get("_fixed"):
         print(f"自動修復: {deck['_fixed']}")
-    print(f"合計: {total_cards(deck)} 枚")
+    print(f"合計: {deck['total']} 枚")
     print("=" * 50)
-    mtga = to_mtga(deck)
-    print(mtga)
+    print(deck["mtga"])
 
     out = Path(__file__).parent / "out_deck.txt"
-    out.write_text(mtga, encoding="utf-8")
+    out.write_text(deck["mtga"], encoding="utf-8")
     print(f"\nMTGA 貼り付け用を書き出し: {out}")
 
 

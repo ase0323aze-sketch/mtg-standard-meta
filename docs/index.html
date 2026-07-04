@@ -90,6 +90,7 @@
     <div class="gen-note">🔒 Geminiキーはこの端末のブラウザ内(localStorage)にのみ保存され、Google以外には送信されません。リポジトリにも保存されません。</div>
     <input id="gkey" type="password" placeholder="Gemini APIキー" autocomplete="off">
     <textarea id="gtheme" rows="2" placeholder="プレイスタイル・お題（例: 黒単で手札破壊しながらじわじわ削り勝ちたい）"></textarea>
+    <input id="gcore" type="text" placeholder="軸にするカード（任意・日本語/英語可・カンマ区切り。例: 強迫, ボロスの魔除け）">
     <div class="gen-row">
       <select id="gcolor">
         <option value="">色: 制限なし</option>
@@ -196,6 +197,38 @@ async function ensureData(){
   POOL=c;POOLNAMES=new Set(c.map(x=>x.n));JPMAP=j;
 }
 function jpName(n){return (JPMAP&&JPMAP[n])||n;}
+let JPREV=null;
+function reverseJp(){
+  if(!JPREV){JPREV={};for(const k in (JPMAP||{}))JPREV[JPMAP[k]]=k;}
+  return JPREV;
+}
+// 軸カード入力（日本語/英語）をプールに存在する英語名へ解決する
+function resolveCore(raw){
+  const res=[],un=[];
+  (raw||'').split(/[,、\n]/).map(s=>s.trim()).filter(Boolean).forEach(tok=>{
+    let en=null;
+    if(POOLNAMES.has(tok)||BASICS.has(tok))en=tok;
+    else{const r=reverseJp();if(r[tok]&&(POOLNAMES.has(r[tok])||BASICS.has(r[tok])))en=r[tok];}
+    if(en)res.push(en);else un.push(tok);
+  });
+  return {res:[...new Set(res)],un};
+}
+// 軸カードを確実に入れ、基本土地で60枚に戻す
+function forceCore(deck,core){
+  if(!core||!core.length)return deck;
+  core.forEach(n=>{if(!deck.maindeck.some(e=>e.name===n))deck.maindeck.push({name:n,count:4});});
+  let delta=total(deck)-60;
+  if(delta>0){
+    const trim=deck.maindeck.filter(e=>!core.includes(e.name)&&BASICS.has(e.name)).sort((a,c)=>c.count-a.count)
+      .concat(deck.maindeck.filter(e=>!core.includes(e.name)&&!BASICS.has(e.name)));
+    for(const e of trim){if(delta<=0)break;const cut=Math.min(delta,e.count);e.count-=cut;delta-=cut;}
+    deck.maindeck=deck.maindeck.filter(e=>+e.count>0);
+  }else if(delta<0){
+    const b=deck.maindeck.find(e=>BASICS.has(e.name)&&!core.includes(e.name));
+    if(b)b.count-=delta;else deck.maindeck.push({name:'Wastes',count:-delta});
+  }
+  return deck;
+}
 function filteredPool(colors){
   if(!colors)return POOL;
   const set=new Set(colors.split(''));
@@ -211,18 +244,20 @@ function metaCtx(){
   lines.push('↑これらに有利を取れることを意識して構築する。');
   return lines.join('\n');
 }
-function buildGenPrompt(theme,colors,useMeta,fb){
+function buildGenPrompt(theme,colors,useMeta,fb,core){
   const block=filteredPool(colors).map(c=>`${c.n} | ${c.m||'—'} | ${c.t} | ${c.x||''}`).join('\n');
   return `あなたはMTGスタンダードのトッププロのデッキビルダーです。以下のカードプール（スタンダード合法・実在カードのみ）から60枚ちょうどの構築済みデッキを1つ作ってください。
 
 # お題
 ${theme}
 ${colors?`使用色: ${colors} のみ`:'使用色: 制限なし（全色可）'}
+${core&&core.length?`\n# 必ず入れる軸カード（これらを中心に、原則各4枚採用してデッキを設計する）\n${core.join(', ')}`:''}
 ${useMeta?metaCtx():''}
 
 # 厳守するルール
 - 合計ちょうど60枚（土地含む）。基本土地以外は同名4枚まで。
 - カード名は下のプールに存在する英語名と完全一致。存在しないカードは絶対に使わない。
+- 上記の軸カードは必ずデッキに含める。
 - 土地は22〜26枚程度。
 ${fb?'\n# 前回の問題（必ず直す）\n'+fb:''}
 
@@ -286,16 +321,23 @@ async function genDeck(){
   btn.disabled=true;document.getElementById('gresult').innerHTML='';
   try{
     await ensureData();
+    const {res:core,un}=resolveCore(document.getElementById('gcore').value);
     let deck=null,fb='';
     for(let i=1;i<=3;i++){
       gstatus(`Geminiで生成中… (${i}回目)`);
-      deck=await callGemini(key,buildGenPrompt(theme,colors,useMeta,fb));
+      deck=await callGemini(key,buildGenPrompt(theme,colors,useMeta,fb,core));
       const pr=validateGen(deck);
+      const missing=core.filter(n=>!(deck.maindeck||[]).some(e=>e.name===n));
+      if(missing.length)pr.push('軸カードが未採用: '+missing.join(', ')+'（必ず入れる）');
       if(!pr.length){break;}
       fb=pr.join('\n');
-      if(i===3){deck=autofixGen(deck);}
+      if(i===3){deck=forceCore(autofixGen(deck),core);}
     }
-    renderGen(deck);gstatus('完成！');
+    renderGen(deck);
+    let msg='完成！';
+    if(core.length)msg+=`（軸: ${core.map(jpName).join('・')}）`;
+    if(un.length)msg+=` ※解決できず無視: ${un.join('・')}`;
+    gstatus(msg);
   }catch(e){gstatus('エラー: '+e.message);}
   btn.disabled=false;
 }

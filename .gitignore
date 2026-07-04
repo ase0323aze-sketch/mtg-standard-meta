@@ -3,9 +3,9 @@
 !.env.example
 venv/
 out_deck.txt
-cards.json
+/cards.json
 cardpool.xlsx
-jp_names.json
+/jp_names.json
 *.db
 __pycache__/
 *.pyc

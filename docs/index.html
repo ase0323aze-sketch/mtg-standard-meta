@@ -61,6 +61,18 @@
     columns:2;column-gap:16px}
   .dl.open{display:block}
   .dl div{break-inside:avoid;padding:1px 0;color:var(--mut)}
+  .genbox{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:14px 0}
+  .gen-note{font-size:12px;color:var(--mut);margin:2px 0 10px;line-height:1.5}
+  .genbox input,.genbox textarea,.genbox select{width:100%;box-sizing:border-box;
+    background:var(--card2);border:1px solid var(--line);border-radius:8px;color:var(--txt);
+    font-size:14px;padding:9px 10px;margin-bottom:8px;font-family:inherit}
+  .gen-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .gen-row select{width:auto;flex:1;min-width:120px;margin-bottom:0}
+  .gen-row label{font-size:12px;color:var(--mut);display:flex;align-items:center;gap:4px}
+  .gbtn{background:var(--acc);color:#1a1400;border:none;border-radius:8px;padding:9px 16px;
+    font-size:14px;font-weight:600;cursor:pointer}
+  .gbtn:disabled{opacity:.5;cursor:default}
+  .gen-status{font-size:12px;color:var(--acc2);margin-top:8px;min-height:16px}
   .err{color:#e0533b;font-size:14px;padding:20px 0}
   footer{color:var(--mut);font-size:12px;margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
   .caret{color:var(--mut);transition:transform .15s}
@@ -73,6 +85,28 @@
     <h1>MTG Standard メタトラッカー</h1>
     <div class="meta" id="meta"></div>
   </header>
+  <section class="genbox">
+    <h2 style="margin:2px 0 8px">AIでデッキを作る</h2>
+    <div class="gen-note">🔒 Geminiキーはこの端末のブラウザ内(localStorage)にのみ保存され、Google以外には送信されません。リポジトリにも保存されません。</div>
+    <input id="gkey" type="password" placeholder="Gemini APIキー" autocomplete="off">
+    <textarea id="gtheme" rows="2" placeholder="プレイスタイル・お題（例: 黒単で手札破壊しながらじわじわ削り勝ちたい）"></textarea>
+    <div class="gen-row">
+      <select id="gcolor">
+        <option value="">色: 制限なし</option>
+        <option value="W">白単</option><option value="U">青単</option><option value="B">黒単</option>
+        <option value="R">赤単</option><option value="G">緑単</option>
+        <option value="WU">アゾリウス(白青)</option><option value="UB">ディミーア(青黒)</option>
+        <option value="BR">ラクドス(黒赤)</option><option value="RG">グルール(赤緑)</option>
+        <option value="WG">セレズニア(緑白)</option><option value="WB">オルゾフ(白黒)</option>
+        <option value="UR">イゼット(青赤)</option><option value="BG">ゴルガリ(黒緑)</option>
+        <option value="WR">ボロス(赤白)</option><option value="UG">シミック(緑青)</option>
+      </select>
+      <label><input type="checkbox" id="gmeta" checked style="width:auto;margin:0"> 現メタを反映</label>
+      <button id="gbtn" class="gbtn" onclick="genDeck()">デッキを生成</button>
+    </div>
+    <div id="gstatus" class="gen-status"></div>
+    <div id="gresult"></div>
+  </section>
   <main id="app"><p class="meta">読み込み中…</p></main>
   <section id="decks"></section>
   <footer id="foot"></footer>
@@ -104,6 +138,7 @@ fetch('data/meta.json?_='+Date.now()).then(r=>{
   if(!r.ok) throw new Error('meta.json '+r.status);
   return r.json();
 }).then(d=>{
+  window.META=d;
   const dt=new Date(d.generated_at);
   document.getElementById('meta').innerHTML=
     `<span>スナップショット <b>${d.snapshot||'-'}</b></span>`+
@@ -146,6 +181,125 @@ fetch('data/decks.json?_='+Date.now()).then(r=>r.ok?r.json():null).then(d=>{
   const tag=d.meta_aware?'（現メタを反映）':'';
   el.innerHTML='<h2>AIおすすめデッキ '+tag+'</h2>'+d.decks.map(deckCard).join('');
 }).catch(()=>{});
+// ===== ブラウザ内デッキ生成（あなたのGeminiキーで直接生成） =====
+const BASICS=new Set(['Swamp','Island','Plains','Mountain','Forest','Wastes',
+  'Snow-Covered Swamp','Snow-Covered Island','Snow-Covered Plains','Snow-Covered Mountain','Snow-Covered Forest']);
+let POOL=null,POOLNAMES=null,JPMAP=null;
+function gstatus(t){document.getElementById('gstatus').textContent=t;}
+async function ensureData(){
+  if(POOL)return;
+  gstatus('カードデータ読込中…（初回のみ）');
+  const [c,j]=await Promise.all([
+    fetch('data/cards.json').then(r=>r.json()),
+    fetch('data/jp_names.json').then(r=>r.ok?r.json():{}).catch(()=>({}))
+  ]);
+  POOL=c;POOLNAMES=new Set(c.map(x=>x.n));JPMAP=j;
+}
+function jpName(n){return (JPMAP&&JPMAP[n])||n;}
+function filteredPool(colors){
+  if(!colors)return POOL;
+  const set=new Set(colors.split(''));
+  return POOL.filter(c=>[...(c.c||'')].every(x=>set.has(x)));
+}
+function metaCtx(){
+  const m=window.META;if(!m||!m.archetypes)return '';
+  const lines=['# 現在のスタンダード上位メタ（大会上位デッキ）'];
+  m.archetypes.slice(0,6).forEach(a=>{
+    const st=(a.staples||[]).slice(0,5).map(s=>s.name).join(', ');
+    lines.push(`- ${a.archetype}（${a.colors}）${a.share}%  主要カード: ${st}`);
+  });
+  lines.push('↑これらに有利を取れることを意識して構築する。');
+  return lines.join('\n');
+}
+function buildGenPrompt(theme,colors,useMeta,fb){
+  const block=filteredPool(colors).map(c=>`${c.n} | ${c.m||'—'} | ${c.t} | ${c.x||''}`).join('\n');
+  return `あなたはMTGスタンダードのトッププロのデッキビルダーです。以下のカードプール（スタンダード合法・実在カードのみ）から60枚ちょうどの構築済みデッキを1つ作ってください。
+
+# お題
+${theme}
+${colors?`使用色: ${colors} のみ`:'使用色: 制限なし（全色可）'}
+${useMeta?metaCtx():''}
+
+# 厳守するルール
+- 合計ちょうど60枚（土地含む）。基本土地以外は同名4枚まで。
+- カード名は下のプールに存在する英語名と完全一致。存在しないカードは絶対に使わない。
+- 土地は22〜26枚程度。
+${fb?'\n# 前回の問題（必ず直す）\n'+fb:''}
+
+# 出力形式（JSONのみ・前後に文章を付けない）。archetypeとstrategyは日本語、nameは英語。
+{"archetype":"デッキ名(日本語)","strategy":"勝ち筋と戦い方を日本語で3〜4文","maindeck":[{"name":"英語カード名","count":4}]}
+
+# カードプール（名前 | マナ | タイプ | テキスト）
+${block}`;
+}
+async function callGemini(key,prompt){
+  const url='https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key='+encodeURIComponent(key);
+  const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({contents:[{parts:[{text:prompt}]}],generationConfig:{responseMimeType:'application/json',temperature:0.9}})});
+  if(!r.ok)throw new Error('API '+r.status+' '+(await r.text()).slice(0,160));
+  const d=await r.json();
+  const txt=d.candidates&&d.candidates[0]&&d.candidates[0].content.parts[0].text;
+  if(!txt)throw new Error('空の応答');
+  return JSON.parse(txt);
+}
+function total(deck){return (deck.maindeck||[]).reduce((s,e)=>s+(+e.count||0),0);}
+function validateGen(deck){
+  const p=[];const seen={};
+  (deck.maindeck||[]).forEach(e=>{
+    seen[e.name]=(seen[e.name]||0)+(+e.count||0);
+    if(!POOLNAMES.has(e.name)&&!BASICS.has(e.name))p.push('存在しないカード: '+e.name);
+    if(!BASICS.has(e.name)&&+e.count>4)p.push(e.name+' が5枚以上');
+  });
+  const t=total(deck);
+  if(t!==60)p.push('合計'+t+'枚（60枚にする。'+(t>60?(t-60)+'枚減らせ':(60-t)+'枚足せ')+'）');
+  return [...new Set(p)];
+}
+function autofixGen(deck){
+  deck.maindeck=(deck.maindeck||[]).filter(e=>POOLNAMES.has(e.name)||BASICS.has(e.name));
+  let delta=total(deck)-60;
+  const basics=deck.maindeck.filter(e=>BASICS.has(e.name));
+  if(delta>0&&basics.length){const b=basics.sort((a,c)=>c.count-a.count)[0];b.count-=Math.min(delta,b.count-1);}
+  else if(delta<0){if(basics.length)basics.sort((a,c)=>c.count-a.count)[0].count+=-delta;else deck.maindeck.push({name:'Wastes',count:-delta});}
+  return deck;
+}
+function toMtgaGen(deck){return 'Deck\n'+deck.maindeck.filter(e=>+e.count>0).map(e=>e.count+' '+e.name).join('\n');}
+function renderGen(deck){
+  const cards=deck.maindeck.filter(e=>+e.count>0).map(e=>`<div>${e.count} ${jpName(e.name)}</div>`).join('');
+  const mtga=toMtgaGen(deck).replace(/"/g,'&quot;');
+  document.getElementById('gresult').innerHTML=`<div class="deck" style="margin-top:10px">
+    <div class="deck-h"><span class="deck-title">${deck.archetype||'生成デッキ'}</span>
+      <button class="copy" onclick="copyDeck(this,\`${mtga}\`)">MTGAにコピー</button></div>
+    <div class="deck-arch">${total(deck)}枚</div>
+    <div class="strategy">${deck.strategy||''}</div>
+    <div class="dl-toggle" onclick="this.nextElementSibling.classList.toggle('open')">▸ デッキリストを見る</div>
+    <div class="dl open">${cards}</div></div>`;
+}
+async function genDeck(){
+  const key=document.getElementById('gkey').value.trim();
+  const theme=document.getElementById('gtheme').value.trim();
+  const colors=document.getElementById('gcolor').value;
+  const useMeta=document.getElementById('gmeta').checked;
+  const btn=document.getElementById('gbtn');
+  if(!key){gstatus('Geminiキーを入力してください');return;}
+  if(!theme){gstatus('お題（プレイスタイル）を入力してください');return;}
+  localStorage.setItem('gemini_key',key);
+  btn.disabled=true;document.getElementById('gresult').innerHTML='';
+  try{
+    await ensureData();
+    let deck=null,fb='';
+    for(let i=1;i<=3;i++){
+      gstatus(`Geminiで生成中… (${i}回目)`);
+      deck=await callGemini(key,buildGenPrompt(theme,colors,useMeta,fb));
+      const pr=validateGen(deck);
+      if(!pr.length){break;}
+      fb=pr.join('\n');
+      if(i===3){deck=autofixGen(deck);}
+    }
+    renderGen(deck);gstatus('完成！');
+  }catch(e){gstatus('エラー: '+e.message);}
+  btn.disabled=false;
+}
+document.getElementById('gkey').value=localStorage.getItem('gemini_key')||'';
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
 </script>
 </body>

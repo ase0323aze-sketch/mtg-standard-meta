@@ -11,9 +11,10 @@ Write-Host "[1/3] collect (MTGTop8 + Moxfield)"
 & $py collect_runner.py --source mtgtop8 --limit 40
 & $py collect_runner.py --source moxfield --limit 20
 
-Write-Host "[2/4] refresh JP name map + analyze + emit web JSON"
+Write-Host "[2/4] refresh JP name map + analyze + emit web JSON + web pool"
 & $py build_jp_map.py
 & $py analyze.py --json
+& $py export_web.py
 
 Write-Host "[3/4] generate AI showcase decks (meta-aware)"
 & $py build_showcase.py

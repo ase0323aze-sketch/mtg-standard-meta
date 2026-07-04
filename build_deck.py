@@ -175,24 +175,29 @@ def total_cards(deck: dict) -> int:
 
 
 def normalize_to_60(deck: dict) -> dict:
-    """最終手段: 基本土地の枚数を増減して合計を 60 枚ちょうどに合わせる。
-    土地枚数は融通が利くため、構築の骨格を壊さずに合法化できる。"""
+    """最終手段: 合計を 60 枚ちょうどに合わせる。
+    多すぎる場合は 基本土地(多い順)→その他(多い順) の順に削る（基本土地が無くても必ず60枚に届く）。
+    少なすぎる場合は基本土地を増やす。"""
     main = deck.get("maindeck", [])
     delta = total_cards(deck) - DECK_SIZE
     if delta == 0:
         return deck
-    # 既存の基本土地を探す（最も枚数の多いものを調整対象に）
-    basics = [e for e in main if e.get("name") in BASIC_LANDS]
-    if delta > 0 and basics:                       # 多い → 基本土地を削る
-        target = max(basics, key=lambda e: e["count"])
-        cut = min(delta, target["count"] - 1)
-        target["count"] -= cut
-    elif delta < 0:                                # 少ない → 基本土地を足す
+    if delta > 0:                                  # 多い → 削る
+        order = sorted(main, key=lambda e: (e.get("name") not in BASIC_LANDS, -int(e.get("count", 0))))
+        for e in order:
+            if delta <= 0:
+                break
+            cut = min(delta, int(e.get("count", 0)))
+            e["count"] = int(e.get("count", 0)) - cut
+            delta -= cut
+        deck["maindeck"] = [e for e in main if int(e.get("count", 0)) > 0]
+    else:                                          # 少ない → 基本土地を足す
+        basics = [e for e in main if e.get("name") in BASIC_LANDS]
         if basics:
             max(basics, key=lambda e: e["count"])["count"] += -delta
         else:
             main.append({"name": "Wastes", "count": -delta})
-    deck["_normalized"] = f"基本土地を調整して {DECK_SIZE} 枚に補正"
+    deck["_normalized"] = f"枚数を調整して {DECK_SIZE} 枚に補正"
     return deck
 
 

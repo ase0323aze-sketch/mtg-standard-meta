@@ -99,7 +99,7 @@ def _deck_cards(sess: requests.Session, event_id: str, deck_id: str):
     return cards, normalize_colors(color_set)
 
 
-def collect(limit: int = 30, max_events: int = 8) -> list[DeckRecord]:
+def collect(limit: int = 120, max_events: int = 30) -> list[DeckRecord]:
     sess = _session()
     out: list[DeckRecord] = []
     for event_id in _event_ids(sess, max_events):

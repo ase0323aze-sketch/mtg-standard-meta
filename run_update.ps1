@@ -8,7 +8,7 @@ Set-Location $here
 $py = Join-Path $here "venv\Scripts\python.exe"
 
 Write-Host "[1/3] collect (MTGTop8 + Moxfield)"
-& $py collect_runner.py --source mtgtop8 --limit 40
+& $py collect_runner.py --source mtgtop8 --limit 120
 & $py collect_runner.py --source moxfield --limit 20
 
 Write-Host "[2/4] refresh JP name map + analyze + emit web JSON + web pool"

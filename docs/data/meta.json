@@ -1,568 +1,504 @@
 {
-  "generated_at": "2026-08-01T00:06:09+00:00",
+  "generated_at": "2026-08-15T00:05:41+00:00",
   "source": "mtgtop8",
-  "snapshot": "2026-08-01",
-  "total_decks": 37,
+  "snapshot": "2026-08-15",
+  "total_decks": 21,
   "archetypes": [
-    {
-      "archetype": "Izzet Lesson",
-      "colors": "WUR",
-      "count": 22,
-      "share": 59.5,
-      "staples": [
-        {
-          "name": "Accumulate Wisdom",
-          "decks": 22,
-          "copies": 88,
-          "jp": "積み重ねられた叡智"
-        },
-        {
-          "name": "Combustion Technique",
-          "decks": 22,
-          "copies": 88,
-          "jp": "爆裂の技"
-        },
-        {
-          "name": "Firebending Lesson",
-          "decks": 22,
-          "copies": 88,
-          "jp": "火の技の修行"
-        },
-        {
-          "name": "Gran-Gran",
-          "decks": 22,
-          "copies": 88,
-          "jp": "ばあば"
-        },
-        {
-          "name": "Great Hall of the Biblioplex",
-          "decks": 22,
-          "copies": 88,
-          "jp": "Great Hall of the Biblioplex"
-        },
-        {
-          "name": "Jeskai Revelation",
-          "decks": 22,
-          "copies": 88,
-          "jp": "ジェスカイの啓示"
-        },
-        {
-          "name": "Steam Vents",
-          "decks": 22,
-          "copies": 88,
-          "jp": "蒸気孔"
-        },
-        {
-          "name": "Tablet of Discovery",
-          "decks": 22,
-          "copies": 88,
-          "jp": "発見の石板"
-        }
-      ],
-      "decks": [
-        {
-          "url": "https://www.mtgtop8.com/event?e=88947&d=875153&f=ST",
-          "event": "88947"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88947&d=875147&f=ST",
-          "event": "88947"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88908&d=874863&f=ST",
-          "event": "88908"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88857&d=874469&f=ST",
-          "event": "88857"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88857&d=874479&f=ST",
-          "event": "88857"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88813&d=874085&f=ST",
-          "event": "88813"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88920&d=874978&f=ST",
-          "event": "88920"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88735&d=873554&f=ST",
-          "event": "88735"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88728&d=873451&f=ST",
-          "event": "88728"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88728&d=873456&f=ST",
-          "event": "88728"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88734&d=873530&f=ST",
-          "event": "88734"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88716&d=873362&f=ST",
-          "event": "88716"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88716&d=873363&f=ST",
-          "event": "88716"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88716&d=873365&f=ST",
-          "event": "88716"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88671&d=873059&f=ST",
-          "event": "88671"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88671&d=873058&f=ST",
-          "event": "88671"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88621&d=872653&f=ST",
-          "event": "88621"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88621&d=872661&f=ST",
-          "event": "88621"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88621&d=872660&f=ST",
-          "event": "88621"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88621&d=872652&f=ST",
-          "event": "88621"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88621&d=872650&f=ST",
-          "event": "88621"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88620&d=872634&f=ST",
-          "event": "88620"
-        }
-      ]
-    },
     {
       "archetype": "4/5C Control",
       "colors": "WUBR",
-      "count": 11,
-      "share": 29.7,
+      "count": 10,
+      "share": 47.6,
       "staples": [
         {
           "name": "Great Hall of the Biblioplex",
-          "decks": 11,
-          "copies": 44,
+          "decks": 10,
+          "copies": 40,
           "jp": "Great Hall of the Biblioplex"
         },
         {
-          "name": "Jeskai Revelation",
-          "decks": 11,
-          "copies": 44,
-          "jp": "ジェスカイの啓示"
-        },
-        {
           "name": "Stock Up",
-          "decks": 11,
-          "copies": 44,
+          "decks": 10,
+          "copies": 40,
           "jp": "食糧補充"
         },
         {
           "name": "Tablet of Discovery",
-          "decks": 11,
-          "copies": 44,
+          "decks": 10,
+          "copies": 40,
           "jp": "発見の石板"
         },
         {
+          "name": "Jeskai Revelation",
+          "decks": 10,
+          "copies": 39,
+          "jp": "ジェスカイの啓示"
+        },
+        {
           "name": "Inevitable Defeat",
-          "decks": 11,
-          "copies": 41,
+          "decks": 10,
+          "copies": 37,
           "jp": "不可避の敗北"
         },
         {
+          "name": "Steam Vents",
+          "decks": 10,
+          "copies": 33,
+          "jp": "蒸気孔"
+        },
+        {
           "name": "Consult the Star Charts",
-          "decks": 11,
-          "copies": 30,
+          "decks": 10,
+          "copies": 28,
           "jp": "星間航路の助言"
         },
         {
           "name": "Sacred Foundry",
-          "decks": 11,
-          "copies": 26,
+          "decks": 10,
+          "copies": 27,
           "jp": "聖なる鋳造所"
-        },
-        {
-          "name": "Flashback",
-          "decks": 11,
-          "copies": 22,
-          "jp": "フラッシュバック"
         }
       ],
       "decks": [
         {
-          "url": "https://www.mtgtop8.com/event?e=88987&d=875459&f=ST",
-          "event": "88987"
+          "url": "https://www.mtgtop8.com/event?e=89517&d=879413&f=ST",
+          "event": "89517"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=88987&d=875448&f=ST",
-          "event": "88987"
+          "url": "https://www.mtgtop8.com/event?e=89496&d=879267&f=ST",
+          "event": "89496"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=88908&d=874869&f=ST",
-          "event": "88908"
+          "url": "https://www.mtgtop8.com/event?e=89467&d=879108&f=ST",
+          "event": "89467"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=88728&d=873459&f=ST",
-          "event": "88728"
+          "url": "https://www.mtgtop8.com/event?e=89467&d=879104&f=ST",
+          "event": "89467"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=88728&d=873446&f=ST",
-          "event": "88728"
+          "url": "https://www.mtgtop8.com/event?e=89417&d=878683&f=ST",
+          "event": "89417"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=88734&d=873543&f=ST",
-          "event": "88734"
+          "url": "https://www.mtgtop8.com/event?e=89382&d=878411&f=ST",
+          "event": "89382"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=88716&d=873372&f=ST",
-          "event": "88716"
+          "url": "https://www.mtgtop8.com/event?e=89362&d=878212&f=ST",
+          "event": "89362"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=88671&d=873065&f=ST",
-          "event": "88671"
+          "url": "https://www.mtgtop8.com/event?e=89345&d=878023&f=ST",
+          "event": "89345"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=88671&d=873066&f=ST",
-          "event": "88671"
+          "url": "https://www.mtgtop8.com/event?e=89345&d=878028&f=ST",
+          "event": "89345"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=88621&d=872663&f=ST",
-          "event": "88621"
-        },
-        {
-          "url": "https://www.mtgtop8.com/event?e=88620&d=872647&f=ST",
-          "event": "88620"
+          "url": "https://www.mtgtop8.com/event?e=89323&d=877854&f=ST",
+          "event": "89323"
         }
       ]
     },
     {
       "archetype": "Jeskai Tablet",
       "colors": "WUR",
-      "count": 2,
-      "share": 5.4,
+      "count": 5,
+      "share": 23.8,
       "staples": [
         {
+          "name": "Abandon Attachments",
+          "decks": 5,
+          "copies": 20,
+          "jp": "愛着を捨てる"
+        },
+        {
           "name": "Accumulate Wisdom",
-          "decks": 2,
-          "copies": 8,
+          "decks": 5,
+          "copies": 20,
           "jp": "積み重ねられた叡智"
         },
         {
           "name": "Combustion Technique",
-          "decks": 2,
-          "copies": 8,
+          "decks": 5,
+          "copies": 20,
           "jp": "爆裂の技"
         },
         {
           "name": "Firebending Lesson",
-          "decks": 2,
-          "copies": 8,
+          "decks": 5,
+          "copies": 20,
           "jp": "火の技の修行"
         },
         {
-          "name": "Gran-Gran",
-          "decks": 2,
-          "copies": 8,
-          "jp": "ばあば"
-        },
-        {
           "name": "Great Hall of the Biblioplex",
-          "decks": 2,
-          "copies": 8,
+          "decks": 5,
+          "copies": 20,
           "jp": "Great Hall of the Biblioplex"
         },
         {
           "name": "Jeskai Revelation",
-          "decks": 2,
-          "copies": 8,
+          "decks": 5,
+          "copies": 20,
           "jp": "ジェスカイの啓示"
         },
         {
           "name": "Steam Vents",
-          "decks": 2,
-          "copies": 8,
+          "decks": 5,
+          "copies": 20,
           "jp": "蒸気孔"
         },
         {
           "name": "Tablet of Discovery",
-          "decks": 2,
-          "copies": 8,
+          "decks": 5,
+          "copies": 20,
           "jp": "発見の石板"
         }
       ],
       "decks": [
         {
-          "url": "https://www.mtgtop8.com/event?e=88987&d=875452&f=ST",
-          "event": "88987"
+          "url": "https://www.mtgtop8.com/event?e=89516&d=879391&f=ST",
+          "event": "89516"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=88987&d=875456&f=ST",
-          "event": "88987"
+          "url": "https://www.mtgtop8.com/event?e=89497&d=879276&f=ST",
+          "event": "89497"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=89398&d=878522&f=ST",
+          "event": "89398"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=89398&d=878518&f=ST",
+          "event": "89398"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=89323&d=877851&f=ST",
+          "event": "89323"
         }
       ]
     },
     {
-      "archetype": "Jeskai Control",
-      "colors": "WUR",
-      "count": 1,
-      "share": 2.7,
+      "archetype": "Mardu Aggro",
+      "colors": "WBR",
+      "count": 4,
+      "share": 19.0,
       "staples": [
         {
-          "name": "Abandon Attachments",
-          "decks": 1,
-          "copies": 4,
-          "jp": "愛着を捨てる"
+          "name": "Blood Crypt",
+          "decks": 4,
+          "copies": 16,
+          "jp": "血の墓所"
         },
         {
-          "name": "Accumulate Wisdom",
-          "decks": 1,
-          "copies": 4,
-          "jp": "積み重ねられた叡智"
+          "name": "Bloodghast",
+          "decks": 4,
+          "copies": 16,
+          "jp": "恐血鬼"
         },
         {
-          "name": "Combustion Technique",
-          "decks": 1,
-          "copies": 4,
-          "jp": "爆裂の技"
+          "name": "Cool but Rude",
+          "decks": 4,
+          "copies": 16,
+          "jp": "華麗だが無礼者"
         },
         {
-          "name": "Firebending Lesson",
-          "decks": 1,
-          "copies": 4,
-          "jp": "火の技の修行"
+          "name": "Hardened Academic",
+          "decks": 4,
+          "copies": 16,
+          "jp": "頑なな学徒"
         },
         {
-          "name": "Gran-Gran",
-          "decks": 1,
-          "copies": 4,
-          "jp": "ばあば"
+          "name": "Iron-Shield Elf",
+          "decks": 4,
+          "copies": 16,
+          "jp": "鉄盾のエルフ"
         },
         {
-          "name": "Great Hall of the Biblioplex",
-          "decks": 1,
-          "copies": 4,
-          "jp": "Great Hall of the Biblioplex"
+          "name": "Marauding Mako",
+          "decks": 4,
+          "copies": 16,
+          "jp": "略奪するアオザメ"
         },
         {
-          "name": "Jeskai Revelation",
-          "decks": 1,
-          "copies": 4,
-          "jp": "ジェスカイの啓示"
+          "name": "Moonshadow",
+          "decks": 4,
+          "copies": 16,
+          "jp": "月影"
         },
         {
-          "name": "Riverpyre Verge",
-          "decks": 1,
-          "copies": 4,
-          "jp": "リバーパイアーの境界"
+          "name": "Sacred Foundry",
+          "decks": 4,
+          "copies": 16,
+          "jp": "聖なる鋳造所"
         }
       ],
       "decks": [
         {
-          "url": "https://www.mtgtop8.com/event?e=88717&d=873375&f=ST",
-          "event": "88717"
+          "url": "https://www.mtgtop8.com/event?e=89516&d=879393&f=ST",
+          "event": "89516"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=89497&d=879279&f=ST",
+          "event": "89497"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=89467&d=879110&f=ST",
+          "event": "89467"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=89362&d=878205&f=ST",
+          "event": "89362"
         }
       ]
     },
     {
-      "archetype": "Izzet Control",
-      "colors": "WUR",
+      "archetype": "Rakdos Aggro",
+      "colors": "BR",
       "count": 1,
-      "share": 2.7,
+      "share": 4.8,
       "staples": [
         {
-          "name": "Abandon Attachments",
+          "name": "Blazemire Verge",
           "decks": 1,
           "copies": 4,
-          "jp": "愛着を捨てる"
+          "jp": "ブレイズマイアの境界"
         },
         {
-          "name": "Accumulate Wisdom",
+          "name": "Blood Crypt",
           "decks": 1,
           "copies": 4,
-          "jp": "積み重ねられた叡智"
+          "jp": "血の墓所"
         },
         {
-          "name": "Combustion Technique",
+          "name": "Bloodghast",
           "decks": 1,
           "copies": 4,
-          "jp": "爆裂の技"
+          "jp": "恐血鬼"
         },
         {
-          "name": "Firebending Lesson",
+          "name": "Cool but Rude",
           "decks": 1,
           "copies": 4,
-          "jp": "火の技の修行"
+          "jp": "華麗だが無礼者"
         },
         {
-          "name": "Gran-Gran",
+          "name": "Dark Fortress",
           "decks": 1,
           "copies": 4,
-          "jp": "ばあば"
+          "jp": "闇の砦"
         },
         {
-          "name": "Great Hall of the Biblioplex",
+          "name": "Iron-Shield Elf",
           "decks": 1,
           "copies": 4,
-          "jp": "Great Hall of the Biblioplex"
+          "jp": "鉄盾のエルフ"
         },
         {
-          "name": "Jeskai Revelation",
+          "name": "Marauding Mako",
           "decks": 1,
           "copies": 4,
-          "jp": "ジェスカイの啓示"
+          "jp": "略奪するアオザメ"
         },
         {
-          "name": "Riverpyre Verge",
+          "name": "Moonshadow",
           "decks": 1,
           "copies": 4,
-          "jp": "リバーパイアーの境界"
+          "jp": "月影"
         }
       ],
       "decks": [
         {
-          "url": "https://www.mtgtop8.com/event?e=88894&d=874767&f=ST",
-          "event": "88894"
+          "url": "https://www.mtgtop8.com/event?e=89339&d=877993&f=ST",
+          "event": "89339"
+        }
+      ]
+    },
+    {
+      "archetype": "Mardu Control",
+      "colors": "WBR",
+      "count": 1,
+      "share": 4.8,
+      "staples": [
+        {
+          "name": "Blood Crypt",
+          "decks": 1,
+          "copies": 4,
+          "jp": "血の墓所"
+        },
+        {
+          "name": "Godless Shrine",
+          "decks": 1,
+          "copies": 4,
+          "jp": "神無き祭殿"
+        },
+        {
+          "name": "Inevitable Defeat",
+          "decks": 1,
+          "copies": 4,
+          "jp": "不可避の敗北"
+        },
+        {
+          "name": "Lightning Helix",
+          "decks": 1,
+          "copies": 4,
+          "jp": "稲妻のらせん"
+        },
+        {
+          "name": "Sacred Foundry",
+          "decks": 1,
+          "copies": 4,
+          "jp": "聖なる鋳造所"
+        },
+        {
+          "name": "Tablet of Discovery",
+          "decks": 1,
+          "copies": 4,
+          "jp": "発見の石板"
+        },
+        {
+          "name": "Death to Our Enemies",
+          "decks": 1,
+          "copies": 3,
+          "jp": "仇敵に死を"
+        },
+        {
+          "name": "Improvisation Capstone",
+          "decks": 1,
+          "copies": 3,
+          "jp": "即興の集大成"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=89317&d=877785&f=ST",
+          "event": "89317"
         }
       ]
     }
   ],
   "overall_staples": [
     {
+      "name": "Tablet of Discovery",
+      "decks": 16,
+      "copies": 64,
+      "jp": "発見の石板"
+    },
+    {
       "name": "Great Hall of the Biblioplex",
-      "decks": 37,
-      "copies": 148,
+      "decks": 16,
+      "copies": 62,
       "jp": "Great Hall of the Biblioplex"
     },
     {
       "name": "Jeskai Revelation",
-      "decks": 37,
-      "copies": 148,
+      "decks": 15,
+      "copies": 59,
       "jp": "ジェスカイの啓示"
     },
     {
-      "name": "Tablet of Discovery",
-      "decks": 37,
-      "copies": 148,
-      "jp": "発見の石板"
-    },
-    {
-      "name": "Firebending Lesson",
-      "decks": 37,
-      "copies": 125,
-      "jp": "火の技の修行"
-    },
-    {
-      "name": "Stock Up",
-      "decks": 37,
-      "copies": 112,
-      "jp": "食糧補充"
-    },
-    {
       "name": "Steam Vents",
-      "decks": 36,
-      "copies": 137,
+      "decks": 15,
+      "copies": 53,
       "jp": "蒸気孔"
     },
     {
+      "name": "Stock Up",
+      "decks": 15,
+      "copies": 53,
+      "jp": "食糧補充"
+    },
+    {
+      "name": "Sacred Foundry",
+      "decks": 15,
+      "copies": 47,
+      "jp": "聖なる鋳造所"
+    },
+    {
+      "name": "Firebending Lesson",
+      "decks": 14,
+      "copies": 40,
+      "jp": "火の技の修行"
+    },
+    {
       "name": "Hallowed Fountain",
-      "decks": 33,
-      "copies": 94,
+      "decks": 13,
+      "copies": 29,
       "jp": "神聖なる泉"
     },
     {
+      "name": "Godless Shrine",
+      "decks": 13,
+      "copies": 24,
+      "jp": "神無き祭殿"
+    },
+    {
       "name": "Sundown Pass",
-      "decks": 33,
-      "copies": 58,
+      "decks": 13,
+      "copies": 18,
       "jp": "日没の道"
     },
     {
-      "name": "Riverpyre Verge",
-      "decks": 30,
-      "copies": 104,
-      "jp": "リバーパイアーの境界"
-    },
-    {
-      "name": "Accumulate Wisdom",
-      "decks": 26,
-      "copies": 104,
-      "jp": "積み重ねられた叡智"
-    },
-    {
-      "name": "Combustion Technique",
-      "decks": 26,
-      "copies": 104,
-      "jp": "爆裂の技"
-    },
-    {
-      "name": "Gran-Gran",
-      "decks": 26,
-      "copies": 104,
-      "jp": "ばあば"
-    },
-    {
-      "name": "Abandon Attachments",
-      "decks": 26,
-      "copies": 88,
-      "jp": "愛着を捨てる"
-    },
-    {
-      "name": "Spirebluff Canal",
-      "decks": 26,
-      "copies": 78,
-      "jp": "尖塔断の運河"
-    },
-    {
-      "name": "It'll Quench Ya!",
-      "decks": 26,
-      "copies": 53,
-      "jp": "飲めば潤う！"
-    },
-    {
-      "name": "Iroh's Demonstration",
-      "decks": 26,
-      "copies": 51,
-      "jp": "アイローの表演"
-    },
-    {
-      "name": "Thor, God of Thunder",
-      "decks": 26,
-      "copies": 44,
-      "jp": "雷神、ソー"
+      "name": "Flashback",
+      "decks": 12,
+      "copies": 22,
+      "jp": "フラッシュバック"
     },
     {
       "name": "Mistrise Village",
-      "decks": 24,
-      "copies": 24,
+      "decks": 12,
+      "copies": 12,
       "jp": "湧霧の村"
     },
     {
-      "name": "Three Steps Ahead",
-      "decks": 23,
-      "copies": 23,
-      "jp": "三歩先"
+      "name": "Inevitable Defeat",
+      "decks": 11,
+      "copies": 41,
+      "jp": "不可避の敗北"
     },
     {
-      "name": "Flashback",
-      "decks": 14,
+      "name": "Cori Mountain Monastery",
+      "decks": 11,
+      "copies": 11,
+      "jp": "コーリ山の僧院"
+    },
+    {
+      "name": "Consult the Star Charts",
+      "decks": 10,
+      "copies": 28,
+      "jp": "星間航路の助言"
+    },
+    {
+      "name": "Shattered Sanctum",
+      "decks": 10,
+      "copies": 20,
+      "jp": "砕かれた聖域"
+    },
+    {
+      "name": "Sear",
+      "decks": 10,
+      "copies": 19,
+      "jp": "焼きつけ"
+    },
+    {
+      "name": "Blood Crypt",
+      "decks": 8,
+      "copies": 32,
+      "jp": "血の墓所"
+    },
+    {
+      "name": "Riverpyre Verge",
+      "decks": 8,
       "copies": 25,
-      "jp": "フラッシュバック"
+      "jp": "リバーパイアーの境界"
+    },
+    {
+      "name": "Lightning Helix",
+      "decks": 8,
+      "copies": 17,
+      "jp": "稲妻のらせん"
     }
   ],
   "trend": {
@@ -593,6 +529,13 @@
       "Izzet Lesson": 22,
       "Jeskai Control": 1,
       "Jeskai Tablet": 2
+    },
+    "2026-08-15": {
+      "4/5C Control": 10,
+      "Jeskai Tablet": 5,
+      "Mardu Aggro": 4,
+      "Mardu Control": 1,
+      "Rakdos Aggro": 1
     }
   }
 }

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>はま寿司 ネタガチャ</title>
+<meta name="description" content="はま寿司で何を食べるか迷ったら回すやつ。1回・10連・予算ガチャ／図鑑／苦手ネタ除外つき（非公式ファンメイド）">
+<meta name="theme-color" content="#13161c">
+<style>
+  :root{
+    --bg:#0f1116; --card:#181b22; --card2:#1f232c; --line:#2a2f3a;
+    --txt:#e7e9ee; --mut:#9aa3b2; --acc:#e0a106; --acc2:#4ea1ff; --red:#e0533b;
+    --N:#7d8593; --R:#4ea1ff; --SR:#b57bff; --SSR:#e0a106; --UR:#ff6b6b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font-family:-apple-system,"Segoe UI",system-ui,"Hiragino Sans","Yu Gothic UI",sans-serif;
+    line-height:1.6;-webkit-text-size-adjust:100%}
+  .wrap{max-width:760px;margin:0 auto;padding:16px 14px 60px}
+  header h1{font-size:22px;font-weight:700;margin:4px 0;display:flex;align-items:center;gap:8px}
+  header p{color:var(--mut);font-size:13px;margin:0 0 12px}
+  h2{font-size:14px;font-weight:600;margin:26px 0 10px;color:var(--mut);
+    text-transform:uppercase;letter-spacing:.04em}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0}
+  .btns{display:flex;flex-wrap:wrap;gap:8px}
+  .btn{background:var(--acc);color:#1a1400;border:none;border-radius:10px;padding:11px 18px;
+    font-size:15px;font-weight:700;cursor:pointer;flex:1;min-width:120px}
+  .btn.sub{background:var(--card2);color:var(--txt);border:1px solid var(--line)}
+  .btn.red{background:var(--red);color:#fff}
+  .btn:active{transform:scale(.97)}
+  .btn:disabled{opacity:.5;cursor:default;transform:none}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
+  .row label{font-size:13px;color:var(--mut);display:flex;align-items:center;gap:5px}
+  .row input[type=number]{width:96px;background:var(--card2);border:1px solid var(--line);
+    border-radius:8px;color:var(--txt);font-size:14px;padding:6px 8px;font-family:inherit}
+  .status{font-size:13px;color:var(--acc2);min-height:18px;margin-top:8px}
+
+  /* 結果 */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:12px}
+  .grid.single{grid-template-columns:1fr;max-width:340px;margin-left:auto;margin-right:auto}
+  .neta{perspective:800px;min-height:150px}
+  .neta .in{position:relative;width:100%;height:100%;min-height:150px;
+    transition:transform .55s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d}
+  .neta.flip .in{transform:rotateY(180deg)}
+  .face{position:absolute;inset:0;border-radius:14px;border:1px solid var(--line);
+    backface-visibility:hidden;-webkit-backface-visibility:hidden;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px;text-align:center}
+  .back{background:linear-gradient(145deg,#2a2f3a,#181b22);font-size:44px}
+  .back span{display:inline-block;animation:spin 1s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .front{background:var(--card);transform:rotateY(180deg)}
+  .front .emo{font-size:38px;line-height:1.1}
+  .front .nm{font-weight:700;font-size:15px;margin-top:6px}
+  .front .pr{font-size:12px;color:var(--mut)}
+  .front .tag{position:absolute;top:8px;left:8px;font-size:11px;font-weight:800;
+    padding:1px 8px;border-radius:20px;color:#fff;letter-spacing:.06em}
+  .front .cm{font-size:11px;color:var(--mut);margin-top:4px;line-height:1.4}
+  .front .new{position:absolute;top:8px;right:8px;font-size:10px;font-weight:800;color:#1a1400;
+    background:var(--acc);padding:1px 6px;border-radius:6px}
+  .rN .tag{background:var(--N)}.rR .tag{background:var(--R)}.rSR .tag{background:var(--SR)}
+  .rSSR .tag{background:var(--SSR);color:#1a1400}
+  .rUR .tag{background:linear-gradient(90deg,#ff6b6b,#ffb86b,#ffe66b,#6bff9e,#6bd0ff,#c86bff)}
+  .rSR .front{border-color:var(--SR)}
+  .rSSR .front{border-color:var(--SSR);box-shadow:0 0 18px #e0a10655}
+  .rUR .front{border-color:var(--UR);box-shadow:0 0 26px #ff6b6b66;
+    background:radial-gradient(circle at 50% 30%,#2a1f1f,#181b22)}
+  .sum{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px 14px;
+    margin-top:12px;font-size:14px}
+  .sum b{color:var(--acc);font-variant-numeric:tabular-nums;font-size:18px}
+  .shoyu{font-size:13px;color:var(--mut);margin-top:6px}
+  .shoyu b{color:var(--txt);font-weight:600}
+  .banner{background:linear-gradient(90deg,#3a2a00,#181b22);border:1px solid var(--acc);
+    border-radius:10px;padding:8px 12px;font-size:13px;color:var(--acc);margin-top:10px;font-weight:600}
+
+  /* 図鑑・除外 */
+  .prog{height:7px;background:var(--card2);border-radius:4px;margin:8px 0 10px;overflow:hidden}
+  .prog > i{display:block;height:100%;background:var(--acc);border-radius:4px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{background:var(--card2);border:1px solid var(--line);border-radius:20px;
+    padding:3px 10px;font-size:12px;cursor:pointer;user-select:none;display:inline-flex;gap:4px;align-items:center}
+  .chip.locked{opacity:.35;filter:grayscale(1)}
+  .chip.off{opacity:.4;text-decoration:line-through}
+  .chip.rSR{border-color:var(--SR)}.chip.rSSR{border-color:var(--SSR)}.chip.rUR{border-color:var(--UR)}
+  details summary{cursor:pointer;color:var(--acc2);font-size:13px;user-select:none}
+  .cat{font-size:12px;color:var(--mut);margin:10px 0 4px;font-weight:600}
+  .hist{font-size:13px;color:var(--mut)}
+  .hist div{padding:4px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px}
+  .hist div span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .rates{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--mut)}
+  .rates i{font-style:normal;font-weight:800}
+  footer{color:var(--mut);font-size:12px;margin-top:30px;border-top:1px solid var(--line);padding-top:14px;line-height:1.7}
+  footer a{color:var(--acc2)}
+  @media (prefers-reduced-motion:reduce){.neta .in{transition:none}.back span{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>🍣 はま寿司 ネタガチャ</h1>
+  <p>何を食べるか迷ったら回すやつ。1回・10連・予算ガチャ。図鑑コンプを目指そう。</p>
+</header>
+
+<div class="box">
+  <div class="btns">
+    <button class="btn" id="b1" onclick="roll(1)">1回引く</button>
+    <button class="btn" id="b10" onclick="roll(10)">10連（SR以上1枚確定）</button>
+    <button class="btn red" id="bb" onclick="rollBudget()">予算で引く</button>
+  </div>
+  <div class="row">
+    <label>予算 <input type="number" id="budget" value="1500" min="110" step="10"> 円</label>
+    <label><input type="checkbox" id="side"> サイドメニューも混ぜる</label>
+    <label><input type="checkbox" id="nodup" checked> 10連・予算で同じネタを出さない</label>
+  </div>
+  <div class="rates" style="margin-top:8px">
+    <span><i style="color:var(--N)">N</i> 50%</span><span><i style="color:var(--R)">R</i> 28%</span>
+    <span><i style="color:var(--SR)">SR</i> 14%</span><span><i style="color:var(--SSR)">SSR</i> 6%</span>
+    <span><i style="color:var(--UR)">UR</i> 2%</span>
+  </div>
+  <div class="status" id="status"></div>
+</div>
+
+<div id="banner"></div>
+<div class="grid" id="result"></div>
+<div id="summary"></div>
+
+<h2>図鑑 <span id="zcount" style="text-transform:none;font-weight:400"></span></h2>
+<div class="box">
+  <div class="prog"><i id="zbar" style="width:0%"></i></div>
+  <div id="zukan"></div>
+</div>
+
+<h2>苦手ネタを外す</h2>
+<div class="box">
+  <details>
+    <summary>タップで開く（外したネタはガチャに出なくなります）<span id="excount"></span></summary>
+    <div id="exlist"></div>
+    <div class="btns" style="margin-top:10px">
+      <button class="btn sub" onclick="setAllEx(false)">全部出す</button>
+      <button class="btn sub" onclick="setAllEx(true)">全部外す</button>
+    </div>
+  </details>
+</div>
+
+<h2>今日の履歴</h2>
+<div class="box">
+  <div class="hist" id="hist"></div>
+  <div class="btns" style="margin-top:10px">
+    <button class="btn sub" onclick="share()">結果をコピー</button>
+    <button class="btn sub" onclick="resetHist()">履歴をクリア</button>
+    <button class="btn sub" onclick="resetAll()">図鑑もリセット</button>
+  </div>
+</div>
+
+<footer>
+  非公式のファンメイドページです。はま寿司（株式会社はま寿司／ゼンショーグループ）とは一切関係ありません。<br>
+  ネタ・価格は一般的な目安で、店舗・時期・曜日により異なります。実際のメニューは店頭でご確認ください。<br>
+  <a href="../index.html">← MTG Standard メタに戻る</a>
+</footer>
+</div>
+
+<script>
+// ===== データ =====
+// r: レアリティ  p: 皿の目安価格(税込)  c: カテゴリ  e: 絵文字  m: ひとこと
+const NETA = [
+  // 赤身・青魚
+  {n:"まぐろ",c:"赤身・青魚",p:110,r:"N",e:"🍣",m:"迷ったらこれ。王道"},
+  {n:"びんちょう",c:"赤身・青魚",p:110,r:"N",e:"🍣",m:"やわらかい淡いまぐろ"},
+  {n:"ねぎとろ",c:"赤身・青魚",p:110,r:"N",e:"🍣",m:"軍艦の定番"},
+  {n:"かつおたたき",c:"赤身・青魚",p:110,r:"R",e:"🍣",m:"にんにく・生姜が合う"},
+  {n:"あじ",c:"赤身・青魚",p:110,r:"R",e:"🐟",m:"生姜とねぎで"},
+  {n:"いわし",c:"赤身・青魚",p:110,r:"R",e:"🐟",m:"脂がのった青魚"},
+  {n:"〆さば",c:"赤身・青魚",p:110,r:"R",e:"🐟",m:"酢〆のさっぱり感"},
+  {n:"中とろ",c:"赤身・青魚",p:220,r:"SSR",e:"🍣",m:"とろける脂"},
+  {n:"大とろ",c:"赤身・青魚",p:330,r:"UR",e:"🍣",m:"最高級。出たら拍手"},
+  // 白身
+  {n:"真だい",c:"白身",p:110,r:"N",e:"🍣",m:"上品な甘み"},
+  {n:"はまち",c:"白身",p:110,r:"N",e:"🍣",m:"脂と旨味のバランス"},
+  {n:"えんがわ",c:"白身",p:110,r:"R",e:"🍣",m:"コリコリ食感"},
+  {n:"活〆ぶり",c:"白身",p:165,r:"SR",e:"🍣",m:"ぶりん食感と脂"},
+  {n:"ひらめ",c:"白身",p:165,r:"SR",e:"🍣",m:"淡白で上品"},
+  // サーモン
+  {n:"サーモン",c:"サーモン",p:110,r:"N",e:"🍣",m:"人気No.1級"},
+  {n:"とろサーモン",c:"サーモン",p:110,r:"R",e:"🍣",m:"ハラス部分の脂"},
+  {n:"焼きとろサーモン",c:"サーモン",p:110,r:"R",e:"🔥",m:"炙りの香ばしさ"},
+  {n:"炙りチーズサーモン",c:"サーモン",p:110,r:"R",e:"🧀",m:"背徳の組み合わせ"},
+  {n:"オニオンサーモン",c:"サーモン",p:110,r:"R",e:"🧅",m:"マヨとオニオン"},
+  {n:"サーモンアボカド",c:"サーモン",p:110,r:"R",e:"🥑",m:"まろやかコンビ"},
+  // えび・かに
+  {n:"えび",c:"えび・かに",p:110,r:"N",e:"🍤",m:"子どもも大好き"},
+  {n:"甘えび",c:"えび・かに",p:110,r:"N",e:"🦐",m:"とろっと甘い"},
+  {n:"えびアボカド",c:"えび・かに",p:110,r:"R",e:"🥑",m:"マヨ×アボカド"},
+  {n:"えび天にぎり",c:"えび・かに",p:110,r:"R",e:"🍤",m:"サクサク揚げたて"},
+  {n:"赤えび",c:"えび・かに",p:165,r:"SR",e:"🦐",m:"大ぶりで濃厚"},
+  {n:"かにかま",c:"えび・かに",p:110,r:"N",e:"🦀",m:"安定のかにかま"},
+  {n:"生本ずわいがに",c:"えび・かに",p:220,r:"SSR",e:"🦀",m:"本物のかに"},
+  // 貝
+  {n:"つぶ貝",c:"貝",p:110,r:"R",e:"🐚",m:"コリッと食感"},
+  {n:"ほたて",c:"貝",p:165,r:"SR",e:"🐚",m:"甘くてぷりぷり"},
+  {n:"赤貝",c:"貝",p:165,r:"SR",e:"🐚",m:"通好みの磯の香り"},
+  {n:"北寄貝",c:"貝",p:165,r:"SR",e:"🐚",m:"甘みと歯ごたえ"},
+  {n:"あわび",c:"貝",p:330,r:"UR",e:"🐚",m:"高級貝の代表"},
+  // いか・たこ
+  {n:"真いか",c:"いか・たこ",p:110,r:"N",e:"🦑",m:"ねっとり甘い"},
+  {n:"大葉真いか",c:"いか・たこ",p:110,r:"N",e:"🌿",m:"大葉の香りが爽やか"},
+  {n:"たこ",c:"いか・たこ",p:110,r:"N",e:"🐙",m:"プリッと弾力"},
+  // 軍艦・その他
+  {n:"いくら",c:"軍艦・その他",p:165,r:"SR",e:"🍣",m:"プチプチ"},
+  {n:"うに",c:"軍艦・その他",p:330,r:"UR",e:"🍣",m:"大当たり"},
+  {n:"数の子",c:"軍艦・その他",p:165,r:"SR",e:"🍣",m:"ポリポリ食感"},
+  {n:"とびこ",c:"軍艦・その他",p:110,r:"N",e:"🍣",m:"プチプチ入門"},
+  {n:"コーン",c:"軍艦・その他",p:110,r:"N",e:"🌽",m:"マヨコーン安定"},
+  {n:"ツナサラダ",c:"軍艦・その他",p:110,r:"N",e:"🥗",m:"ほっとする味"},
+  {n:"納豆",c:"軍艦・その他",p:110,r:"N",e:"🫘",m:"好きな人は好き"},
+  {n:"玉子",c:"軍艦・その他",p:110,r:"N",e:"🥚",m:"締めの一貫"},
+  {n:"味付いなり",c:"軍艦・その他",p:110,r:"N",e:"🍙",m:"甘じょっぱい"},
+  {n:"生ハム",c:"軍艦・その他",p:110,r:"R",e:"🥓",m:"寿司屋の生ハム"},
+  {n:"直火焼き牛カルビ",c:"軍艦・その他",p:110,r:"R",e:"🥩",m:"肉寿司枠"},
+  {n:"ハンバーグ",c:"軍艦・その他",p:110,r:"R",e:"🍔",m:"子ども大喜び"},
+  {n:"あなご",c:"軍艦・その他",p:110,r:"R",e:"🍣",m:"ふわっとタレ"},
+  {n:"うなぎ",c:"軍艦・その他",p:165,r:"SR",e:"🍣",m:"タレの香り"},
+  {n:"穴子一本にぎり",c:"軍艦・その他",p:220,r:"SSR",e:"🍣",m:"皿からはみ出る"},
+  // 巻物
+  {n:"鉄火巻",c:"巻物",p:110,r:"N",e:"🍱",m:"まぐろの細巻"},
+  {n:"かっぱ巻",c:"巻物",p:110,r:"N",e:"🥒",m:"口直しに"},
+  {n:"ねぎとろ巻",c:"巻物",p:110,r:"N",e:"🍱",m:"ねぎとろを巻きで"},
+  {n:"かんぴょう巻",c:"巻物",p:110,r:"N",e:"🍱",m:"渋い選択"},
+];
+const SIDE = [
+  {n:"茶碗蒸し",c:"サイド",p:220,r:"R",e:"🍵",m:"具だくさん",s:1},
+  {n:"あおさの味噌汁",c:"サイド",p:165,r:"N",e:"🥣",m:"磯の香り",s:1},
+  {n:"あさりの味噌汁",c:"サイド",p:220,r:"R",e:"🥣",m:"だしが染みる",s:1},
+  {n:"フライドポテト",c:"サイド",p:165,r:"N",e:"🍟",m:"寿司屋のポテト",s:1},
+  {n:"鶏の唐揚げ",c:"サイド",p:220,r:"R",e:"🍗",m:"ジューシー",s:1},
+  {n:"旨だし鶏塩ラーメン",c:"サイド",p:440,r:"SR",e:"🍜",m:"はま寿司名物",s:1},
+  {n:"大学いも",c:"サイド",p:165,r:"N",e:"🍠",m:"甘い締め",s:1},
+  {n:"なめらかプリン",c:"サイド",p:165,r:"N",e:"🍮",m:"デザート枠",s:1},
+];
+const SHOYU = [
+  "特製だし醤油（迷ったらこれ）","関東風濃口醤油（赤身に）","九州風さしみ醤油（甘口・白身や光り物に）",
+  "四国風ゆずかつお醤油（貝・いかに）","北海道昆布醤油（サーモン・えびに）","はま寿司特製ぽん酢（炙りに）"
+];
+const RATE = {N:50,R:28,SR:14,SSR:6,UR:2};
+const RORDER = ["N","R","SR","SSR","UR"];
+const ALL = NETA.concat(SIDE);
+
+// ===== 保存 =====
+function lsGet(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+let EX = new Set(lsGet("hz_excluded",[]));   // 除外ネタ
+let SEEN = new Set(lsGet("hz_seen",[]));     // 図鑑
+let HIST = lsGet("hz_hist",[]);              // 履歴 [{t,items:[name]}]
+const today = new Date().toDateString();
+HIST = HIST.filter(h=>h.d===today);          // 履歴は当日分のみ
+
+// ===== 抽選 =====
+function pool(){
+  const useSide=document.getElementById("side").checked;
+  return (useSide?ALL:NETA).filter(x=>!EX.has(x.n));
+}
+function pickRarity(minIdx){
+  const cand=RORDER.slice(minIdx||0);
+  const tot=cand.reduce((s,r)=>s+RATE[r],0);
+  let x=Math.random()*tot;
+  for(const r of cand){x-=RATE[r];if(x<0)return r;}
+  return cand[cand.length-1];
+}
+function drawOne(items,minIdx){
+  if(!items.length)return null;
+  let r=pickRarity(minIdx);
+  let ri=RORDER.indexOf(r);
+  // その等級に候補がなければ近い等級へ寄せる
+  for(let k=0;k<RORDER.length;k++){
+    const up=RORDER[ri+k],dn=RORDER[ri-k];
+    let c=up?items.filter(x=>x.r===up):[];
+    if(!c.length&&dn&&ri-k>=(minIdx||0))c=items.filter(x=>x.r===dn);
+    if(c.length)return c[Math.floor(Math.random()*c.length)];
+  }
+  return items[Math.floor(Math.random()*items.length)];
+}
+function drawMany(n,opts){
+  const nodup=document.getElementById("nodup").checked;
+  let items=pool();const out=[];
+  for(let i=0;i<n;i++){
+    const last=(i===n-1&&opts&&opts.guaranteeIdx&&!out.some(x=>RORDER.indexOf(x.r)>=opts.guaranteeIdx));
+    const x=drawOne(items,last?opts.guaranteeIdx:0);
+    if(!x)break;
+    out.push(x);
+    if(nodup)items=items.filter(y=>y.n!==x.n);
+  }
+  return out;
+}
+
+// ===== 表示 =====
+function status(t){document.getElementById("status").textContent=t;}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function card(x,isNew){
+  return `<div class="neta r${x.r}"><div class="in">
+    <div class="face back"><span>🍣</span></div>
+    <div class="face front"><span class="tag">${x.r}</span>${isNew?'<span class="new">NEW</span>':''}
+      <div class="emo">${x.e}</div><div class="nm">${esc(x.n)}</div>
+      <div class="pr">${x.p}円皿${x.s?'（サイド）':''}</div><div class="cm">${esc(x.m)}</div></div>
+  </div></div>`;
+}
+let busy=false;
+function lock(b){busy=b;["b1","b10","bb"].forEach(id=>document.getElementById(id).disabled=b);}
+function show(items,label){
+  if(!items.length){status("引けるネタがありません。除外を減らしてください");return;}
+  const news=items.map(x=>!SEEN.has(x.n));
+  items.forEach(x=>SEEN.add(x.n));lsSet("hz_seen",[...SEEN]);
+  HIST.unshift({d:today,t:new Date().toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"}),
+    label,items:items.map(x=>x.n),sum:items.reduce((s,x)=>s+x.p,0)});
+  HIST=HIST.slice(0,50);lsSet("hz_hist",HIST);
+
+  const res=document.getElementById("result");
+  res.className="grid"+(items.length===1?" single":"");
+  res.innerHTML=items.map((x,i)=>card(x,news[i])).join("");
+  document.getElementById("banner").innerHTML="";document.getElementById("summary").innerHTML="";
+  status(label+" 抽選中…");
+  lock(true);
+  const cards=[...res.children];
+  cards.forEach((el,i)=>setTimeout(()=>el.classList.add("flip"),350+i*180));
+  setTimeout(()=>{
+    const best=items.reduce((a,x)=>RORDER.indexOf(x.r)>RORDER.indexOf(a.r)?x:a,items[0]);
+    const bi=RORDER.indexOf(best.r);
+    document.getElementById("banner").innerHTML=
+      bi>=4?`<div class="banner">🎉 UR「${esc(best.n)}」が出た！今日は当たり日</div>`:
+      bi>=3?`<div class="banner">✨ SSR「${esc(best.n)}」が出た！</div>`:"";
+    const sum=items.reduce((s,x)=>s+x.p,0);
+    const newCnt=news.filter(Boolean).length;
+    document.getElementById("summary").innerHTML=`<div class="box">
+      <div class="sum"><span>${items.length}皿</span><span>合計目安 <b>${sum.toLocaleString()}</b> 円</span>
+        <span>${newCnt?`図鑑に <b style="font-size:14px">${newCnt}</b> 種追加`:"新規なし"}</span></div>
+      <div class="shoyu">おすすめ醤油：<b>${SHOYU[Math.floor(Math.random()*SHOYU.length)]}</b></div></div>`;
+    status(label+" 完了");
+    renderZukan();renderHist();lock(false);
+  },350+cards.length*180+500);
+}
+function roll(n){
+  if(busy)return;
+  const items=drawMany(n,n>=10?{guaranteeIdx:2}:null);
+  show(items,n===1?"1回ガチャ":n+"連ガチャ");
+}
+function rollBudget(){
+  if(busy)return;
+  const b=+document.getElementById("budget").value||0;
+  const nodup=document.getElementById("nodup").checked;
+  let items=pool();const out=[];let rest=b;
+  for(let guard=0;guard<40;guard++){
+    const fit=items.filter(x=>x.p<=rest);
+    if(!fit.length)break;
+    const x=drawOne(fit,0);if(!x)break;
+    out.push(x);rest-=x.p;
+    if(nodup)items=items.filter(y=>y.n!==x.n);
+  }
+  if(!out.length){status("その予算では1皿も引けません");return;}
+  show(out,"予算"+b.toLocaleString()+"円ガチャ");
+}
+
+// ===== 図鑑 =====
+function renderZukan(){
+  const useSide=document.getElementById("side").checked;
+  const list=useSide?ALL:NETA;
+  const got=list.filter(x=>SEEN.has(x.n)).length;
+  document.getElementById("zcount").textContent=`${got} / ${list.length}`;
+  document.getElementById("zbar").style.width=(100*got/list.length)+"%";
+  const cats=[...new Set(list.map(x=>x.c))];
+  document.getElementById("zukan").innerHTML=cats.map(c=>`<div class="cat">${c}</div><div class="chips">`+
+    list.filter(x=>x.c===c).map(x=>SEEN.has(x.n)
+      ?`<span class="chip r${x.r}" title="${x.r} / ${x.p}円">${x.e} ${esc(x.n)}</span>`
+      :`<span class="chip locked" title="${x.r}">❔ ？？？</span>`).join("")+`</div>`).join("");
+}
+// ===== 除外 =====
+function renderEx(){
+  const cats=[...new Set(ALL.map(x=>x.c))];
+  document.getElementById("exlist").innerHTML=cats.map(c=>`<div class="cat">${c}</div><div class="chips">`+
+    ALL.filter(x=>x.c===c).map(x=>`<span class="chip${EX.has(x.n)?" off":""}" onclick="toggleEx('${esc(x.n)}')">${x.e} ${esc(x.n)}</span>`).join("")+`</div>`).join("");
+  document.getElementById("excount").textContent=EX.size?`　現在 ${EX.size} 品を除外中`:"";
+}
+function toggleEx(n){if(EX.has(n))EX.delete(n);else EX.add(n);lsSet("hz_excluded",[...EX]);renderEx();}
+function setAllEx(on){EX=new Set(on?ALL.map(x=>x.n):[]);lsSet("hz_excluded",[...EX]);renderEx();}
+// ===== 履歴 =====
+function renderHist(){
+  const el=document.getElementById("hist");
+  if(!HIST.length){el.innerHTML='<div style="border:none">まだ引いていません</div>';return;}
+  el.innerHTML=HIST.map(h=>`<div><span>${h.t} ${h.label}：${h.items.map(esc).join("、")}</span><span>${h.sum.toLocaleString()}円</span></div>`).join("");
+}
+function share(){
+  if(!HIST.length){status("まだ結果がありません");return;}
+  const h=HIST[0];
+  const txt=`🍣 はま寿司ネタガチャ（${h.label}）\n${h.items.join("、")}\n合計目安 ${h.sum.toLocaleString()}円 #はま寿司ネタガチャ\n${location.href}`;
+  const done=()=>status("結果をコピーしました");
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(done).catch(()=>status("コピーできませんでした"));
+  else status("コピーできませんでした");
+}
+function resetHist(){HIST=[];lsSet("hz_hist",HIST);renderHist();status("履歴をクリアしました");}
+function resetAll(){
+  if(!confirm("図鑑と履歴をリセットします。よろしいですか？"))return;
+  SEEN=new Set();HIST=[];lsSet("hz_seen",[]);lsSet("hz_hist",[]);
+  document.getElementById("result").innerHTML="";document.getElementById("summary").innerHTML="";
+  document.getElementById("banner").innerHTML="";
+  renderZukan();renderHist();status("リセットしました");
+}
+document.getElementById("side").addEventListener("change",renderZukan);
+renderZukan();renderEx();renderHist();
+</script>
+</body>
+</html>

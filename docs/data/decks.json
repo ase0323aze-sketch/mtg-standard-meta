@@ -1,60 +1,30 @@
 {
-  "generated_at": "2026-09-01T00:10:57+00:00",
-  "snapshot": "2026-09-01",
+  "generated_at": "2026-10-01T00:13:13+00:00",
+  "snapshot": "2026-10-01",
   "meta_aware": true,
   "decks": [
     {
       "title": "現メタ最強候補",
       "theme": "現環境で最も安定して勝てる完成度の高いデッキ。上位メタに五分以上戦える構築",
       "archetype": "5色コントロール",
-      "strategy": "このデッキは、強力なドロー呪文、効率的な除去、そして打ち消し呪文を組み合わせ、ゲームを完全に掌握する5色コントロールです。Great Hall of the BiblioplexとTablet of Discoveryで安定したカードアドバンテージを稼ぎ、Jeskai Revelationで盤面を制圧しつつ大量のライフとカードを得ます。Mardu Aggroのような高速アグロに対しては豊富な単体・全体除去で盤面をクリアし、同型コントロール対決では打ち消しと継続的なカードアドバンテージで勝利します。",
+      "strategy": "このデッキは、強力な5色マナ基盤をショックランドとトライオームランドで確立し、序盤から安定したプレイを目指します。Expedition MapやCampus Guideで土地を確保し、Prophetic PrismやTablet of Discoveryで手札を補充しながら色を整えます。Get LostやBitter Triumphで相手の単体脅威を効率的に除去し、Reanimatorデッキに対してはSoul-Guide Lanternで墓地を封じます。Fumigateによる全体除去でアグロや中速のクリーチャー展開を流し、Chimil, the Inner Sunで自分の呪文を打ち消されなくしつつ、Discoverで継続的なアドバンテージを稼ぎます。最終的には、打ち消されないSphinx of the Final WordやJeskai Revelationの多角的なアドバンテージでゲームを制圧し、勝利に導きます。",
       "colors": "",
       "total": 60,
       "maindeck": [
         {
-          "name": "Great Hall of the Biblioplex",
-          "count": 4,
-          "jp": "Great Hall of the Biblioplex"
-        },
-        {
-          "name": "Blood Crypt",
-          "count": 2,
-          "jp": "血の墓所"
-        },
-        {
-          "name": "Breeding Pool",
-          "count": 2,
-          "jp": "繁殖池"
-        },
-        {
           "name": "Hallowed Fountain",
-          "count": 2,
+          "count": 4,
           "jp": "神聖なる泉"
         },
         {
-          "name": "Overgrown Tomb",
-          "count": 2,
-          "jp": "草むした墓"
-        },
-        {
-          "name": "Sacred Foundry",
-          "count": 2,
-          "jp": "聖なる鋳造所"
-        },
-        {
-          "name": "Steam Vents",
-          "count": 2,
-          "jp": "蒸気孔"
-        },
-        {
-          "name": "Temple Garden",
-          "count": 2,
-          "jp": "寺院の庭"
-        },
-        {
           "name": "Watery Grave",
-          "count": 2,
+          "count": 4,
           "jp": "湿った墓"
+        },
+        {
+          "name": "Overgrown Tomb",
+          "count": 4,
+          "jp": "草むした墓"
         },
         {
           "name": "Stomping Ground",
@@ -62,96 +32,131 @@
           "jp": "踏み鳴らされる地"
         },
         {
-          "name": "Mystic Monastery",
+          "name": "Sacred Foundry",
           "count": 2,
+          "jp": "聖なる鋳造所"
+        },
+        {
+          "name": "Frontier Bivouac",
+          "count": 1,
+          "jp": "開拓地の野営地"
+        },
+        {
+          "name": "Opulent Palace",
+          "count": 1,
+          "jp": "華やかな宮殿"
+        },
+        {
+          "name": "Mystic Monastery",
+          "count": 1,
           "jp": "神秘の僧院"
         },
         {
-          "name": "Jeskai Revelation",
-          "count": 4,
-          "jp": "ジェスカイの啓示"
+          "name": "Sandsteppe Citadel",
+          "count": 1,
+          "jp": "砂草原の城塞"
         },
         {
-          "name": "Stock Up",
+          "name": "Nomad Outpost",
+          "count": 1,
+          "jp": "遊牧民の前哨地"
+        },
+        {
+          "name": "Great Hall of the Biblioplex",
+          "count": 2,
+          "jp": "大図書棟の大ホール"
+        },
+        {
+          "name": "Cavern of Souls",
+          "count": 1,
+          "jp": "魂の洞窟"
+        },
+        {
+          "name": "Demolition Field",
+          "count": 1,
+          "jp": "解体爆破場"
+        },
+        {
+          "name": "Expedition Map",
+          "count": 2,
+          "jp": "探検の地図"
+        },
+        {
+          "name": "Prophetic Prism",
           "count": 4,
-          "jp": "食糧補充"
+          "jp": "予言のプリズム"
+        },
+        {
+          "name": "Soul-Guide Lantern",
+          "count": 2,
+          "jp": "魂標ランタン"
         },
         {
           "name": "Tablet of Discovery",
-          "count": 4,
+          "count": 2,
           "jp": "発見の石板"
         },
         {
-          "name": "Consult the Star Charts",
+          "name": "Chimil, the Inner Sun",
+          "count": 1,
+          "jp": "Chimil, the Inner Sun"
+        },
+        {
+          "name": "Campus Guide",
           "count": 4,
-          "jp": "星間航路の助言"
+          "jp": "構内ガイド"
         },
         {
-          "name": "Inevitable Defeat",
+          "name": "Solemn Simulacrum",
           "count": 4,
-          "jp": "不可避の敗北"
+          "jp": "真面目な身代わり"
         },
         {
-          "name": "An Offer You Can't Refuse",
+          "name": "Sphinx of the Final Word",
           "count": 2,
-          "jp": "断れない提案"
+          "jp": "終止符のスフィンクス"
         },
         {
-          "name": "Negate",
-          "count": 2,
-          "jp": "否認"
+          "name": "Get Lost",
+          "count": 4,
+          "jp": "失せろ"
         },
         {
-          "name": "Disdainful Stroke",
-          "count": 2,
-          "jp": "軽蔑的な一撃"
+          "name": "Bitter Triumph",
+          "count": 4,
+          "jp": "苦々しい勝利"
         },
         {
-          "name": "Lightning Strike",
+          "name": "Stock Up",
           "count": 2,
-          "jp": "稲妻の一撃"
+          "jp": "食糧補充"
         },
         {
-          "name": "Abrade",
+          "name": "Fumigate",
           "count": 2,
-          "jp": "削剥"
+          "jp": "燻（くん）蒸（じょう）"
         },
         {
-          "name": "Hero's Downfall",
+          "name": "Jeskai Revelation",
           "count": 2,
-          "jp": "英雄の破滅"
-        },
-        {
-          "name": "Day of Judgment",
-          "count": 2,
-          "jp": "審判の日"
-        },
-        {
-          "name": "Wastes",
-          "count": 2,
-          "jp": "荒地"
+          "jp": "ジェスカイの啓示"
         }
       ],
-      "mtga": "Deck\n4 Great Hall of the Biblioplex\n2 Blood Crypt\n2 Breeding Pool\n2 Hallowed Fountain\n2 Overgrown Tomb\n2 Sacred Foundry\n2 Steam Vents\n2 Temple Garden\n2 Watery Grave\n2 Stomping Ground\n2 Mystic Monastery\n4 Jeskai Revelation\n4 Stock Up\n4 Tablet of Discovery\n4 Consult the Star Charts\n4 Inevitable Defeat\n2 An Offer You Can't Refuse\n2 Negate\n2 Disdainful Stroke\n2 Lightning Strike\n2 Abrade\n2 Hero's Downfall\n2 Day of Judgment\n2 Wastes",
-      "fixed": "枚数を調整して 60 枚に補正"
+      "mtga": "Deck\n4 Hallowed Fountain\n4 Watery Grave\n4 Overgrown Tomb\n2 Stomping Ground\n2 Sacred Foundry\n1 Frontier Bivouac\n1 Opulent Palace\n1 Mystic Monastery\n1 Sandsteppe Citadel\n1 Nomad Outpost\n2 Great Hall of the Biblioplex\n1 Cavern of Souls\n1 Demolition Field\n2 Expedition Map\n4 Prophetic Prism\n2 Soul-Guide Lantern\n2 Tablet of Discovery\n1 Chimil, the Inner Sun\n4 Campus Guide\n4 Solemn Simulacrum\n2 Sphinx of the Final Word\n4 Get Lost\n4 Bitter Triumph\n2 Stock Up\n2 Fumigate\n2 Jeskai Revelation",
+      "fixed": ""
     },
     {
       "title": "メタに刺すアグロ",
       "theme": "コントロールが多い現環境を、軽いクロックと火力で素早く殴り切るアグロ",
-      "archetype": "マルドゥ・バーンアグロ",
-      "strategy": "このデッキは、軽量クリーチャーと豊富な火力呪文で序盤から相手のライフを素早く削り取ることを目指します。特にコントロールデッキが盤面を整える前に、回避能力持ちのクリーチャーや速攻を持つクリーチャーで継続的にダメージを与え、除去されても墓地から戻るBloodghastで粘り強く攻めます。Cool but Rudeで手札を補充しつつダメージを蓄積し、終盤は火力呪文で直接止めを刺すことで、相手の大型呪文やプレインズウォーカーが着地する前にゲームを終わらせます。",
+      "archetype": "マルドゥ高速アグロ",
+      "strategy": "このデッキは、軽量クリーチャーと豊富な火力呪文で序盤から相手のライフを素早く削り取るマルドゥカラーのアグロデッキです。コントロールデッキに対しては、高速なクロックとボード全体除去にも耐えうるリソース回復（Bloodghast、Iron-Shield Elf）や全体破壊回避（Boros Charm）で、相手が盤面を安定させる前にゲームを終わらせることを目指します。また、Warleader's Callは横並べを強化しつつ追加ダメージを与え、クロックを加速させます。アグロ対決では除去と打点の高さで有利を取り、リアニメイトデッキにはその速さで対処します。",
       "colors": "",
       "total": 60,
       "maindeck": [
         {
-          "name": "Gingerbrute",
+          "name": "Novice Inspector",
           "count": 4,
-          "jp": "ジンジャーブルート"
-        },
-        {
-          "name": "Fanatical Firebrand",
-          "count": 4,
-          "jp": "狂信的扇動者"
+          "jp": "ひよっこ捜査員"
         },
         {
           "name": "Hardened Academic",
@@ -159,19 +164,29 @@
           "jp": "頑なな学徒"
         },
         {
-          "name": "Bloodghast",
+          "name": "Swiftblade Vindicator",
           "count": 4,
+          "jp": "速太刀の擁護者"
+        },
+        {
+          "name": "Bloodghast",
+          "count": 2,
           "jp": "恐血鬼"
         },
         {
-          "name": "Shock",
+          "name": "Iron-Shield Elf",
           "count": 2,
-          "jp": "ショック"
+          "jp": "鉄盾のエルフ"
         },
         {
-          "name": "Abrade",
+          "name": "Anim Pakal, Thousandth Moon",
           "count": 2,
-          "jp": "削剥"
+          "jp": "千番目の月、アニム・パカル"
+        },
+        {
+          "name": "Shock",
+          "count": 4,
+          "jp": "ショック"
         },
         {
           "name": "Lightning Strike",
@@ -179,19 +194,29 @@
           "jp": "稲妻の一撃"
         },
         {
-          "name": "Firebending Lesson",
+          "name": "Abrade",
           "count": 4,
-          "jp": "火の技の修行"
+          "jp": "削剥"
         },
         {
-          "name": "Cool but Rude",
+          "name": "Boros Charm",
           "count": 4,
-          "jp": "華麗だが無礼者"
+          "jp": "ボロスの魔除け"
+        },
+        {
+          "name": "Bitter Triumph",
+          "count": 2,
+          "jp": "苦々しい勝利"
         },
         {
           "name": "Warleader's Call",
-          "count": 4,
+          "count": 2,
           "jp": "戦導者の号令"
+        },
+        {
+          "name": "Lavaspur Boots",
+          "count": 2,
+          "jp": "溶岩拍車のブーツ"
         },
         {
           "name": "Blood Crypt",
@@ -217,43 +242,38 @@
           "name": "Concealed Courtyard",
           "count": 4,
           "jp": "秘密の中庭"
-        },
-        {
-          "name": "Mountain",
-          "count": 2,
-          "jp": "山"
-        },
-        {
-          "name": "Plains",
-          "count": 1,
-          "jp": "平地"
-        },
-        {
-          "name": "Swamp",
-          "count": 1,
-          "jp": "沼"
         }
       ],
-      "mtga": "Deck\n4 Gingerbrute\n4 Fanatical Firebrand\n4 Hardened Academic\n4 Bloodghast\n2 Shock\n2 Abrade\n4 Lightning Strike\n4 Firebending Lesson\n4 Cool but Rude\n4 Warleader's Call\n4 Blood Crypt\n4 Sacred Foundry\n4 Godless Shrine\n4 Inspiring Vantage\n4 Concealed Courtyard\n2 Mountain\n1 Plains\n1 Swamp",
-      "fixed": ""
+      "mtga": "Deck\n4 Novice Inspector\n4 Hardened Academic\n4 Swiftblade Vindicator\n2 Bloodghast\n2 Iron-Shield Elf\n2 Anim Pakal, Thousandth Moon\n4 Shock\n4 Lightning Strike\n4 Abrade\n4 Boros Charm\n2 Bitter Triumph\n2 Warleader's Call\n2 Lavaspur Boots\n4 Blood Crypt\n4 Sacred Foundry\n4 Godless Shrine\n4 Inspiring Vantage\n4 Concealed Courtyard",
+      "fixed": "枚数を調整して 60 枚に補正"
     },
     {
       "title": "受け切りコントロール",
       "theme": "除去と打ち消しで相手を捌き切り、強力な勝ち筋で蓋をするコントロール",
-      "archetype": "五色コントロール",
-      "strategy": "このデッキは、序盤の軽コスト除去と打ち消し呪文で相手の攻勢を効果的に捌き、中盤以降は《星図の相談》や《ジェスカイの啓示》といった強力なドロー呪文でハンドアドバンテージを確保します。最終的には《嵐の目のウギン》による全体除去とアドバンテージ獲得、《バー・シン・セの城壁》の永続的な防御、または《大いなる書庫の円形劇場》がクリーチャー化した際の脅威でゲームを制圧し、勝利を確定させます。現環境のアグロデッキには豊富な除去とライフ回復で対抗し、他のコントロールデッキに対しては主要な脅威を打ち消し、カードアドバンテージ源で優位を築きます。",
+      "archetype": "5色コントロール",
+      "strategy": "このデッキは、序盤の軽い除去と打ち消しで相手の攻めをいなし、中盤はより強力な除去と手札補充で盤面と手札の有利を確立します。終盤には、ニヴ＝ミゼット、ギルドパクトやウギン、嵐の目、リリアナなどの強力なフィニッシャーでゲームに蓋をします。多様な除去と打ち消しにより、現環境のアグロからコントロール、リアニメイトまで幅広く対応できる柔軟性を持っています。",
       "colors": "",
       "total": 60,
       "maindeck": [
         {
-          "name": "Watery Grave",
-          "count": 4,
-          "jp": "湿った墓"
-        },
-        {
           "name": "Hallowed Fountain",
           "count": 4,
           "jp": "神聖なる泉"
+        },
+        {
+          "name": "Breeding Pool",
+          "count": 4,
+          "jp": "繁殖池"
+        },
+        {
+          "name": "Overgrown Tomb",
+          "count": 4,
+          "jp": "草むした墓"
+        },
+        {
+          "name": "Blood Crypt",
+          "count": 4,
+          "jp": "血の墓所"
         },
         {
           "name": "Steam Vents",
@@ -261,59 +281,14 @@
           "jp": "蒸気孔"
         },
         {
-          "name": "Overgrown Tomb",
-          "count": 2,
-          "jp": "草むした墓"
-        },
-        {
-          "name": "Breeding Pool",
-          "count": 2,
-          "jp": "繁殖池"
-        },
-        {
           "name": "Temple Garden",
           "count": 1,
           "jp": "寺院の庭"
         },
         {
-          "name": "Sacred Foundry",
-          "count": 1,
-          "jp": "聖なる鋳造所"
-        },
-        {
-          "name": "Blood Crypt",
-          "count": 1,
-          "jp": "血の墓所"
-        },
-        {
-          "name": "Swamp",
-          "count": 1,
-          "jp": "沼"
-        },
-        {
-          "name": "Plains",
-          "count": 1,
-          "jp": "平地"
-        },
-        {
-          "name": "Mountain",
-          "count": 1,
-          "jp": "山"
-        },
-        {
-          "name": "Forest",
-          "count": 1,
-          "jp": "森"
-        },
-        {
           "name": "Great Hall of the Biblioplex",
-          "count": 1,
-          "jp": "Great Hall of the Biblioplex"
-        },
-        {
-          "name": "Crystal Grotto",
-          "count": 1,
-          "jp": "水晶の岩屋"
+          "count": 2,
+          "jp": "大図書棟の大ホール"
         },
         {
           "name": "Demolition Field",
@@ -321,29 +296,34 @@
           "jp": "解体爆破場"
         },
         {
+          "name": "Restless Reef",
+          "count": 1,
+          "jp": "不穏な浅瀬"
+        },
+        {
+          "name": "Restless Anchorage",
+          "count": 1,
+          "jp": "不穏な投錨地"
+        },
+        {
+          "name": "Island",
+          "count": 1,
+          "jp": "島"
+        },
+        {
+          "name": "Bitter Triumph",
+          "count": 4,
+          "jp": "苦々しい勝利"
+        },
+        {
           "name": "Get Lost",
           "count": 4,
           "jp": "失せろ"
         },
         {
-          "name": "An Offer You Can't Refuse",
-          "count": 4,
-          "jp": "断れない提案"
-        },
-        {
-          "name": "Annul",
+          "name": "Stroke of Midnight",
           "count": 2,
-          "jp": "無効"
-        },
-        {
-          "name": "Negate",
-          "count": 4,
-          "jp": "否認"
-        },
-        {
-          "name": "Inevitable Defeat",
-          "count": 4,
-          "jp": "不可避の敗北"
+          "jp": "真夜中の一撃"
         },
         {
           "name": "Day of Judgment",
@@ -356,9 +336,19 @@
           "jp": "燻（くん）蒸（じょう）"
         },
         {
-          "name": "Consult the Star Charts",
+          "name": "Negate",
           "count": 4,
-          "jp": "星間航路の助言"
+          "jp": "否認"
+        },
+        {
+          "name": "Disdainful Stroke",
+          "count": 2,
+          "jp": "軽蔑的な一撃"
+        },
+        {
+          "name": "An Offer You Can't Refuse",
+          "count": 2,
+          "jp": "断れない提案"
         },
         {
           "name": "Stock Up",
@@ -366,9 +356,19 @@
           "jp": "食糧補充"
         },
         {
-          "name": "Jeskai Revelation",
-          "count": 4,
-          "jp": "ジェスカイの啓示"
+          "name": "Consult the Star Charts",
+          "count": 2,
+          "jp": "星間航路の助言"
+        },
+        {
+          "name": "Mazemind Tome",
+          "count": 2,
+          "jp": "精神迷わせの秘本"
+        },
+        {
+          "name": "Niv-Mizzet, Guildpact",
+          "count": 1,
+          "jp": "ギルドパクト、ニヴ＝ミゼット"
         },
         {
           "name": "Ugin, Eye of the Storms",
@@ -376,19 +376,29 @@
           "jp": "嵐の目、ウギン"
         },
         {
-          "name": "The Walls of Ba Sing Se",
+          "name": "Liliana, Dreadhorde General",
           "count": 1,
-          "jp": "バーシンセーの城壁"
+          "jp": "戦慄衆の将軍、リリアナ"
+        },
+        {
+          "name": "Rise of the Dark Realms",
+          "count": 1,
+          "jp": "闇の領域の隆盛"
+        },
+        {
+          "name": "The Ten Rings",
+          "count": 1,
+          "jp": "テン・リングス"
         }
       ],
-      "mtga": "Deck\n4 Watery Grave\n4 Hallowed Fountain\n4 Steam Vents\n2 Overgrown Tomb\n2 Breeding Pool\n1 Temple Garden\n1 Sacred Foundry\n1 Blood Crypt\n1 Swamp\n1 Plains\n1 Mountain\n1 Forest\n1 Great Hall of the Biblioplex\n1 Crystal Grotto\n1 Demolition Field\n4 Get Lost\n4 An Offer You Can't Refuse\n2 Annul\n4 Negate\n4 Inevitable Defeat\n2 Day of Judgment\n2 Fumigate\n4 Consult the Star Charts\n2 Stock Up\n4 Jeskai Revelation\n1 Ugin, Eye of the Storms\n1 The Walls of Ba Sing Se",
-      "fixed": "枚数を調整して 60 枚に補正"
+      "mtga": "Deck\n4 Hallowed Fountain\n4 Breeding Pool\n4 Overgrown Tomb\n4 Blood Crypt\n4 Steam Vents\n1 Temple Garden\n2 Great Hall of the Biblioplex\n1 Demolition Field\n1 Restless Reef\n1 Restless Anchorage\n1 Island\n4 Bitter Triumph\n4 Get Lost\n2 Stroke of Midnight\n2 Day of Judgment\n2 Fumigate\n4 Negate\n2 Disdainful Stroke\n2 An Offer You Can't Refuse\n2 Stock Up\n2 Consult the Star Charts\n2 Mazemind Tome\n1 Niv-Mizzet, Guildpact\n1 Ugin, Eye of the Storms\n1 Liliana, Dreadhorde General\n1 Rise of the Dark Realms\n1 The Ten Rings",
+      "fixed": ""
     },
     {
       "title": "ローグ好みの変則コンボ",
       "theme": "意表を突く2〜3枚のコンボや変則的な勝ち筋で決める、ローグ好みのデッキ",
-      "archetype": "5色ミレニアム・カレンダー・コンボ",
-      "strategy": "このデッキは、伝説のアーティファクト《The Millennium Calendar》の能力を繰り返し起動して1000個のタイムカウンターを乗せ、特殊勝利を目指します。序盤は《Llanowar Elves》などのマナクリーチャーと《Springleaf Drum》でマナ基盤を整え、ドロー呪文でコンボパーツを探します。中盤以降は《Unstoppable Plan》で《The Millennium Calendar》をアンタップし、《Gogo, Master of Mimicry》や《Peter Parker's Camera》で起動型能力をコピーしてタイムカウンターを指数関数的に増やします。相手の干渉は《Negate》や《Abrade》、《Get Lost》で捌き、メタデッキの速度を上回る形で勝利を決めます。",
+      "archetype": "5色カレンダーコンボ",
+      "strategy": "このデッキは、《千年暦》と《ピーター・パーカーのカメラ》、そして《凶兆の坩堝のアガサ》を組み合わせた独創的な3枚コンボで勝利を目指します。《凶兆の坩堝のアガサ》に+1/+1カウンターが乗ると、彼女の能力で《千年暦》と《ピーター・パーカーのカメラ》の起動コストがタップのみになります。これにより、《ピーター・パーカーのカメラ》のフィルムカウンターを消費して《千年暦》の「時間カウンターを倍にする」能力を無限にコピーし、即座にゲームに勝利します。《育成する妖精》は《ピーター・パーカーのカメラ》のフィルムカウンターをリセットするために使用されます。このコンボは、コントロールデッキの除去や、アグロデッキの速攻に対しても、適切なタイミングで展開することで対応可能です。",
       "colors": "",
       "total": 60,
       "maindeck": [
@@ -398,74 +408,49 @@
           "jp": "千年暦"
         },
         {
-          "name": "Unstoppable Plan",
-          "count": 4,
-          "jp": "止められない計画"
-        },
-        {
-          "name": "Gogo, Master of Mimicry",
-          "count": 2,
-          "jp": "世界を救うものまね中、ゴゴ"
-        },
-        {
           "name": "Peter Parker's Camera",
-          "count": 2,
+          "count": 4,
           "jp": "ピーター・パーカーのカメラ"
         },
         {
-          "name": "Llanowar Elves",
+          "name": "Agatha of the Vile Cauldron",
           "count": 4,
-          "jp": "ラノワールのエルフ"
+          "jp": "穢れの大釜、アガサ"
         },
         {
-          "name": "Druid of the Cowl",
-          "count": 2,
-          "jp": "僧帽地帯のドルイド"
-        },
-        {
-          "name": "Bloom Tender",
-          "count": 2,
-          "jp": "花を手入れする者"
-        },
-        {
-          "name": "Nanoform Sentinel",
-          "count": 2,
-          "jp": "ナノフォームの歩哨"
-        },
-        {
-          "name": "Springleaf Drum",
-          "count": 1,
-          "jp": "バネ葉の太鼓"
-        },
-        {
-          "name": "Opt",
+          "name": "Nurturing Pixie",
           "count": 4,
-          "jp": "選択"
+          "jp": "養育するピクシー"
         },
         {
-          "name": "Sleight of Hand",
+          "name": "Ironpaw Aspirant",
           "count": 4,
-          "jp": "手練"
+          "jp": "鉄脚の野心家"
+        },
+        {
+          "name": "Prophetic Prism",
+          "count": 4,
+          "jp": "予言のプリズム"
+        },
+        {
+          "name": "Stock Up",
+          "count": 4,
+          "jp": "食糧補充"
         },
         {
           "name": "Negate",
-          "count": 3,
+          "count": 4,
           "jp": "否認"
         },
         {
-          "name": "Abrade",
-          "count": 3,
-          "jp": "削剥"
-        },
-        {
           "name": "Get Lost",
-          "count": 2,
+          "count": 4,
           "jp": "失せろ"
         },
         {
-          "name": "Breeding Pool",
+          "name": "Abrade",
           "count": 4,
-          "jp": "繁殖池"
+          "jp": "削剥"
         },
         {
           "name": "Hallowed Fountain",
@@ -473,42 +458,27 @@
           "jp": "神聖なる泉"
         },
         {
-          "name": "Steam Vents",
+          "name": "Watery Grave",
           "count": 4,
-          "jp": "蒸気孔"
+          "jp": "湿った墓"
         },
         {
-          "name": "Botanical Sanctum",
-          "count": 2,
-          "jp": "植物の聖域"
+          "name": "Blood Crypt",
+          "count": 4,
+          "jp": "血の墓所"
         },
         {
-          "name": "Spirebluff Canal",
-          "count": 2,
-          "jp": "尖塔断の運河"
+          "name": "Stomping Ground",
+          "count": 4,
+          "jp": "踏み鳴らされる地"
         },
         {
-          "name": "Inspiring Vantage",
-          "count": 2,
-          "jp": "感動的な眺望所"
-        },
-        {
-          "name": "Island",
-          "count": 1,
-          "jp": "島"
-        },
-        {
-          "name": "Forest",
-          "count": 1,
-          "jp": "森"
-        },
-        {
-          "name": "Plains",
-          "count": 1,
-          "jp": "平地"
+          "name": "Temple Garden",
+          "count": 4,
+          "jp": "寺院の庭"
         }
       ],
-      "mtga": "Deck\n4 The Millennium Calendar\n4 Unstoppable Plan\n2 Gogo, Master of Mimicry\n2 Peter Parker's Camera\n4 Llanowar Elves\n2 Druid of the Cowl\n2 Bloom Tender\n2 Nanoform Sentinel\n1 Springleaf Drum\n4 Opt\n4 Sleight of Hand\n3 Negate\n3 Abrade\n2 Get Lost\n4 Breeding Pool\n4 Hallowed Fountain\n4 Steam Vents\n2 Botanical Sanctum\n2 Spirebluff Canal\n2 Inspiring Vantage\n1 Island\n1 Forest\n1 Plains",
+      "mtga": "Deck\n4 The Millennium Calendar\n4 Peter Parker's Camera\n4 Agatha of the Vile Cauldron\n4 Nurturing Pixie\n4 Ironpaw Aspirant\n4 Prophetic Prism\n4 Stock Up\n4 Negate\n4 Get Lost\n4 Abrade\n4 Hallowed Fountain\n4 Watery Grave\n4 Blood Crypt\n4 Stomping Ground\n4 Temple Garden",
       "fixed": ""
     }
   ]

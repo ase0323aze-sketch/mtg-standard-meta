@@ -1,187 +1,45 @@
 {
-  "generated_at": "2026-10-01T00:13:13+00:00",
-  "snapshot": "2026-10-01",
+  "generated_at": "2026-11-01T00:10:29+00:00",
+  "snapshot": "2026-11-01",
   "meta_aware": true,
   "decks": [
     {
       "title": "現メタ最強候補",
       "theme": "現環境で最も安定して勝てる完成度の高いデッキ。上位メタに五分以上戦える構築",
-      "archetype": "5色コントロール",
-      "strategy": "このデッキは、強力な5色マナ基盤をショックランドとトライオームランドで確立し、序盤から安定したプレイを目指します。Expedition MapやCampus Guideで土地を確保し、Prophetic PrismやTablet of Discoveryで手札を補充しながら色を整えます。Get LostやBitter Triumphで相手の単体脅威を効率的に除去し、Reanimatorデッキに対してはSoul-Guide Lanternで墓地を封じます。Fumigateによる全体除去でアグロや中速のクリーチャー展開を流し、Chimil, the Inner Sunで自分の呪文を打ち消されなくしつつ、Discoverで継続的なアドバンテージを稼ぎます。最終的には、打ち消されないSphinx of the Final WordやJeskai Revelationの多角的なアドバンテージでゲームを制圧し、勝利に導きます。",
+      "archetype": "ティムール・カウンター・ミッドレンジ",
+      "strategy": "このデッキは、序盤にマナ加速を行い、中盤から後半にかけて+1/+1カウンターを乗せた大型クリーチャーを展開・強化して盤面を制圧します。除去や打ち消しで相手の脅威を対処しつつ、強固なクリーチャー軍で攻撃し、主要なアグロデッキを圧倒し、コントロールデッキには強大な脅威を押し付けます。特に墓地対策はディミーア系、盤面除去はボロス・ドワーフやオルゾフ・アグロに有効です。",
       "colors": "",
       "total": 60,
       "maindeck": [
         {
-          "name": "Hallowed Fountain",
+          "name": "Llanowar Elves",
           "count": 4,
-          "jp": "神聖なる泉"
+          "jp": "ラノワールのエルフ"
         },
         {
-          "name": "Watery Grave",
+          "name": "Bristly Bill, Spine Sower",
           "count": 4,
-          "jp": "湿った墓"
+          "jp": "棘を播く者、逆棘のビル"
         },
         {
-          "name": "Overgrown Tomb",
+          "name": "Scavenging Ooze",
           "count": 4,
-          "jp": "草むした墓"
+          "jp": "漁る軟泥"
         },
         {
-          "name": "Stomping Ground",
+          "name": "Wildwood Scourge",
+          "count": 3,
+          "jp": "野生林の災い魔"
+        },
+        {
+          "name": "Zimone, Paradox Sculptor",
+          "count": 3,
+          "jp": "逆説の彫刻家、ジモーン"
+        },
+        {
+          "name": "Tarmogoyf",
           "count": 2,
-          "jp": "踏み鳴らされる地"
-        },
-        {
-          "name": "Sacred Foundry",
-          "count": 2,
-          "jp": "聖なる鋳造所"
-        },
-        {
-          "name": "Frontier Bivouac",
-          "count": 1,
-          "jp": "開拓地の野営地"
-        },
-        {
-          "name": "Opulent Palace",
-          "count": 1,
-          "jp": "華やかな宮殿"
-        },
-        {
-          "name": "Mystic Monastery",
-          "count": 1,
-          "jp": "神秘の僧院"
-        },
-        {
-          "name": "Sandsteppe Citadel",
-          "count": 1,
-          "jp": "砂草原の城塞"
-        },
-        {
-          "name": "Nomad Outpost",
-          "count": 1,
-          "jp": "遊牧民の前哨地"
-        },
-        {
-          "name": "Great Hall of the Biblioplex",
-          "count": 2,
-          "jp": "大図書棟の大ホール"
-        },
-        {
-          "name": "Cavern of Souls",
-          "count": 1,
-          "jp": "魂の洞窟"
-        },
-        {
-          "name": "Demolition Field",
-          "count": 1,
-          "jp": "解体爆破場"
-        },
-        {
-          "name": "Expedition Map",
-          "count": 2,
-          "jp": "探検の地図"
-        },
-        {
-          "name": "Prophetic Prism",
-          "count": 4,
-          "jp": "予言のプリズム"
-        },
-        {
-          "name": "Soul-Guide Lantern",
-          "count": 2,
-          "jp": "魂標ランタン"
-        },
-        {
-          "name": "Tablet of Discovery",
-          "count": 2,
-          "jp": "発見の石板"
-        },
-        {
-          "name": "Chimil, the Inner Sun",
-          "count": 1,
-          "jp": "Chimil, the Inner Sun"
-        },
-        {
-          "name": "Campus Guide",
-          "count": 4,
-          "jp": "構内ガイド"
-        },
-        {
-          "name": "Solemn Simulacrum",
-          "count": 4,
-          "jp": "真面目な身代わり"
-        },
-        {
-          "name": "Sphinx of the Final Word",
-          "count": 2,
-          "jp": "終止符のスフィンクス"
-        },
-        {
-          "name": "Get Lost",
-          "count": 4,
-          "jp": "失せろ"
-        },
-        {
-          "name": "Bitter Triumph",
-          "count": 4,
-          "jp": "苦々しい勝利"
-        },
-        {
-          "name": "Stock Up",
-          "count": 2,
-          "jp": "食糧補充"
-        },
-        {
-          "name": "Fumigate",
-          "count": 2,
-          "jp": "燻（くん）蒸（じょう）"
-        },
-        {
-          "name": "Jeskai Revelation",
-          "count": 2,
-          "jp": "ジェスカイの啓示"
-        }
-      ],
-      "mtga": "Deck\n4 Hallowed Fountain\n4 Watery Grave\n4 Overgrown Tomb\n2 Stomping Ground\n2 Sacred Foundry\n1 Frontier Bivouac\n1 Opulent Palace\n1 Mystic Monastery\n1 Sandsteppe Citadel\n1 Nomad Outpost\n2 Great Hall of the Biblioplex\n1 Cavern of Souls\n1 Demolition Field\n2 Expedition Map\n4 Prophetic Prism\n2 Soul-Guide Lantern\n2 Tablet of Discovery\n1 Chimil, the Inner Sun\n4 Campus Guide\n4 Solemn Simulacrum\n2 Sphinx of the Final Word\n4 Get Lost\n4 Bitter Triumph\n2 Stock Up\n2 Fumigate\n2 Jeskai Revelation",
-      "fixed": ""
-    },
-    {
-      "title": "メタに刺すアグロ",
-      "theme": "コントロールが多い現環境を、軽いクロックと火力で素早く殴り切るアグロ",
-      "archetype": "マルドゥ高速アグロ",
-      "strategy": "このデッキは、軽量クリーチャーと豊富な火力呪文で序盤から相手のライフを素早く削り取るマルドゥカラーのアグロデッキです。コントロールデッキに対しては、高速なクロックとボード全体除去にも耐えうるリソース回復（Bloodghast、Iron-Shield Elf）や全体破壊回避（Boros Charm）で、相手が盤面を安定させる前にゲームを終わらせることを目指します。また、Warleader's Callは横並べを強化しつつ追加ダメージを与え、クロックを加速させます。アグロ対決では除去と打点の高さで有利を取り、リアニメイトデッキにはその速さで対処します。",
-      "colors": "",
-      "total": 60,
-      "maindeck": [
-        {
-          "name": "Novice Inspector",
-          "count": 4,
-          "jp": "ひよっこ捜査員"
-        },
-        {
-          "name": "Hardened Academic",
-          "count": 4,
-          "jp": "頑なな学徒"
-        },
-        {
-          "name": "Swiftblade Vindicator",
-          "count": 4,
-          "jp": "速太刀の擁護者"
-        },
-        {
-          "name": "Bloodghast",
-          "count": 2,
-          "jp": "恐血鬼"
-        },
-        {
-          "name": "Iron-Shield Elf",
-          "count": 2,
-          "jp": "鉄盾のエルフ"
-        },
-        {
-          "name": "Anim Pakal, Thousandth Moon",
-          "count": 2,
-          "jp": "千番目の月、アニム・パカル"
+          "jp": "タルモゴイフ"
         },
         {
           "name": "Shock",
@@ -194,71 +52,24 @@
           "jp": "稲妻の一撃"
         },
         {
-          "name": "Abrade",
-          "count": 4,
-          "jp": "削剥"
-        },
-        {
-          "name": "Boros Charm",
-          "count": 4,
-          "jp": "ボロスの魔除け"
-        },
-        {
-          "name": "Bitter Triumph",
+          "name": "Negate",
           "count": 2,
-          "jp": "苦々しい勝利"
+          "jp": "否認"
         },
         {
-          "name": "Warleader's Call",
+          "name": "Inspiring Call",
           "count": 2,
-          "jp": "戦導者の号令"
+          "jp": "鼓舞する呼び声"
         },
         {
-          "name": "Lavaspur Boots",
+          "name": "The Earth Crystal",
           "count": 2,
-          "jp": "溶岩拍車のブーツ"
+          "jp": "土のクリスタル"
         },
         {
-          "name": "Blood Crypt",
-          "count": 4,
-          "jp": "血の墓所"
-        },
-        {
-          "name": "Sacred Foundry",
-          "count": 4,
-          "jp": "聖なる鋳造所"
-        },
-        {
-          "name": "Godless Shrine",
-          "count": 4,
-          "jp": "神無き祭殿"
-        },
-        {
-          "name": "Inspiring Vantage",
-          "count": 4,
-          "jp": "感動的な眺望所"
-        },
-        {
-          "name": "Concealed Courtyard",
-          "count": 4,
-          "jp": "秘密の中庭"
-        }
-      ],
-      "mtga": "Deck\n4 Novice Inspector\n4 Hardened Academic\n4 Swiftblade Vindicator\n2 Bloodghast\n2 Iron-Shield Elf\n2 Anim Pakal, Thousandth Moon\n4 Shock\n4 Lightning Strike\n4 Abrade\n4 Boros Charm\n2 Bitter Triumph\n2 Warleader's Call\n2 Lavaspur Boots\n4 Blood Crypt\n4 Sacred Foundry\n4 Godless Shrine\n4 Inspiring Vantage\n4 Concealed Courtyard",
-      "fixed": "枚数を調整して 60 枚に補正"
-    },
-    {
-      "title": "受け切りコントロール",
-      "theme": "除去と打ち消しで相手を捌き切り、強力な勝ち筋で蓋をするコントロール",
-      "archetype": "5色コントロール",
-      "strategy": "このデッキは、序盤の軽い除去と打ち消しで相手の攻めをいなし、中盤はより強力な除去と手札補充で盤面と手札の有利を確立します。終盤には、ニヴ＝ミゼット、ギルドパクトやウギン、嵐の目、リリアナなどの強力なフィニッシャーでゲームに蓋をします。多様な除去と打ち消しにより、現環境のアグロからコントロール、リアニメイトまで幅広く対応できる柔軟性を持っています。",
-      "colors": "",
-      "total": 60,
-      "maindeck": [
-        {
-          "name": "Hallowed Fountain",
-          "count": 4,
-          "jp": "神聖なる泉"
+          "name": "Training Regimen",
+          "count": 2,
+          "jp": "訓練メニュー"
         },
         {
           "name": "Breeding Pool",
@@ -266,14 +77,9 @@
           "jp": "繁殖池"
         },
         {
-          "name": "Overgrown Tomb",
+          "name": "Stomping Ground",
           "count": 4,
-          "jp": "草むした墓"
-        },
-        {
-          "name": "Blood Crypt",
-          "count": 4,
-          "jp": "血の墓所"
+          "jp": "踏み鳴らされる地"
         },
         {
           "name": "Steam Vents",
@@ -281,39 +87,213 @@
           "jp": "蒸気孔"
         },
         {
-          "name": "Temple Garden",
-          "count": 1,
-          "jp": "寺院の庭"
+          "name": "Botanical Sanctum",
+          "count": 4,
+          "jp": "植物の聖域"
         },
         {
-          "name": "Great Hall of the Biblioplex",
+          "name": "Spirebluff Canal",
           "count": 2,
-          "jp": "大図書棟の大ホール"
+          "jp": "尖塔断の運河"
         },
         {
-          "name": "Demolition Field",
-          "count": 1,
-          "jp": "解体爆破場"
+          "name": "Rockfall Vale",
+          "count": 2,
+          "jp": "落石の谷間"
         },
         {
-          "name": "Restless Reef",
-          "count": 1,
-          "jp": "不穏な浅瀬"
-        },
-        {
-          "name": "Restless Anchorage",
-          "count": 1,
-          "jp": "不穏な投錨地"
+          "name": "Forest",
+          "count": 2,
+          "jp": "森"
         },
         {
           "name": "Island",
-          "count": 1,
+          "count": 2,
           "jp": "島"
+        }
+      ],
+      "mtga": "Deck\n4 Llanowar Elves\n4 Bristly Bill, Spine Sower\n4 Scavenging Ooze\n3 Wildwood Scourge\n3 Zimone, Paradox Sculptor\n2 Tarmogoyf\n4 Shock\n4 Lightning Strike\n2 Negate\n2 Inspiring Call\n2 The Earth Crystal\n2 Training Regimen\n4 Breeding Pool\n4 Stomping Ground\n4 Steam Vents\n4 Botanical Sanctum\n2 Spirebluff Canal\n2 Rockfall Vale\n2 Forest\n2 Island",
+      "fixed": ""
+    },
+    {
+      "title": "メタに刺すアグロ",
+      "theme": "コントロールが多い現環境を、軽いクロックと火力で素早く殴り切るアグロ",
+      "archetype": "ボロス・バーンアグロ",
+      "strategy": "このデッキは、低マナ域のクリーチャーと豊富な火力呪文を組み合わせ、対戦相手のライフを素早く削り取ることを目指します。飛行や速攻を持つクリーチャーで序盤から盤面を支配し、除去呪文でブロッカーを排除しつつ、終盤は火力呪文を直接プレイヤーに叩き込んで勝負を決めます。コントロールデッキに対しては、彼らが盤面を安定させる前に強力なクロックと豊富な火力でライフを奪い、奥義を打たれる前にゲームを終わらせることを意識しています。他のアグロデッキに対しては、より効率的なクリーチャーと除去でレースを制し、優位に立ちます。",
+      "colors": "",
+      "total": 60,
+      "maindeck": [
+        {
+          "name": "Fanatical Firebrand",
+          "count": 4,
+          "jp": "狂信的扇動者"
         },
         {
-          "name": "Bitter Triumph",
+          "name": "Healer's Hawk",
           "count": 4,
-          "jp": "苦々しい勝利"
+          "jp": "癒し手の鷹"
+        },
+        {
+          "name": "Savannah Lions",
+          "count": 4,
+          "jp": "サバンナ・ライオン"
+        },
+        {
+          "name": "Gingerbrute",
+          "count": 4,
+          "jp": "ジンジャーブルート"
+        },
+        {
+          "name": "Slickshot Show-Off",
+          "count": 4,
+          "jp": "精鋭射手団の目立ちたがり"
+        },
+        {
+          "name": "Shock",
+          "count": 4,
+          "jp": "ショック"
+        },
+        {
+          "name": "Lightning Strike",
+          "count": 4,
+          "jp": "稲妻の一撃"
+        },
+        {
+          "name": "Obliterating Bolt",
+          "count": 4,
+          "jp": "抹消する稲妻"
+        },
+        {
+          "name": "Boros Charm",
+          "count": 4,
+          "jp": "ボロスの魔除け"
+        },
+        {
+          "name": "Lavaspur Boots",
+          "count": 4,
+          "jp": "溶岩拍車のブーツ"
+        },
+        {
+          "name": "Sacred Foundry",
+          "count": 4,
+          "jp": "聖なる鋳造所"
+        },
+        {
+          "name": "Inspiring Vantage",
+          "count": 4,
+          "jp": "感動的な眺望所"
+        },
+        {
+          "name": "Sundown Pass",
+          "count": 4,
+          "jp": "日没の道"
+        },
+        {
+          "name": "Restless Bivouac",
+          "count": 2,
+          "jp": "眠らずの露営"
+        },
+        {
+          "name": "Abraded Bluffs",
+          "count": 2,
+          "jp": "擦り減った絶壁"
+        },
+        {
+          "name": "Plains",
+          "count": 2,
+          "jp": "平地"
+        },
+        {
+          "name": "Mountain",
+          "count": 2,
+          "jp": "山"
+        }
+      ],
+      "mtga": "Deck\n4 Fanatical Firebrand\n4 Healer's Hawk\n4 Savannah Lions\n4 Gingerbrute\n4 Slickshot Show-Off\n4 Shock\n4 Lightning Strike\n4 Obliterating Bolt\n4 Boros Charm\n4 Lavaspur Boots\n4 Sacred Foundry\n4 Inspiring Vantage\n4 Sundown Pass\n2 Restless Bivouac\n2 Abraded Bluffs\n2 Plains\n2 Mountain",
+      "fixed": ""
+    },
+    {
+      "title": "受け切りコントロール",
+      "theme": "除去と打ち消しで相手を捌き切り、強力な勝ち筋で蓋をするコントロール",
+      "archetype": "五色コントロール",
+      "strategy": "このデッキは、多種多様な除去と打ち消し呪文を駆使して序盤から終盤まで相手の脅威を徹底的に排除します。序盤は軽量除去や打ち消しでテンポを取り、中盤以降は全体除去やプレインズウォーカーによるアドバンテージ獲得で盤面を制圧します。最終的には『ニヴ＝ミゼット、ギルドパクト』や『世界を喰らう者、コーマ』、『嵐の目のウギン』などの強力なフィニッシャーでゲームを決定づけます。充実したマナ基盤とカードアドバンテージ源により、現環境の多様なアグロ、コントロール、サクリファイスデッキに対して安定した対応力と明確な勝ち筋を提供します。",
+      "colors": "",
+      "total": 60,
+      "maindeck": [
+        {
+          "name": "Hallowed Fountain",
+          "count": 2,
+          "jp": "神聖なる泉"
+        },
+        {
+          "name": "Watery Grave",
+          "count": 2,
+          "jp": "湿った墓"
+        },
+        {
+          "name": "Breeding Pool",
+          "count": 2,
+          "jp": "繁殖池"
+        },
+        {
+          "name": "Steam Vents",
+          "count": 2,
+          "jp": "蒸気孔"
+        },
+        {
+          "name": "Overgrown Tomb",
+          "count": 2,
+          "jp": "草むした墓"
+        },
+        {
+          "name": "Opulent Palace",
+          "count": 1,
+          "jp": "華やかな宮殿"
+        },
+        {
+          "name": "Frontier Bivouac",
+          "count": 1,
+          "jp": "開拓地の野営地"
+        },
+        {
+          "name": "Mystic Monastery",
+          "count": 1,
+          "jp": "神秘の僧院"
+        },
+        {
+          "name": "Sandsteppe Citadel",
+          "count": 1,
+          "jp": "砂草原の城塞"
+        },
+        {
+          "name": "Fabled Passage",
+          "count": 4,
+          "jp": "寓話の小道"
+        },
+        {
+          "name": "Evolving Wilds",
+          "count": 4,
+          "jp": "進化する未開地"
+        },
+        {
+          "name": "Multiversal Passage",
+          "count": 4,
+          "jp": "マルチバースへの通り道"
+        },
+        {
+          "name": "An Offer You Can't Refuse",
+          "count": 3,
+          "jp": "断れない提案"
+        },
+        {
+          "name": "Negate",
+          "count": 3,
+          "jp": "否認"
+        },
+        {
+          "name": "Essence Scatter",
+          "count": 2,
+          "jp": "本質の散乱"
         },
         {
           "name": "Get Lost",
@@ -321,14 +301,19 @@
           "jp": "失せろ"
         },
         {
-          "name": "Stroke of Midnight",
+          "name": "Bitter Triumph",
           "count": 2,
-          "jp": "真夜中の一撃"
+          "jp": "苦々しい勝利"
         },
         {
-          "name": "Day of Judgment",
+          "name": "Abrade",
           "count": 2,
-          "jp": "審判の日"
+          "jp": "削剥"
+        },
+        {
+          "name": "Hero's Downfall",
+          "count": 2,
+          "jp": "英雄の破滅"
         },
         {
           "name": "Fumigate",
@@ -336,29 +321,14 @@
           "jp": "燻（くん）蒸（じょう）"
         },
         {
-          "name": "Negate",
-          "count": 4,
-          "jp": "否認"
+          "name": "The Theorist, Jace Beleren",
+          "count": 3,
+          "jp": "理論家、ジェイス・ベレレン"
         },
         {
-          "name": "Disdainful Stroke",
+          "name": "Ashiok, Wicked Manipulator",
           "count": 2,
-          "jp": "軽蔑的な一撃"
-        },
-        {
-          "name": "An Offer You Can't Refuse",
-          "count": 2,
-          "jp": "断れない提案"
-        },
-        {
-          "name": "Stock Up",
-          "count": 2,
-          "jp": "食糧補充"
-        },
-        {
-          "name": "Consult the Star Charts",
-          "count": 2,
-          "jp": "星間航路の助言"
+          "jp": "忌まわしき干渉者、アショク"
         },
         {
           "name": "Mazemind Tome",
@@ -366,39 +336,44 @@
           "jp": "精神迷わせの秘本"
         },
         {
-          "name": "Niv-Mizzet, Guildpact",
-          "count": 1,
-          "jp": "ギルドパクト、ニヴ＝ミゼット"
-        },
-        {
           "name": "Ugin, Eye of the Storms",
           "count": 1,
           "jp": "嵐の目、ウギン"
         },
         {
-          "name": "Liliana, Dreadhorde General",
+          "name": "Niv-Mizzet, Guildpact",
           "count": 1,
-          "jp": "戦慄衆の将軍、リリアナ"
+          "jp": "ギルドパクト、ニヴ＝ミゼット"
         },
         {
-          "name": "Rise of the Dark Realms",
+          "name": "Koma, World-Eater",
           "count": 1,
-          "jp": "闇の領域の隆盛"
+          "jp": "世界を喰らうもの、コーマ"
         },
         {
-          "name": "The Ten Rings",
+          "name": "Sphinx of the Final Word",
           "count": 1,
-          "jp": "テン・リングス"
+          "jp": "終止符のスフィンクス"
+        },
+        {
+          "name": "Ultima, Origin of Oblivion",
+          "count": 1,
+          "jp": "原初の生命体、アルテマ"
+        },
+        {
+          "name": "Gilded Lotus",
+          "count": 2,
+          "jp": "金粉の水蓮"
         }
       ],
-      "mtga": "Deck\n4 Hallowed Fountain\n4 Breeding Pool\n4 Overgrown Tomb\n4 Blood Crypt\n4 Steam Vents\n1 Temple Garden\n2 Great Hall of the Biblioplex\n1 Demolition Field\n1 Restless Reef\n1 Restless Anchorage\n1 Island\n4 Bitter Triumph\n4 Get Lost\n2 Stroke of Midnight\n2 Day of Judgment\n2 Fumigate\n4 Negate\n2 Disdainful Stroke\n2 An Offer You Can't Refuse\n2 Stock Up\n2 Consult the Star Charts\n2 Mazemind Tome\n1 Niv-Mizzet, Guildpact\n1 Ugin, Eye of the Storms\n1 Liliana, Dreadhorde General\n1 Rise of the Dark Realms\n1 The Ten Rings",
+      "mtga": "Deck\n2 Hallowed Fountain\n2 Watery Grave\n2 Breeding Pool\n2 Steam Vents\n2 Overgrown Tomb\n1 Opulent Palace\n1 Frontier Bivouac\n1 Mystic Monastery\n1 Sandsteppe Citadel\n4 Fabled Passage\n4 Evolving Wilds\n4 Multiversal Passage\n3 An Offer You Can't Refuse\n3 Negate\n2 Essence Scatter\n4 Get Lost\n2 Bitter Triumph\n2 Abrade\n2 Hero's Downfall\n2 Fumigate\n3 The Theorist, Jace Beleren\n2 Ashiok, Wicked Manipulator\n2 Mazemind Tome\n1 Ugin, Eye of the Storms\n1 Niv-Mizzet, Guildpact\n1 Koma, World-Eater\n1 Sphinx of the Final Word\n1 Ultima, Origin of Oblivion\n2 Gilded Lotus",
       "fixed": ""
     },
     {
       "title": "ローグ好みの変則コンボ",
       "theme": "意表を突く2〜3枚のコンボや変則的な勝ち筋で決める、ローグ好みのデッキ",
-      "archetype": "5色カレンダーコンボ",
-      "strategy": "このデッキは、《千年暦》と《ピーター・パーカーのカメラ》、そして《凶兆の坩堝のアガサ》を組み合わせた独創的な3枚コンボで勝利を目指します。《凶兆の坩堝のアガサ》に+1/+1カウンターが乗ると、彼女の能力で《千年暦》と《ピーター・パーカーのカメラ》の起動コストがタップのみになります。これにより、《ピーター・パーカーのカメラ》のフィルムカウンターを消費して《千年暦》の「時間カウンターを倍にする」能力を無限にコピーし、即座にゲームに勝利します。《育成する妖精》は《ピーター・パーカーのカメラ》のフィルムカウンターをリセットするために使用されます。このコンボは、コントロールデッキの除去や、アグロデッキの速攻に対しても、適切なタイミングで展開することで対応可能です。",
+      "archetype": "悠久の時計仕掛け",
+      "strategy": "このデッキは《The Millennium Calendar》による特殊勝利を目指すコンボデッキです。序盤は《Aegis Turtle》などの防御的なクリーチャーと《Springleaf Drum》でマナを整え、《Opt》でコンボパーツを探します。《Unstoppable Plan》と《Forensic Researcher》が揃うと、《The Millennium Calendar》のカウンターを急速に増やし、特殊勝利を達成します。《Negate》や《Get Lost》、《Day of Judgment》で相手の妨害や攻撃からコンボを守り、相手の意表を突く勝利を狙います。アグロやコントロールを問わず、明確な勝ち筋で対戦相手を上回ります。",
       "colors": "",
       "total": 60,
       "maindeck": [
@@ -408,34 +383,29 @@
           "jp": "千年暦"
         },
         {
-          "name": "Peter Parker's Camera",
+          "name": "Unstoppable Plan",
           "count": 4,
-          "jp": "ピーター・パーカーのカメラ"
+          "jp": "止められない計画"
         },
         {
-          "name": "Agatha of the Vile Cauldron",
+          "name": "Forensic Researcher",
           "count": 4,
-          "jp": "穢れの大釜、アガサ"
+          "jp": "鑑識の研究者"
         },
         {
-          "name": "Nurturing Pixie",
+          "name": "Springleaf Drum",
           "count": 4,
-          "jp": "養育するピクシー"
+          "jp": "バネ葉の太鼓"
         },
         {
-          "name": "Ironpaw Aspirant",
+          "name": "Aegis Turtle",
           "count": 4,
-          "jp": "鉄脚の野心家"
+          "jp": "神盾の海亀"
         },
         {
-          "name": "Prophetic Prism",
+          "name": "Opt",
           "count": 4,
-          "jp": "予言のプリズム"
-        },
-        {
-          "name": "Stock Up",
-          "count": 4,
-          "jp": "食糧補充"
+          "jp": "選択"
         },
         {
           "name": "Negate",
@@ -448,9 +418,9 @@
           "jp": "失せろ"
         },
         {
-          "name": "Abrade",
+          "name": "Day of Judgment",
           "count": 4,
-          "jp": "削剥"
+          "jp": "審判の日"
         },
         {
           "name": "Hallowed Fountain",
@@ -458,27 +428,32 @@
           "jp": "神聖なる泉"
         },
         {
-          "name": "Watery Grave",
+          "name": "Deserted Beach",
           "count": 4,
-          "jp": "湿った墓"
+          "jp": "さびれた浜"
         },
         {
-          "name": "Blood Crypt",
+          "name": "Floodfarm Verge",
           "count": 4,
-          "jp": "血の墓所"
+          "jp": "フラッドファームの境界"
         },
         {
-          "name": "Stomping Ground",
-          "count": 4,
-          "jp": "踏み鳴らされる地"
+          "name": "Gleaming Bastion",
+          "count": 2,
+          "jp": "まばゆき根城"
         },
         {
-          "name": "Temple Garden",
-          "count": 4,
-          "jp": "寺院の庭"
+          "name": "Island",
+          "count": 5,
+          "jp": "島"
+        },
+        {
+          "name": "Plains",
+          "count": 5,
+          "jp": "平地"
         }
       ],
-      "mtga": "Deck\n4 The Millennium Calendar\n4 Peter Parker's Camera\n4 Agatha of the Vile Cauldron\n4 Nurturing Pixie\n4 Ironpaw Aspirant\n4 Prophetic Prism\n4 Stock Up\n4 Negate\n4 Get Lost\n4 Abrade\n4 Hallowed Fountain\n4 Watery Grave\n4 Blood Crypt\n4 Stomping Ground\n4 Temple Garden",
+      "mtga": "Deck\n4 The Millennium Calendar\n4 Unstoppable Plan\n4 Forensic Researcher\n4 Springleaf Drum\n4 Aegis Turtle\n4 Opt\n4 Negate\n4 Get Lost\n4 Day of Judgment\n4 Hallowed Fountain\n4 Deserted Beach\n4 Floodfarm Verge\n2 Gleaming Bastion\n5 Island\n5 Plains",
       "fixed": ""
     }
   ]

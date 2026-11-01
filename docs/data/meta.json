@@ -1,246 +1,934 @@
 {
-  "generated_at": "2026-10-01T00:05:11+00:00",
+  "generated_at": "2026-11-01T00:04:52+00:00",
   "source": "mtgtop8",
-  "snapshot": "2026-10-01",
-  "total_decks": 12,
+  "snapshot": "2026-11-01",
+  "total_decks": 84,
   "archetypes": [
     {
-      "archetype": "4/5C Control",
-      "colors": "WUBR",
-      "count": 7,
-      "share": 58.3,
+      "archetype": "Dimir Aggro",
+      "colors": "UB",
+      "count": 16,
+      "share": 19.0,
       "staples": [
         {
-          "name": "Great Hall of the Biblioplex",
-          "decks": 7,
-          "copies": 28,
-          "jp": "大図書棟の大ホール"
+          "name": "Dream Beavers",
+          "decks": 16,
+          "copies": 64,
+          "jp": "悪夢のビーバー"
         },
         {
-          "name": "Tablet of Discovery",
-          "decks": 7,
-          "copies": 28,
-          "jp": "発見の石板"
+          "name": "Floodpits Drowner",
+          "decks": 16,
+          "copies": 64,
+          "jp": "フラッドピットの溺れさせ"
         },
         {
-          "name": "Jeskai Revelation",
-          "decks": 7,
-          "copies": 27,
-          "jp": "ジェスカイの啓示"
+          "name": "Gloomlake Verge",
+          "decks": 16,
+          "copies": 64,
+          "jp": "グルームレイクの境界"
         },
         {
-          "name": "Stock Up",
-          "decks": 7,
-          "copies": 27,
-          "jp": "食糧補充"
+          "name": "Kaito, Bane of Nightmares",
+          "decks": 16,
+          "copies": 64,
+          "jp": "悪夢滅ぼし、魁渡"
         },
         {
-          "name": "Inevitable Defeat",
-          "decks": 7,
-          "copies": 25,
-          "jp": "不可避の敗北"
+          "name": "Watery Grave",
+          "decks": 16,
+          "copies": 64,
+          "jp": "湿った墓"
         },
         {
-          "name": "Steam Vents",
-          "decks": 7,
-          "copies": 19,
-          "jp": "蒸気孔"
+          "name": "Enduring Curiosity",
+          "decks": 16,
+          "copies": 62,
+          "jp": "永劫の好奇心"
         },
         {
-          "name": "Consult the Star Charts",
-          "decks": 7,
-          "copies": 15,
-          "jp": "星間航路の助言"
+          "name": "Spyglass Siren",
+          "decks": 16,
+          "copies": 56,
+          "jp": "遠眼鏡のセイレーン"
         },
         {
-          "name": "Firebending Lesson",
-          "decks": 7,
-          "copies": 14,
-          "jp": "火の技の修行"
+          "name": "Requiting Hex",
+          "decks": 16,
+          "copies": 51,
+          "jp": "報いの呪詛"
         }
       ],
       "decks": [
         {
-          "url": "https://www.mtgtop8.com/event?e=91303&d=893397&f=ST",
-          "event": "91303"
+          "url": "https://www.mtgtop8.com/event?e=93025&d=906681&f=ST",
+          "event": "93025"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=91298&d=893348&f=ST",
-          "event": "91298"
+          "url": "https://www.mtgtop8.com/event?e=93025&d=906687&f=ST",
+          "event": "93025"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=91228&d=892859&f=ST",
-          "event": "91228"
+          "url": "https://www.mtgtop8.com/event?e=92998&d=906500&f=ST",
+          "event": "92998"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=91227&d=892857&f=ST",
-          "event": "91227"
+          "url": "https://www.mtgtop8.com/event?e=92995&d=906474&f=ST",
+          "event": "92995"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=91245&d=892979&f=ST",
-          "event": "91245"
+          "url": "https://www.mtgtop8.com/event?e=92967&d=906268&f=ST",
+          "event": "92967"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=91240&d=892941&f=ST",
-          "event": "91240"
+          "url": "https://www.mtgtop8.com/event?e=92948&d=906114&f=ST",
+          "event": "92948"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=91112&d=891967&f=ST",
-          "event": "91112"
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905749&f=ST",
+          "event": "92894"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905756&f=ST",
+          "event": "92894"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905760&f=ST",
+          "event": "92894"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92858&d=905399&f=ST",
+          "event": "92858"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92858&d=905400&f=ST",
+          "event": "92858"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=93011&d=906569&f=ST",
+          "event": "93011"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92999&d=906504&f=ST",
+          "event": "92999"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92869&d=905515&f=ST",
+          "event": "92869"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92869&d=905517&f=ST",
+          "event": "92869"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92561&d=903113&f=ST",
+          "event": "92561"
         }
       ]
     },
     {
-      "archetype": "Mardu Aggro",
-      "colors": "WBR",
-      "count": 2,
-      "share": 16.7,
+      "archetype": "Dimir Control",
+      "colors": "UBR",
+      "count": 13,
+      "share": 15.5,
       "staples": [
         {
-          "name": "Blood Crypt",
-          "decks": 2,
-          "copies": 8,
-          "jp": "血の墓所"
+          "name": "Gloomlake Verge",
+          "decks": 13,
+          "copies": 52,
+          "jp": "グルームレイクの境界"
         },
         {
-          "name": "Bloodghast",
-          "decks": 2,
-          "copies": 8,
-          "jp": "恐血鬼"
+          "name": "Shipwreck Marsh",
+          "decks": 13,
+          "copies": 52,
+          "jp": "難破船の湿地"
         },
         {
-          "name": "Cool but Rude",
-          "decks": 2,
-          "copies": 8,
-          "jp": "華麗だが無礼者"
+          "name": "Watery Grave",
+          "decks": 13,
+          "copies": 52,
+          "jp": "湿った墓"
         },
         {
-          "name": "Hardened Academic",
-          "decks": 2,
-          "copies": 8,
-          "jp": "頑なな学徒"
+          "name": "Requiting Hex",
+          "decks": 13,
+          "copies": 42,
+          "jp": "報いの呪詛"
         },
         {
-          "name": "Iron-Shield Elf",
-          "decks": 2,
-          "copies": 8,
-          "jp": "鉄盾のエルフ"
+          "name": "The Theorist, Jace Beleren",
+          "decks": 13,
+          "copies": 41,
+          "jp": "理論家、ジェイス・ベレレン"
         },
         {
-          "name": "Marauding Mako",
-          "decks": 2,
-          "copies": 8,
-          "jp": "略奪するアオザメ"
+          "name": "Restless Reef",
+          "decks": 13,
+          "copies": 40,
+          "jp": "不穏な浅瀬"
         },
         {
-          "name": "Moonshadow",
-          "decks": 2,
-          "copies": 8,
-          "jp": "月影"
+          "name": "Deadly Cover-Up",
+          "decks": 13,
+          "copies": 26,
+          "jp": "死人に口無し"
+        },
+        {
+          "name": "Bitter Triumph",
+          "decks": 12,
+          "copies": 23,
+          "jp": "苦々しい勝利"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=92995&d=906477&f=ST",
+          "event": "92995"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92992&d=906453&f=ST",
+          "event": "92992"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92973&d=906321&f=ST",
+          "event": "92973"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92972&d=906309&f=ST",
+          "event": "92972"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92972&d=906312&f=ST",
+          "event": "92972"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92967&d=906271&f=ST",
+          "event": "92967"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92948&d=906108&f=ST",
+          "event": "92948"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92948&d=906109&f=ST",
+          "event": "92948"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905748&f=ST",
+          "event": "92894"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=93000&d=906510&f=ST",
+          "event": "93000"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=93000&d=906511&f=ST",
+          "event": "93000"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92996&d=906479&f=ST",
+          "event": "92996"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92561&d=903118&f=ST",
+          "event": "92561"
+        }
+      ]
+    },
+    {
+      "archetype": "Jund Sacrifice",
+      "colors": "BRG",
+      "count": 11,
+      "share": 13.1,
+      "staples": [
+        {
+          "name": "Biotech Specialist",
+          "decks": 11,
+          "copies": 44,
+          "jp": "生体工学の専門家"
+        },
+        {
+          "name": "Blooming Marsh",
+          "decks": 11,
+          "copies": 44,
+          "jp": "花盛りの湿地"
+        },
+        {
+          "name": "Gene Pollinator",
+          "decks": 11,
+          "copies": 44,
+          "jp": "遺伝子送粉機"
+        },
+        {
+          "name": "Greedy Freebooter",
+          "decks": 11,
+          "copies": 44,
+          "jp": "強欲な掠め盗り"
+        },
+        {
+          "name": "Obsessive Pursuit",
+          "decks": 11,
+          "copies": 44,
+          "jp": "妄執の追跡行"
+        },
+        {
+          "name": "The Sackville-Bagginses",
+          "decks": 11,
+          "copies": 44,
+          "jp": "サックビル＝バギンズ一家"
+        },
+        {
+          "name": "Lively Dirge",
+          "decks": 11,
+          "copies": 43,
+          "jp": "陽気な哀歌"
         },
         {
           "name": "Starting Town",
-          "decks": 2,
-          "copies": 8,
+          "decks": 11,
+          "copies": 43,
           "jp": "始まりの町"
         }
       ],
       "decks": [
         {
-          "url": "https://www.mtgtop8.com/event?e=91240&d=892942&f=ST",
-          "event": "91240"
+          "url": "https://www.mtgtop8.com/event?e=93012&d=906576&f=ST",
+          "event": "93012"
         },
         {
-          "url": "https://www.mtgtop8.com/event?e=91191&d=892652&f=ST",
-          "event": "91191"
+          "url": "https://www.mtgtop8.com/event?e=92995&d=906470&f=ST",
+          "event": "92995"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92972&d=906313&f=ST",
+          "event": "92972"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92967&d=906262&f=ST",
+          "event": "92967"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92967&d=906258&f=ST",
+          "event": "92967"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92967&d=906265&f=ST",
+          "event": "92967"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905759&f=ST",
+          "event": "92894"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905750&f=ST",
+          "event": "92894"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92858&d=905402&f=ST",
+          "event": "92858"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92869&d=905518&f=ST",
+          "event": "92869"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92561&d=903122&f=ST",
+          "event": "92561"
         }
       ]
     },
     {
-      "archetype": "Superior Reanimator",
-      "colors": "UBRG",
-      "count": 1,
-      "share": 8.3,
+      "archetype": "UW Control",
+      "colors": "WU",
+      "count": 8,
+      "share": 9.5,
       "staples": [
         {
-          "name": "Breeding Pool",
-          "decks": 1,
-          "copies": 4,
-          "jp": "繁殖池"
+          "name": "Consult the Star Charts",
+          "decks": 8,
+          "copies": 32,
+          "jp": "星間航路の助言"
         },
         {
-          "name": "Bringer of the Last Gift",
-          "decks": 1,
-          "copies": 4,
-          "jp": "最後の贈り物の運び手"
+          "name": "Deserted Beach",
+          "decks": 8,
+          "copies": 32,
+          "jp": "さびれた浜"
         },
         {
-          "name": "Cavern of Souls",
-          "decks": 1,
-          "copies": 4,
-          "jp": "魂の洞窟"
+          "name": "Floodfarm Verge",
+          "decks": 8,
+          "copies": 32,
+          "jp": "フラッドファームの境界"
         },
         {
-          "name": "Formidable Speaker",
-          "decks": 1,
-          "copies": 4,
-          "jp": "並外れた語り部"
+          "name": "Get Lost",
+          "decks": 8,
+          "copies": 32,
+          "jp": "失せろ"
         },
         {
-          "name": "Oblivious Bookworm",
-          "decks": 1,
-          "copies": 4,
-          "jp": "不注意な読書家"
+          "name": "Hallowed Fountain",
+          "decks": 8,
+          "copies": 32,
+          "jp": "神聖なる泉"
         },
         {
-          "name": "Overgrown Tomb",
-          "decks": 1,
-          "copies": 4,
-          "jp": "草むした墓"
+          "name": "The Theorist, Jace Beleren",
+          "decks": 8,
+          "copies": 30,
+          "jp": "理論家、ジェイス・ベレレン"
         },
         {
-          "name": "Superior Spider-Man",
-          "decks": 1,
-          "copies": 4,
-          "jp": "スーペリア・スパイダーマン"
+          "name": "Seam Rip",
+          "decks": 8,
+          "copies": 25,
+          "jp": "縫い目破り"
         },
         {
-          "name": "Town Greeter",
-          "decks": 1,
-          "copies": 4,
-          "jp": "町の歓迎者"
+          "name": "No More Lies",
+          "decks": 8,
+          "copies": 24,
+          "jp": "喝破"
         }
       ],
       "decks": [
         {
-          "url": "https://www.mtgtop8.com/event?e=91191&d=892649&f=ST",
-          "event": "91191"
+          "url": "https://www.mtgtop8.com/event?e=93025&d=906686&f=ST",
+          "event": "93025"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92998&d=906494&f=ST",
+          "event": "92998"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92998&d=906496&f=ST",
+          "event": "92998"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92998&d=906498&f=ST",
+          "event": "92998"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92998&d=906499&f=ST",
+          "event": "92998"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=93000&d=906517&f=ST",
+          "event": "93000"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92999&d=906509&f=ST",
+          "event": "92999"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92996&d=906482&f=ST",
+          "event": "92996"
         }
       ]
     },
     {
-      "archetype": "Reanimator",
-      "colors": "UBG",
-      "count": 1,
-      "share": 8.3,
+      "archetype": "Orzhov Aggro",
+      "colors": "WB",
+      "count": 8,
+      "share": 9.5,
       "staples": [
         {
-          "name": "Deceit",
-          "decks": 1,
-          "copies": 4,
-          "jp": "欺瞞"
+          "name": "Amalia Benavides Aguirre",
+          "decks": 8,
+          "copies": 32,
+          "jp": "アマリア・べナヴィデス・アギーレ"
         },
         {
-          "name": "Dina's Guidance",
-          "decks": 1,
-          "copies": 4,
-          "jp": "ダイナの導き"
+          "name": "Case of the Uneaten Feast",
+          "decks": 8,
+          "copies": 32,
+          "jp": "手つかずの饗宴の事件"
         },
         {
-          "name": "Superior Spider-Man",
+          "name": "Godless Shrine",
+          "decks": 8,
+          "copies": 32,
+          "jp": "神無き祭殿"
+        },
+        {
+          "name": "Hinterland Sanctifier",
+          "decks": 8,
+          "copies": 32,
+          "jp": "内陸の聖別者"
+        },
+        {
+          "name": "Multiversal Passage",
+          "decks": 8,
+          "copies": 32,
+          "jp": "マルチバースへの通り道"
+        },
+        {
+          "name": "Starting Town",
+          "decks": 8,
+          "copies": 32,
+          "jp": "始まりの町"
+        },
+        {
+          "name": "Concealed Courtyard",
+          "decks": 8,
+          "copies": 31,
+          "jp": "秘密の中庭"
+        },
+        {
+          "name": "Enlightened Confidant",
+          "decks": 8,
+          "copies": 31,
+          "jp": "光の腹心"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=92972&d=906311&f=ST",
+          "event": "92972"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92967&d=906263&f=ST",
+          "event": "92967"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92967&d=906257&f=ST",
+          "event": "92967"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92967&d=906267&f=ST",
+          "event": "92967"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92948&d=906110&f=ST",
+          "event": "92948"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92948&d=906113&f=ST",
+          "event": "92948"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92858&d=905401&f=ST",
+          "event": "92858"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92869&d=905516&f=ST",
+          "event": "92869"
+        }
+      ]
+    },
+    {
+      "archetype": "Boros Dwarves",
+      "colors": "WR",
+      "count": 8,
+      "share": 9.5,
+      "staples": [
+        {
+          "name": "Cavern of Souls",
+          "decks": 8,
+          "copies": 32,
+          "jp": "魂の洞窟"
+        },
+        {
+          "name": "Dragonfire Blade",
+          "decks": 8,
+          "copies": 32,
+          "jp": "龍火の刃"
+        },
+        {
+          "name": "Dwarven Mauler",
+          "decks": 8,
+          "copies": 32,
+          "jp": "ドワーフの打ち壊し屋"
+        },
+        {
+          "name": "Dáin's Company",
+          "decks": 8,
+          "copies": 32,
+          "jp": "ダーインの隊"
+        },
+        {
+          "name": "Inspiring Vantage",
+          "decks": 8,
+          "copies": 32,
+          "jp": "感動的な眺望所"
+        },
+        {
+          "name": "Kíli the Resourceful",
+          "decks": 8,
+          "copies": 32,
+          "jp": "臨機応変なる者、キーリ"
+        },
+        {
+          "name": "Lavaspur Boots",
+          "decks": 8,
+          "copies": 32,
+          "jp": "溶岩拍車のブーツ"
+        },
+        {
+          "name": "Leyline Axe",
+          "decks": 8,
+          "copies": 32,
+          "jp": "力線の斧"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=93012&d=906579&f=ST",
+          "event": "93012"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92998&d=906501&f=ST",
+          "event": "92998"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92995&d=906475&f=ST",
+          "event": "92995"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92973&d=906322&f=ST",
+          "event": "92973"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92948&d=906115&f=ST",
+          "event": "92948"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905757&f=ST",
+          "event": "92894"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92858&d=905398&f=ST",
+          "event": "92858"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92858&d=905403&f=ST",
+          "event": "92858"
+        }
+      ]
+    },
+    {
+      "archetype": "Azorius Momo",
+      "colors": "WU",
+      "count": 6,
+      "share": 7.1,
+      "staples": [
+        {
+          "name": "Floodfarm Verge",
+          "decks": 6,
+          "copies": 24,
+          "jp": "フラッドファームの境界"
+        },
+        {
+          "name": "Hallowed Fountain",
+          "decks": 6,
+          "copies": 24,
+          "jp": "神聖なる泉"
+        },
+        {
+          "name": "Momo, Friendly Flier",
+          "decks": 6,
+          "copies": 24,
+          "jp": "空飛ぶ友だち、モモ"
+        },
+        {
+          "name": "Quantum Riddler",
+          "decks": 6,
+          "copies": 24,
+          "jp": "量子の謎かけ屋"
+        },
+        {
+          "name": "Sage of the Skies",
+          "decks": 6,
+          "copies": 24,
+          "jp": "大空の賢人"
+        },
+        {
+          "name": "Springleaf Drum",
+          "decks": 6,
+          "copies": 24,
+          "jp": "バネ葉の太鼓"
+        },
+        {
+          "name": "Starfield Shepherd",
+          "decks": 6,
+          "copies": 24,
+          "jp": "星原の番人"
+        },
+        {
+          "name": "Steamcore Scholar",
+          "decks": 6,
+          "copies": 24,
+          "jp": "蒸気核の学者"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=93025&d=906682&f=ST",
+          "event": "93025"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92973&d=906318&f=ST",
+          "event": "92973"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92967&d=906256&f=ST",
+          "event": "92967"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92967&d=906266&f=ST",
+          "event": "92967"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905758&f=ST",
+          "event": "92894"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905752&f=ST",
+          "event": "92894"
+        }
+      ]
+    },
+    {
+      "archetype": "Orzhov Amalia",
+      "colors": "WB",
+      "count": 4,
+      "share": 4.8,
+      "staples": [
+        {
+          "name": "Amalia Benavides Aguirre",
+          "decks": 4,
+          "copies": 16,
+          "jp": "アマリア・べナヴィデス・アギーレ"
+        },
+        {
+          "name": "Case of the Uneaten Feast",
+          "decks": 4,
+          "copies": 16,
+          "jp": "手つかずの饗宴の事件"
+        },
+        {
+          "name": "Enlightened Confidant",
+          "decks": 4,
+          "copies": 16,
+          "jp": "光の腹心"
+        },
+        {
+          "name": "Godless Shrine",
+          "decks": 4,
+          "copies": 16,
+          "jp": "神無き祭殿"
+        },
+        {
+          "name": "Haliya, Guided by Light",
+          "decks": 4,
+          "copies": 16,
+          "jp": "光に導かれし者、ハリーヤ"
+        },
+        {
+          "name": "Hinterland Sanctifier",
+          "decks": 4,
+          "copies": 16,
+          "jp": "内陸の聖別者"
+        },
+        {
+          "name": "Starting Town",
+          "decks": 4,
+          "copies": 16,
+          "jp": "始まりの町"
+        },
+        {
+          "name": "Concealed Courtyard",
+          "decks": 4,
+          "copies": 15,
+          "jp": "秘密の中庭"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=92973&d=906320&f=ST",
+          "event": "92973"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=93011&d=906570&f=ST",
+          "event": "93011"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92999&d=906505&f=ST",
+          "event": "92999"
+        },
+        {
+          "url": "https://www.mtgtop8.com/event?e=92561&d=903120&f=ST",
+          "event": "92561"
+        }
+      ]
+    },
+    {
+      "archetype": "Rakdos Aggro",
+      "colors": "BR",
+      "count": 1,
+      "share": 1.2,
+      "staples": [
+        {
+          "name": "Blazemire Verge",
           "decks": 1,
           "copies": 4,
-          "jp": "スーペリア・スパイダーマン"
+          "jp": "ブレイズマイアの境界"
+        },
+        {
+          "name": "Blood Crypt",
+          "decks": 1,
+          "copies": 4,
+          "jp": "血の墓所"
+        },
+        {
+          "name": "Flamecache Gecko",
+          "decks": 1,
+          "copies": 4,
+          "jp": "炎貯えのヤモリ"
+        },
+        {
+          "name": "Hired Claw",
+          "decks": 1,
+          "copies": 4,
+          "jp": "雇われ爪"
+        },
+        {
+          "name": "Iridescent Vinelasher",
+          "decks": 1,
+          "copies": 4,
+          "jp": "玉虫色の蔦打ち"
+        },
+        {
+          "name": "Master of Barbs",
+          "decks": 1,
+          "copies": 4,
+          "jp": "棘ある言葉の達人"
+        },
+        {
+          "name": "Burst Lightning",
+          "decks": 1,
+          "copies": 3,
+          "jp": "噴出の稲妻"
+        },
+        {
+          "name": "Cavern of Souls",
+          "decks": 1,
+          "copies": 3,
+          "jp": "魂の洞窟"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905755&f=ST",
+          "event": "92894"
+        }
+      ]
+    },
+    {
+      "archetype": "Jeskai Tablet",
+      "colors": "WUR",
+      "count": 1,
+      "share": 1.2,
+      "staples": [
+        {
+          "name": "Abandon Attachments",
+          "decks": 1,
+          "copies": 4,
+          "jp": "愛着を捨てる"
+        },
+        {
+          "name": "Accumulate Wisdom",
+          "decks": 1,
+          "copies": 4,
+          "jp": "積み重ねられた叡智"
+        },
+        {
+          "name": "Combustion Technique",
+          "decks": 1,
+          "copies": 4,
+          "jp": "爆裂の技"
+        },
+        {
+          "name": "Firebending Lesson",
+          "decks": 1,
+          "copies": 4,
+          "jp": "火の技の修行"
+        },
+        {
+          "name": "Great Hall of the Biblioplex",
+          "decks": 1,
+          "copies": 4,
+          "jp": "大図書棟の大ホール"
+        },
+        {
+          "name": "Jeskai Revelation",
+          "decks": 1,
+          "copies": 4,
+          "jp": "ジェスカイの啓示"
+        },
+        {
+          "name": "Riverpyre Verge",
+          "decks": 1,
+          "copies": 4,
+          "jp": "リバーパイアーの境界"
+        },
+        {
+          "name": "Steam Vents",
+          "decks": 1,
+          "copies": 4,
+          "jp": "蒸気孔"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=92894&d=905753&f=ST",
+          "event": "92894"
+        }
+      ]
+    },
+    {
+      "archetype": "Grixis \"drakes\"",
+      "colors": "UBR",
+      "count": 1,
+      "share": 1.2,
+      "staples": [
+        {
+          "name": "Dragonfly Swarm",
+          "decks": 1,
+          "copies": 4,
+          "jp": "リュウトンボの群れ"
+        },
+        {
+          "name": "Enigma Drake",
+          "decks": 1,
+          "copies": 4,
+          "jp": "奇怪なドレイク"
+        },
+        {
+          "name": "Opt",
+          "decks": 1,
+          "copies": 4,
+          "jp": "選択"
+        },
+        {
+          "name": "Sleight of Hand",
+          "decks": 1,
+          "copies": 4,
+          "jp": "手練"
+        },
+        {
+          "name": "Spirebluff Canal",
+          "decks": 1,
+          "copies": 4,
+          "jp": "尖塔断の運河"
+        },
+        {
+          "name": "Starting Town",
+          "decks": 1,
+          "copies": 4,
+          "jp": "始まりの町"
         },
         {
           "name": "Watery Grave",
@@ -249,48 +937,352 @@
           "jp": "湿った墓"
         },
         {
-          "name": "Bitter Triumph",
+          "name": "Octopus Form",
           "decks": 1,
           "copies": 3,
-          "jp": "苦々しい勝利"
-        },
-        {
-          "name": "Formidable Speaker",
-          "decks": 1,
-          "copies": 3,
-          "jp": "並外れた語り部"
-        },
-        {
-          "name": "Gloomlake Verge",
-          "decks": 1,
-          "copies": 3,
-          "jp": "グルームレイクの境界"
-        },
-        {
-          "name": "Overgrown Tomb",
-          "decks": 1,
-          "copies": 3,
-          "jp": "草むした墓"
+          "jp": "タコの型"
         }
       ],
       "decks": [
         {
-          "url": "https://www.mtgtop8.com/event?e=91278&d=893203&f=ST",
-          "event": "91278"
+          "url": "https://www.mtgtop8.com/event?e=92978&d=906343&f=ST",
+          "event": "92978"
         }
       ]
     },
     {
-      "archetype": "4-color Control",
+      "archetype": "Dimir Kaito",
+      "colors": "UB",
+      "count": 1,
+      "share": 1.2,
+      "staples": [
+        {
+          "name": "Dream Beavers",
+          "decks": 1,
+          "copies": 4,
+          "jp": "悪夢のビーバー"
+        },
+        {
+          "name": "Enduring Curiosity",
+          "decks": 1,
+          "copies": 4,
+          "jp": "永劫の好奇心"
+        },
+        {
+          "name": "Floodpits Drowner",
+          "decks": 1,
+          "copies": 4,
+          "jp": "フラッドピットの溺れさせ"
+        },
+        {
+          "name": "Gloomlake Verge",
+          "decks": 1,
+          "copies": 4,
+          "jp": "グルームレイクの境界"
+        },
+        {
+          "name": "Kaito, Bane of Nightmares",
+          "decks": 1,
+          "copies": 4,
+          "jp": "悪夢滅ぼし、魁渡"
+        },
+        {
+          "name": "Watery Grave",
+          "decks": 1,
+          "copies": 4,
+          "jp": "湿った墓"
+        },
+        {
+          "name": "Requiting Hex",
+          "decks": 1,
+          "copies": 3,
+          "jp": "報いの呪詛"
+        },
+        {
+          "name": "Spyglass Siren",
+          "decks": 1,
+          "copies": 3,
+          "jp": "遠眼鏡のセイレーン"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=92784&d=904716&f=ST",
+          "event": "92784"
+        }
+      ]
+    },
+    {
+      "archetype": "Boros Superfriends",
+      "colors": "WR",
+      "count": 1,
+      "share": 1.2,
+      "staples": [
+        {
+          "name": "Caretaker's Talent",
+          "decks": 1,
+          "copies": 4,
+          "jp": "世話人の才能"
+        },
+        {
+          "name": "Gideon's Memorial",
+          "decks": 1,
+          "copies": 4,
+          "jp": "ギデオンの記念碑"
+        },
+        {
+          "name": "Sacred Foundry",
+          "decks": 1,
+          "copies": 4,
+          "jp": "聖なる鋳造所"
+        },
+        {
+          "name": "Sunbillow Verge",
+          "decks": 1,
+          "copies": 4,
+          "jp": "サンビロウの境界"
+        },
+        {
+          "name": "Voice of Victory",
+          "decks": 1,
+          "copies": 4,
+          "jp": "勝利の楽士"
+        },
+        {
+          "name": "Ajani Unrelenting",
+          "decks": 1,
+          "copies": 3,
+          "jp": "容赦なきアジャニ"
+        },
+        {
+          "name": "Ajani, Outland Chaperone",
+          "decks": 1,
+          "copies": 3,
+          "jp": "辺境地の御目付役、アジャニ"
+        },
+        {
+          "name": "Chandra, Torch of Defiance",
+          "decks": 1,
+          "copies": 3,
+          "jp": "反逆の先導者、チャンドラ"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=92978&d=906342&f=ST",
+          "event": "92978"
+        }
+      ]
+    },
+    {
+      "archetype": "Boros Aggro",
+      "colors": "WR",
+      "count": 1,
+      "share": 1.2,
+      "staples": [
+        {
+          "name": "Cavern of Souls",
+          "decks": 1,
+          "copies": 4,
+          "jp": "魂の洞窟"
+        },
+        {
+          "name": "Dragonfire Blade",
+          "decks": 1,
+          "copies": 4,
+          "jp": "龍火の刃"
+        },
+        {
+          "name": "Dwarven Mauler",
+          "decks": 1,
+          "copies": 4,
+          "jp": "ドワーフの打ち壊し屋"
+        },
+        {
+          "name": "Dáin's Company",
+          "decks": 1,
+          "copies": 4,
+          "jp": "ダーインの隊"
+        },
+        {
+          "name": "Inspiring Vantage",
+          "decks": 1,
+          "copies": 4,
+          "jp": "感動的な眺望所"
+        },
+        {
+          "name": "Kíli the Resourceful",
+          "decks": 1,
+          "copies": 4,
+          "jp": "臨機応変なる者、キーリ"
+        },
+        {
+          "name": "Lavaspur Boots",
+          "decks": 1,
+          "copies": 4,
+          "jp": "溶岩拍車のブーツ"
+        },
+        {
+          "name": "Leyline Axe",
+          "decks": 1,
+          "copies": 4,
+          "jp": "力線の斧"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=93011&d=906573&f=ST",
+          "event": "93011"
+        }
+      ]
+    },
+    {
+      "archetype": "Azorius Pixie",
+      "colors": "WU",
+      "count": 1,
+      "share": 1.2,
+      "staples": [
+        {
+          "name": "Daydream",
+          "decks": 1,
+          "copies": 4,
+          "jp": "白昼夢"
+        },
+        {
+          "name": "Floodfarm Verge",
+          "decks": 1,
+          "copies": 4,
+          "jp": "フラッドファームの境界"
+        },
+        {
+          "name": "Gleaming Bastion",
+          "decks": 1,
+          "copies": 4,
+          "jp": "まばゆき根城"
+        },
+        {
+          "name": "Hallowed Fountain",
+          "decks": 1,
+          "copies": 4,
+          "jp": "神聖なる泉"
+        },
+        {
+          "name": "Momo, Friendly Flier",
+          "decks": 1,
+          "copies": 4,
+          "jp": "空飛ぶ友だち、モモ"
+        },
+        {
+          "name": "Practiced Offense",
+          "decks": 1,
+          "copies": 4,
+          "jp": "練習を積んだ攻撃"
+        },
+        {
+          "name": "Quantum Riddler",
+          "decks": 1,
+          "copies": 4,
+          "jp": "量子の謎かけ屋"
+        },
+        {
+          "name": "Sage of the Skies",
+          "decks": 1,
+          "copies": 4,
+          "jp": "大空の賢人"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=92784&d=904714&f=ST",
+          "event": "92784"
+        }
+      ]
+    },
+    {
+      "archetype": "Azorius Control",
+      "colors": "WU",
+      "count": 1,
+      "share": 1.2,
+      "staples": [
+        {
+          "name": "Consult the Star Charts",
+          "decks": 1,
+          "copies": 4,
+          "jp": "星間航路の助言"
+        },
+        {
+          "name": "Countersculpt",
+          "decks": 1,
+          "copies": 4,
+          "jp": "対抗刻彫"
+        },
+        {
+          "name": "Deserted Beach",
+          "decks": 1,
+          "copies": 4,
+          "jp": "さびれた浜"
+        },
+        {
+          "name": "Floodfarm Verge",
+          "decks": 1,
+          "copies": 4,
+          "jp": "フラッドファームの境界"
+        },
+        {
+          "name": "Get Lost",
+          "decks": 1,
+          "copies": 4,
+          "jp": "失せろ"
+        },
+        {
+          "name": "Hallowed Fountain",
+          "decks": 1,
+          "copies": 4,
+          "jp": "神聖なる泉"
+        },
+        {
+          "name": "No More Lies",
+          "decks": 1,
+          "copies": 4,
+          "jp": "喝破"
+        },
+        {
+          "name": "The Theorist, Jace Beleren",
+          "decks": 1,
+          "copies": 4,
+          "jp": "理論家、ジェイス・ベレレン"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=92978&d=906341&f=ST",
+          "event": "92978"
+        }
+      ]
+    },
+    {
+      "archetype": "4/5C Control",
       "colors": "WUBR",
       "count": 1,
-      "share": 8.3,
+      "share": 1.2,
       "staples": [
+        {
+          "name": "Blood Crypt",
+          "decks": 1,
+          "copies": 4,
+          "jp": "血の墓所"
+        },
         {
           "name": "Great Hall of the Biblioplex",
           "decks": 1,
           "copies": 4,
           "jp": "大図書棟の大ホール"
+        },
+        {
+          "name": "Inevitable Defeat",
+          "decks": 1,
+          "copies": 4,
+          "jp": "不可避の敗北"
         },
         {
           "name": "Jeskai Revelation",
@@ -311,158 +1303,208 @@
           "jp": "発見の石板"
         },
         {
+          "name": "Extrapolate the Impossible",
+          "decks": 1,
+          "copies": 3,
+          "jp": "不可能の外挿"
+        },
+        {
+          "name": "Sacred Foundry",
+          "decks": 1,
+          "copies": 3,
+          "jp": "聖なる鋳造所"
+        }
+      ],
+      "decks": [
+        {
+          "url": "https://www.mtgtop8.com/event?e=93025&d=906685&f=ST",
+          "event": "93025"
+        }
+      ]
+    },
+    {
+      "archetype": "4 Color Tablet Control",
+      "colors": "WUBR",
+      "count": 1,
+      "share": 1.2,
+      "staples": [
+        {
+          "name": "Great Hall of the Biblioplex",
+          "decks": 1,
+          "copies": 4,
+          "jp": "大図書棟の大ホール"
+        },
+        {
+          "name": "Inevitable Defeat",
+          "decks": 1,
+          "copies": 4,
+          "jp": "不可避の敗北"
+        },
+        {
+          "name": "Jeskai Revelation",
+          "decks": 1,
+          "copies": 4,
+          "jp": "ジェスカイの啓示"
+        },
+        {
+          "name": "Tablet of Discovery",
+          "decks": 1,
+          "copies": 4,
+          "jp": "発見の石板"
+        },
+        {
           "name": "Consult the Star Charts",
           "decks": 1,
           "copies": 3,
           "jp": "星間航路の助言"
         },
         {
-          "name": "Inevitable Defeat",
+          "name": "Lightning Helix",
           "decks": 1,
           "copies": 3,
-          "jp": "不可避の敗北"
+          "jp": "稲妻のらせん"
+        },
+        {
+          "name": "No More Lies",
+          "decks": 1,
+          "copies": 3,
+          "jp": "喝破"
         },
         {
           "name": "Steam Vents",
           "decks": 1,
           "copies": 3,
           "jp": "蒸気孔"
-        },
-        {
-          "name": "Day of Judgment",
-          "decks": 1,
-          "copies": 2,
-          "jp": "審判の日"
         }
       ],
       "decks": [
         {
-          "url": "https://www.mtgtop8.com/event?e=91371&d=893927&f=ST",
-          "event": "91371"
+          "url": "https://www.mtgtop8.com/event?e=92561&d=903119&f=ST",
+          "event": "92561"
         }
       ]
     }
   ],
   "overall_staples": [
     {
-      "name": "Sacred Foundry",
-      "decks": 9,
-      "copies": 20,
-      "jp": "聖なる鋳造所"
+      "name": "Requiting Hex",
+      "decks": 40,
+      "copies": 111,
+      "jp": "報いの呪詛"
     },
     {
-      "name": "Great Hall of the Biblioplex",
-      "decks": 8,
-      "copies": 32,
-      "jp": "大図書棟の大ホール"
+      "name": "Gloomlake Verge",
+      "decks": 33,
+      "copies": 124,
+      "jp": "グルームレイクの境界"
     },
     {
-      "name": "Tablet of Discovery",
-      "decks": 8,
-      "copies": 32,
-      "jp": "発見の石板"
+      "name": "Watery Grave",
+      "decks": 31,
+      "copies": 124,
+      "jp": "湿った墓"
     },
     {
-      "name": "Jeskai Revelation",
-      "decks": 8,
-      "copies": 31,
-      "jp": "ジェスカイの啓示"
+      "name": "Bitter Triumph",
+      "decks": 31,
+      "copies": 60,
+      "jp": "苦々しい勝利"
     },
     {
-      "name": "Stock Up",
-      "decks": 8,
-      "copies": 31,
-      "jp": "食糧補充"
+      "name": "Restless Reef",
+      "decks": 30,
+      "copies": 74,
+      "jp": "不穏な浅瀬"
     },
     {
-      "name": "Inevitable Defeat",
-      "decks": 8,
-      "copies": 28,
-      "jp": "不可避の敗北"
+      "name": "The Theorist, Jace Beleren",
+      "decks": 29,
+      "copies": 85,
+      "jp": "理論家、ジェイス・ベレレン"
     },
     {
-      "name": "Steam Vents",
-      "decks": 8,
-      "copies": 22,
-      "jp": "蒸気孔"
+      "name": "Shipwreck Marsh",
+      "decks": 28,
+      "copies": 80,
+      "jp": "難破船の湿地"
+    },
+    {
+      "name": "Strategic Betrayal",
+      "decks": 27,
+      "copies": 34,
+      "jp": "戦略的裏切り"
     },
     {
       "name": "Starting Town",
-      "decks": 8,
-      "copies": 19,
+      "decks": 26,
+      "copies": 99,
       "jp": "始まりの町"
     },
     {
-      "name": "Consult the Star Charts",
-      "decks": 8,
-      "copies": 18,
-      "jp": "星間航路の助言"
+      "name": "Erode",
+      "decks": 26,
+      "copies": 61,
+      "jp": "浸食作用"
     },
     {
-      "name": "Firebending Lesson",
-      "decks": 8,
-      "copies": 16,
-      "jp": "火の技の修行"
+      "name": "Spell Snare",
+      "decks": 25,
+      "copies": 35,
+      "jp": "呪文嵌め"
     },
     {
-      "name": "Flashback",
-      "decks": 8,
-      "copies": 14,
-      "jp": "フラッシュバック"
+      "name": "Multiversal Passage",
+      "decks": 24,
+      "copies": 68,
+      "jp": "マルチバースへの通り道"
     },
     {
-      "name": "Shattered Sanctum",
-      "decks": 8,
-      "copies": 14,
-      "jp": "砕かれた聖域"
+      "name": "Cavern of Souls",
+      "decks": 20,
+      "copies": 51,
+      "jp": "魂の洞窟"
     },
     {
-      "name": "Sear",
-      "decks": 7,
-      "copies": 14,
-      "jp": "焼きつけ"
+      "name": "The Wondrous Wasp",
+      "decks": 20,
+      "copies": 29,
+      "jp": "ワンダラス・ワスプ"
     },
     {
-      "name": "Together as One",
-      "decks": 7,
-      "copies": 12,
-      "jp": "力を一つに"
+      "name": "Shoot the Sheriff",
+      "decks": 19,
+      "copies": 34,
+      "jp": "保安官を撃て"
     },
     {
-      "name": "Blood Crypt",
-      "decks": 6,
-      "copies": 24,
-      "jp": "血の墓所"
+      "name": "Hallowed Fountain",
+      "decks": 18,
+      "copies": 68,
+      "jp": "神聖なる泉"
     },
     {
-      "name": "Mistrise Village",
-      "decks": 6,
-      "copies": 8,
-      "jp": "湧霧の村"
+      "name": "Wan Shi Tong, Librarian",
+      "decks": 18,
+      "copies": 19,
+      "jp": "司書、ワン・シー・トン"
     },
     {
-      "name": "Riverpyre Verge",
-      "decks": 5,
-      "copies": 11,
-      "jp": "リバーパイアーの境界"
+      "name": "Dream Beavers",
+      "decks": 17,
+      "copies": 68,
+      "jp": "悪夢のビーバー"
     },
     {
-      "name": "Undercity Sewers",
-      "decks": 5,
-      "copies": 9,
-      "jp": "地底街の下水道"
+      "name": "Floodpits Drowner",
+      "decks": 17,
+      "copies": 68,
+      "jp": "フラッドピットの溺れさせ"
     },
     {
-      "name": "Godless Shrine",
-      "decks": 5,
-      "copies": 8,
-      "jp": "神無き祭殿"
-    },
-    {
-      "name": "Sundown Pass",
-      "decks": 5,
-      "copies": 6,
-      "jp": "日没の道"
+      "name": "Kaito, Bane of Nightmares",
+      "decks": 17,
+      "copies": 68,
+      "jp": "悪夢滅ぼし、魁渡"
     }
   ],
   "trend": {
@@ -517,6 +1559,26 @@
       "Mardu Aggro": 2,
       "Reanimator": 1,
       "Superior Reanimator": 1
+    },
+    "2026-11-01": {
+      "4 Color Tablet Control": 1,
+      "4/5C Control": 1,
+      "Azorius Control": 1,
+      "Azorius Momo": 6,
+      "Azorius Pixie": 1,
+      "Boros Aggro": 1,
+      "Boros Dwarves": 8,
+      "Boros Superfriends": 1,
+      "Dimir Aggro": 16,
+      "Dimir Control": 13,
+      "Dimir Kaito": 1,
+      "Grixis \"drakes\"": 1,
+      "Jeskai Tablet": 1,
+      "Jund Sacrifice": 11,
+      "Orzhov Aggro": 8,
+      "Orzhov Amalia": 4,
+      "Rakdos Aggro": 1,
+      "UW Control": 8
     }
   }
 }
